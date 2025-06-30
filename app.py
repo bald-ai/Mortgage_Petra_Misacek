@@ -153,6 +153,9 @@ def index():
         context[key] = SECTION_CACHE[key]
         context[f"{key}_buckets"] = SECTION_BUCKETS[key]
 
+    # Add overall number of listings so the template can show it at the bottom.
+    context["total_listings"] = len(RAW_LISTINGS)
+
     return render_template('index.html', **context)
 
 
