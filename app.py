@@ -14,8 +14,7 @@ app = Flask(__name__)
 # the JSON there. Falling back to the local file makes local development
 # friction-less (no /data mount on developer machines).
 
-_DEFAULT_DATA_PATH = Path(__file__).with_name("MERGED_LISTINGS.json")
-DATA_PATH = Path("/data/MERGED_LISTINGS.json") if Path("/data").exists() else _DEFAULT_DATA_PATH
+DATA_PATH = Path(__file__).with_name("MERGED_LISTINGS.json")
 
 
 def _parse_size(val):

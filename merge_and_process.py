@@ -148,7 +148,7 @@ def main():
 
     # Determine destination: persistent disk at /data when present (Render.com),
     # else default to script directory for local runs.
-    output_path = "/data/MERGED_LISTINGS.json" if os.path.isdir("/data") else os.path.join(script_dir, "MERGED_LISTINGS.json")
+    output_path = os.path.join(script_dir, "MERGED_LISTINGS.json")
 
     try:
         with open(output_path, "w", encoding="utf-8") as f:
