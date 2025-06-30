@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytový Výběr | Petra & Michal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background: #f0f4f8;
+            color: #1c1c1c;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 15px;
+        }
+        
+        /* Banner image styling */
+        .banner-img {
+            width: 100%;
+            height: 510px; /* approx 25% reduction from original auto height */
+            object-fit: cover; /* keep width full, crop excess height */
+            border-radius: 15px;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .view-container {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            font-size: 1.7rem;
+            color: #3a5683;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #e8efff;
+        }
+        
+        .scroller {
+            display: flex;
+            overflow-x: auto;
+            gap: 25px;
+            padding: 15px 5px 25px;
+            scroll-behavior: smooth;
+        }
+        
+        /* Hide scrollbar for focus */
+        .scroller::-webkit-scrollbar {
+            height: 0;
+        }
+        
+        .flat-card {
+            min-width: 425px;
+            /* auto height; halfway size */
+            min-height: 295px;
+            background: linear-gradient(145deg, #edf2ff, #e2eaff);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2d4a75;
+            box-shadow: 0 4px 8px rgba(58,86,131,0.15);
+            border: 2px solid #e0e8ff;
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .flat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(58,86,131,0.2);
+        }
+        
+        .flat-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #4a6fac, #829bc9);
+        }
+        
+        .flat-card img {
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+            border-bottom: 2px solid #d0dcf5;
+        }
+        
+        .flat-card .meta {
+            padding: 8px 10px 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            width: 100%;
+        }
+        
+        .flat-card .addr {
+            font-size: 1.1rem;
+            color: #000;
+            padding: 0 10px 6px;
+            text-align: center;
+        }
+        
+        /* Override text colour inside meta spans as well */
+        .flat-card .meta span {
+            color: #000;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background: #eef4ff;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #3a5683;
+            border: 2px solid #d0dcf5;
+        }
+        
+        /* Filter button styles */
+        .filter-bar {
+            margin: 10px 0 5px;
+            display: none; /* hidden by default */
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .filter-bar.show {
+            display: flex; /* shown when toggled */
+        }
+        
+        .filter-toggle-btn {
+            padding: 6px 14px;
+            font-size: 0.9rem;
+            border: 2px solid #d0dcf5;
+            border-radius: 8px;
+            background: #eef4ff;
+            color: #3a5683;
+            cursor: pointer;
+            margin: 10px 0 5px;
+        }
+        
+        .filter-btn {
+            padding: 6px 14px;
+            font-size: 0.9rem;
+            border: 2px solid #d0dcf5;
+            border-radius: 8px;
+            background: #f5f7ff;
+            color: #3a5683;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        
+        .filter-btn.active {
+            background: #4a6fac;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/banner.png" alt="Petra &amp; Michal banner" class="banner-img" />
+    </header>
+
+    <!-- View 1 - Řečkovice a Medlánky -->
+    <section class="view-container">
+        <h2>Řečkovice a Medlánky</h2>
+        <button class="filter-toggle-btn">Cenový filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in reckovice_medlanky_buckets %}
+            <button class="filter-btn" data-bucket="{{ b }}">
+                {{ 'No price' if b == 'no-price' else b[:-3] ~ ' mil' }}
+            </button>
+            {% endfor %}
+        </div>
+        <div class="scroller">
+            {% for flat in reckovice_medlanky %}
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+                <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
+                <div class="meta">
+                    <span>{{ flat.size }} m²</span>
+                    <span>{{ flat.price|short_price }}</span>
+                </div>
+                <div class="addr">{{ flat.locality }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- View 2 - 2+kk -->
+    <section class="view-container">
+        <h2>2+kk</h2>
+        <button class="filter-toggle-btn">Cenový filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_2kk_buckets %}
+            <button class="filter-btn" data-bucket="{{ b }}">
+                {{ 'No price' if b == 'no-price' else b[:-3] ~ ' mil' }}
+            </button>
+            {% endfor %}
+        </div>
+        <div class="scroller">
+            {% for flat in flats_2kk %}
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+                <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
+                <div class="meta">
+                    <span>{{ flat.size }} m²</span>
+                    <span>{{ flat.price|short_price }}</span>
+                </div>
+                <div class="addr">{{ flat.locality }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- View 3 - 2+1 -->
+    <section class="view-container">
+        <h2>2+1</h2>
+        <button class="filter-toggle-btn">Cenový filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_2plus1_buckets %}
+            <button class="filter-btn" data-bucket="{{ b }}">
+                {{ 'No price' if b == 'no-price' else b[:-3] ~ ' mil' }}
+            </button>
+            {% endfor %}
+        </div>
+        <div class="scroller">
+            {% for flat in flats_2plus1 %}
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+                <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
+                <div class="meta">
+                    <span>{{ flat.size }} m²</span>
+                    <span>{{ flat.price|short_price }}</span>
+                </div>
+                <div class="addr">{{ flat.locality }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- View 4 - 3+kk -->
+    <section class="view-container">
+        <h2>3+kk</h2>
+        <button class="filter-toggle-btn">Cenový filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_3kk_buckets %}
+            <button class="filter-btn" data-bucket="{{ b }}">
+                {{ 'No price' if b == 'no-price' else b[:-3] ~ ' mil' }}
+            </button>
+            {% endfor %}
+        </div>
+        <div class="scroller">
+            {% for flat in flats_3kk %}
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+                <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
+                <div class="meta">
+                    <span>{{ flat.size }} m²</span>
+                    <span>{{ flat.price|short_price }}</span>
+                </div>
+                <div class="addr">{{ flat.locality }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- View 5 - 3+1 -->
+    <section class="view-container">
+        <h2>3+1</h2>
+        <button class="filter-toggle-btn">Cenový filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_3plus1_buckets %}
+            <button class="filter-btn" data-bucket="{{ b }}">
+                {{ 'No price' if b == 'no-price' else b[:-3] ~ ' mil' }}
+            </button>
+            {% endfor %}
+        </div>
+        <div class="scroller">
+            {% for flat in flats_3plus1 %}
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+                <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
+                <div class="meta">
+                    <span>{{ flat.size }} m²</span>
+                    <span>{{ flat.price|short_price }}</span>
+                </div>
+                <div class="addr">{{ flat.locality }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+    // Toggle visibility of filter bars
+    document.querySelectorAll('.filter-toggle-btn').forEach(tgl => {
+        tgl.addEventListener('click', () => {
+            const bar = tgl.nextElementSibling;
+            if (bar) {
+                bar.classList.toggle('show');
+            }
+        });
+    });
+
+    // Handle filtering
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+
+            const section = btn.closest('.view-container');
+            const activeBuckets = Array.from(section.querySelectorAll('.filter-btn.active'))
+                .map(b => b.dataset.bucket);
+
+            section.querySelectorAll('.flat-card').forEach(card => {
+                const cardBucket = card.dataset.bucket;
+                if (activeBuckets.length === 0 || activeBuckets.includes(cardBucket)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
