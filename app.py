@@ -9,7 +9,13 @@ app = Flask(__name__)
 # Data loading and preprocessing
 # --------------------------------------------------
 
-DATA_PATH = Path(__file__).with_name("MERGED_LISTINGS.json")
+# Path to the merged listings file. When deployed on Render.com both the web
+# service and the worker share a persistent disk mounted at /data, so we place
+# the JSON there. Falling back to the local file makes local development
+# friction-less (no /data mount on developer machines).
+
+_DEFAULT_DATA_PATH = Path(__file__).with_name("MERGED_LISTINGS.json")
+DATA_PATH = Path("/data/MERGED_LISTINGS.json") if Path("/data").exists() else _DEFAULT_DATA_PATH
 
 
 def _parse_size(val):
