@@ -4,4 +4,4 @@ selenium
 webdriver-manager
 beautifulsoup4
 lxml
-Flask 
+Flask gunicorn
