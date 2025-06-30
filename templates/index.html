@@ -135,6 +135,14 @@
             font-size: 0.9rem;
         }
         
+        /* Centered scrape button at the bottom */
+        #scrapeBtn {
+            margin-top: 10px;
+            padding: 20px 40px; /* doubled size */
+            font-size: 1.6rem;
+            background: linear-gradient(145deg, #edf2ff, #e2eaff); /* soft listing-blue */
+        }
+        
         .nav-buttons {
             display: flex;
             justify-content: center;
@@ -189,6 +197,41 @@
         .filter-btn.active {
             background: #4a6fac;
             color: #fff;
+        }
+        
+        /* Full-screen overlay shown while scraping is running */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            display: none; /* shown when active */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+        }
+        
+        #overlay img {
+            width: 160px;
+            margin-bottom: 18px;
+        }
+        
+        #overlay span {
+            /* text style if any raw text was present */
+        }
+        
+        /* Styled box for processing message */
+        .overlay-box {
+            background: #eef4ff;
+            padding: 30px 45px;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            color: #3a5683;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
     </style>
 </head>
@@ -323,7 +366,14 @@
     </section>
 
     <footer>
+        <!-- Button to refresh data by running the scraping pipeline -->
+        <button id="scrapeBtn" class="nav-btn">Aktualizovat data</button>
     </footer>
+
+    <!-- Overlay that blocks UI when scraping runs -->
+    <div id="overlay">
+        <div class="overlay-box">Zpracovávám data… prosím čekejte.</div>
+    </div>
 
     <script>
     // Toggle visibility of filter bars
@@ -354,6 +404,44 @@
                 }
             });
         });
+    });
+
+    // Handle click on "Aktualizovat data" button
+    const scrapeBtn = document.getElementById('scrapeBtn');
+    scrapeBtn.addEventListener('click', () => {
+        const msg = 'Toto spustí proces stahování dat a potrvá přibližně 1 minutu.\n' +
+                    'Chcete pokračovat?';
+
+        if (!confirm(msg)) {
+            return; // User cancelled
+        }
+
+        // Provide immediate visual feedback
+        scrapeBtn.disabled = true;
+        const originalLabel = scrapeBtn.textContent;
+        scrapeBtn.textContent = 'Probíhá…';
+
+        const overlay = document.getElementById('overlay');
+        overlay.style.display = 'flex';
+
+        fetch('/run-scrape', { method: 'POST' })
+            .then(resp => resp.json())
+            .then(data => {
+                overlay.style.display = 'none';
+                if (data.status === 'done') {
+                    alert('Hotovo! Obnovte stránku pro zobrazení nových dat.');
+                } else {
+                    alert('Nastala chyba: ' + (data.message || 'neznámá'));
+                }
+            })
+            .catch(err => {
+                overlay.style.display = 'none';
+                alert('Nepodařilo se spustit proces: ' + err);
+            })
+            .finally(() => {
+                scrapeBtn.disabled = false;
+                scrapeBtn.textContent = originalLabel;
+            });
     });
     </script>
 </body>

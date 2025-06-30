@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, jsonify
 import json
 import re
 from pathlib import Path
@@ -103,6 +103,22 @@ def _sorted_buckets(bucket_set: set[str]):
 SECTION_BUCKETS = {k: _sorted_buckets({rec["bucket"] for rec in lst}) for k, lst in SECTION_CACHE.items()}
 
 # -------------------------------------------------------------------------
+# Data reloading helper
+# -------------------------------------------------------------------------
+
+
+def _refresh_data() -> None:
+    """Reload MERGED_LISTINGS.json into in-memory caches after scraping."""
+    global RAW_LISTINGS, SECTION_CACHE, SECTION_BUCKETS
+
+    RAW_LISTINGS = _load_listings()
+    SECTION_CACHE = {k: _section_list(k) for k in SECTION_DEFS}
+    SECTION_BUCKETS = {
+        k: _sorted_buckets({rec["bucket"] for rec in lst}) for k, lst in SECTION_CACHE.items()
+    }
+
+
+# -------------------------------------------------------------------------
 # Jinja filters
 # -------------------------------------------------------------------------
 
@@ -161,6 +177,40 @@ def banner_img():
 def placeholder_img():
     """Serve the local placeholder image file when an image fails to load."""
     return send_from_directory(Path(__file__).parent, _PLACEHOLDER_NAME)
+
+# NEW_CODE_START
+_WAITING_NAME = "waiting_image.png"  # change to GIF if available
+
+@app.route(f"/{_WAITING_NAME}")
+def waiting_img():
+    """Serve the waiting overlay image (GIF/PNG)."""
+    return send_from_directory(Path(__file__).parent, _WAITING_NAME)
+# NEW_CODE_END
+
+# -------------------------------------------------------------------------
+# Data refresh (scraping) endpoint
+# -------------------------------------------------------------------------
+
+@app.post("/run-scrape")
+def run_scrape_endpoint():
+    """Run the full scraping + processing pipeline then return JSON status.
+
+    This blocks until the pipeline finishes (≈60&nbsp;s). The browser can
+    poll/await the response and show a notification afterwards.
+    """
+    try:
+        import scrap_and_pocess_data  # local module with `main()` entry-point
+
+        # Launch the full ETL pipeline (scrape → merge/process JSON).
+        scrap_and_pocess_data.main()
+        # Hot-reload in-memory data so newly merged JSON is served immediately.
+        _refresh_data()
+        return jsonify({"status": "done"})
+    except Exception as exc:  # noqa: BLE001 – return error details to client
+        return (
+            jsonify({"status": "error", "message": str(exc)}),
+            500,
+        )
 
 
 if __name__ == '__main__':
