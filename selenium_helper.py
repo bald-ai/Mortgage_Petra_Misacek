@@ -1,6 +1,7 @@
 # selenium_helper.py
 from pathlib import Path
 import subprocess
+import shutil, os
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -33,6 +34,21 @@ def _ensure_playwright_chrome() -> str | None:
         return None
     return _find_playwright_chrome()
 
+def _strip_stale_system_chromedriver() -> None:
+    """Remove /usr/local/bin from PATH if an incompatible chromedriver sits there.
+
+    On hosting platforms such as PythonAnywhere the directory /usr/local/bin is
+    writable only by the base image and ships an outdated chromedriver (131 at
+    the time of writing). We cannot delete or rename it, so we temporarily
+    drop that directory from PATH for the current process before Selenium
+    Manager runs its resolution algorithm.
+    """
+    sys_driver = shutil.which("chromedriver")
+    if sys_driver and sys_driver.startswith("/usr/local/bin/"):
+        # Keep all other PATH entries except /usr/local/bin
+        new_path_parts = [p for p in os.environ.get("PATH", "").split(os.pathsep) if p != "/usr/local/bin"]
+        os.environ["PATH"] = os.pathsep.join(new_path_parts)
+
 def make_driver() -> webdriver.Chrome:
     """Create a headless Chrome driver whose binary is Playwright's Chromium.
 
@@ -44,6 +60,11 @@ def make_driver() -> webdriver.Chrome:
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
+
+    # Ensure Selenium Manager does not pick the stale chromedriver shipped in
+    # /usr/local/bin on PythonAnywhere (v131). We call this *before* touching
+    # anything driver-related so that the lookup path is clean.
+    _strip_stale_system_chromedriver()
 
     playwright_chrome = _ensure_playwright_chrome()
     if playwright_chrome:
