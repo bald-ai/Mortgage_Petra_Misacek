@@ -44,10 +44,21 @@ def _strip_stale_system_chromedriver() -> None:
     Manager runs its resolution algorithm.
     """
     sys_driver = shutil.which("chromedriver")
-    if sys_driver and sys_driver.startswith("/usr/local/bin/"):
-        # Keep all other PATH entries except /usr/local/bin
-        new_path_parts = [p for p in os.environ.get("PATH", "").split(os.pathsep) if p != "/usr/local/bin"]
-        os.environ["PATH"] = os.pathsep.join(new_path_parts)
+    if not sys_driver:
+        return
+
+    # If the driver is inside the user's home (very likely something we
+    # installed ourselves), leave it alone. Otherwise (e.g. /usr/bin or
+    # /usr/local/bin) drop that directory from PATH so Selenium Manager will
+    # ignore it.
+    home = str(Path.home())
+    if not sys_driver.startswith(home):
+        stale_dir = os.path.dirname(sys_driver)
+        path_parts = [p for p in os.environ.get("PATH", "").split(os.pathsep) if p != stale_dir]
+        os.environ["PATH"] = os.pathsep.join(path_parts)
+        # If `chromedriver` still resolves (some other occurrence), recurse
+        if shutil.which("chromedriver") and shutil.which("chromedriver") != sys_driver:
+            _strip_stale_system_chromedriver()
 
 def make_driver() -> webdriver.Chrome:
     """Create a headless Chrome driver whose binary is Playwright's Chromium.
