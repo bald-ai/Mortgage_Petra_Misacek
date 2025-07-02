@@ -7,6 +7,8 @@ Run the full ETL pipeline:
 """
 
 from datetime import datetime
+import os
+from pathlib import Path
 
 from run_all_scrapers import SCRAPER_MODULES, run_scraper
 import merge_and_process
@@ -26,6 +28,17 @@ def run_all_scrapers() -> None:
 
 def main() -> None:
     """Run scraping stage followed by merge + post-processing stage."""
+    # ------------------------------------------------------------------
+    # Ensure working directory = project root so that every scraper writes
+    # its output JSON next to its source code (repo root).  When the Flask
+    # worker runs on a host like Render or PythonAnywhere the CWD can be
+    # something like `/home` or the platform-specific app directory, which
+    # causes scrapers to scatter their JSON files all over the place.  By
+    # switching to the directory where *this* script resides we keep all
+    # artefacts together and make merge_and_process find them reliably.
+    # ------------------------------------------------------------------
+    os.chdir(Path(__file__).resolve().parent)
+
     _log("Starting full scrape → process pipeline …")
 
     # 1️⃣ Scrape
