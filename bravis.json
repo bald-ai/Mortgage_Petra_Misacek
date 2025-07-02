@@ -1,0 +1,592 @@
+[
+    {
+        "image": "https://www.bravis.cz/advimg/list/19796-eb6e3831283dafe570fce67704f83b71.jpg",
+        "locality": "Pod kopcem, Brno - Žebětín",
+        "type_of_flat": "3+kk",
+        "size": "71",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bezbarieroveho-bytu-2kk3kk-ulice-pod-kopcem-brno-zebetin-zahrada-05623",
+        "uid": 1,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19787-915d3d695568a3f0ea762e58eac7f7e4.jpg",
+        "locality": "Bohunická, Brno - Horní Heršpice",
+        "type_of_flat": "2+kk",
+        "size": "44",
+        "price": 5680000,
+        "link": "https://www.bravis.cz/prodej-nadcasove-velmi-prostorne-novostavby-bytu-2kk-oddelena-koupelna-a-toaleta-ulice-bohunicka-moznost-parkovani-05614",
+        "uid": 2,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19753-e550722db18f10c1081deb278c811ea4.jpg",
+        "locality": "Botanická, Brno",
+        "type_of_flat": "3+kk",
+        "size": "89",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-ul-botanicka-brno-veveri-balkon-sklep-velky-zeleny-vnitroblok-vyborna-dostupnost-05580",
+        "uid": 3,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19705-35fbebeac79170a1956460e00bb47aec.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "54",
+        "price": 7250000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05532",
+        "uid": 4,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19770-a00dccd4f375103edd86a57f50400c74.jpg",
+        "locality": "Fuchsova, Brno - Staré Brno",
+        "type_of_flat": "2+kk",
+        "size": "77",
+        "price": 8999000,
+        "link": "https://www.bravis.cz/prodej-noveho-bytu-2kk-rezidence-nove-sady-na-ul-fuchsova-chytra-domacnost-rekuperace-klimatizace-balkon-sklep-05597",
+        "uid": 5,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19772-4f31f939d92e6319ef590c3492e38674.jpg",
+        "locality": "Fuchsova, Brno - Staré Brno",
+        "type_of_flat": "2+kk",
+        "size": "65",
+        "price": 7300000,
+        "link": "https://www.bravis.cz/prodej-exkluzivni-bytove-jednotky-1kk-s-moznosti-upravy-na-2kk-a-balkonem-ul-fuchsova-novostavba-05599",
+        "uid": 6,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19745-07b8201576e38e3a5ab06613ed6e9447.jpg",
+        "locality": "U Velké ceny, Brno - Kohoutovice",
+        "type_of_flat": "2+1",
+        "size": "60",
+        "price": 4950000,
+        "link": "https://www.bravis.cz/prodej-bytu-21-574-msup2sup-ulice-u-velke-ceny-brno-kohoutovicesklep-lodzie-05572",
+        "uid": 7,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19747-a2ce637487c8059288055acdc2226657.jpg",
+        "locality": "Jezerůvky, Brno - Řečkovice",
+        "type_of_flat": "2+kk",
+        "size": "59",
+        "price": 7500000,
+        "link": "https://www.bravis.cz/pronajem-zarizeneho-bytu-2kk-ulice-jezeruvky-brno-reckovice-terasa-klidna-lokalita-05574",
+        "uid": 8,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19736-32a7184b8aeb398c99121bb0f6903d97.jpg",
+        "locality": "Auerswaldova, Brno - Zábrdovice",
+        "type_of_flat": "2+kk",
+        "size": "49",
+        "price": 7544600,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-blizko-centra-mesta-s-prostonym-balkonem-128-msup2sup-moznost-garazoveho-stani-05563",
+        "uid": 9,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19737-a09e30413a2f181bb492394bac309fbb.jpg",
+        "locality": "Auerswaldova, Brno - Zábrdovice",
+        "type_of_flat": "2+kk",
+        "size": "47",
+        "price": 6324000,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-ul-auerswaldova-balkon-128-msup2sup-blizko-centra-05564",
+        "uid": 10,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19741-c69b3ddb24fc1f72717a5db6119f52bc.jpg",
+        "locality": "Palackého třída, Brno - Královo Pole",
+        "type_of_flat": "3+kk",
+        "size": "93",
+        "price": 10500000,
+        "link": "https://www.bravis.cz/prodej-druzstevniho-bytu-3kk-brno-kralovo-pole-ulice-palackeho-trida-lodzie-po-kompletni-rekonstrukci-sklep-05568",
+        "uid": 11,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19700-2fa861b184d6166d6d5348e781d2c0c6.jpg",
+        "locality": "Olbrachtovo náměstí, Brno - Komín",
+        "type_of_flat": "2+1",
+        "size": "57",
+        "price": 6200000,
+        "link": "https://www.bravis.cz/prodej-bytu-21-brno-komin-ulice-olbrachtovo-namesti-balkon-sklep-05527",
+        "uid": 12,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19743-92b3ae0071d64669307ab2701670d93e.jpg",
+        "locality": "Vídeňská, Brno - Štýřice",
+        "type_of_flat": "2+kk",
+        "size": "47",
+        "price": 6500000,
+        "link": "https://www.bravis.cz/prodej-bytove-jednotky-2kk-ulvidenska-brno-mesto-vybaveny-sklep-05570",
+        "uid": 13,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19702-051c9db35ba390285dc7df9bdf5c445b.jpg",
+        "locality": "Otakara Kubína, Boskovice",
+        "type_of_flat": "2+kk",
+        "size": "50",
+        "price": 4550000,
+        "link": "https://www.bravis.cz/prodej-bytu-o-velikosti-2kk-ulice-otakara-kubina-boskovice-balkon-novostavba-05529",
+        "uid": 14,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/18977-4e3b64327bb9acb145d4b3fcf3464ea3.jpg",
+        "locality": "Bohunická, Brno - Horní Heršpice",
+        "type_of_flat": "2+kk",
+        "size": "38",
+        "price": 5300000,
+        "link": "https://www.bravis.cz/prodej-nadcasoveho-bytu-o-dispozici-2kk-v-novostavbe-na-ulici-bohunicka-blizko-centra-i-dalnice-04811",
+        "uid": 15,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19527-6bca30e1ebd804d3c620e5b1d53d560f.jpg",
+        "locality": "Bezručova, Brno - Staré Brno",
+        "type_of_flat": "3+1",
+        "size": "79",
+        "price": 10370000,
+        "link": "https://www.bravis.cz/prodej-bytu-31-ul-bezrucova-brno-stare-brno-75-msup2sup-2x-lodzie-sklep-parkovani-05354",
+        "uid": 16,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19660-163ab96ebf9e9cad63c9365962dca8f6.jpg",
+        "locality": "Jezerůvky, Brno - Ivanovice",
+        "type_of_flat": "3+kk",
+        "size": "82",
+        "price": 9900000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-brno-ivanovice-ul-jezeruvky-balkon-terasa-moznost-garazoveho-stani-05487",
+        "uid": 17,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19631-4c7a29e0ccafd9864c8fae77d95393a4.jpg",
+        "locality": "Bzenecká, Brno - Židenice",
+        "type_of_flat": "3+1",
+        "size": "72",
+        "price": 6200000,
+        "link": "https://www.bravis.cz/prodej-bytu-31-ul-bzenecka-brno-zidenice-lodzie-71-msup2sup-05458",
+        "uid": 18,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19650-06f27ce7cf5a3cce28fcfc9697b4757d.jpg",
+        "locality": "Brno",
+        "type_of_flat": "2+kk",
+        "size": "87",
+        "price": 6900000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-877-msup2sup-ul-namesti-svobody-modrice-parkovaci-stani-05477",
+        "uid": 19,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19630-abc82635ad822cf9962defe63187dc92.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "3+kk",
+        "size": "60",
+        "price": 7000000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05457",
+        "uid": 20,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19603-471b18e4e5f7a98be63f06e29e000fc0.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "54",
+        "price": 6600000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05430",
+        "uid": 21,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19620-cfba0858653937fb2bf7fb245211f694.jpg",
+        "locality": "Sedláčkova, Brno - Líšeň",
+        "type_of_flat": "3+kk",
+        "size": "73",
+        "price": 7690000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-v-cihlovem-dome-77-msup2sup-parkovaci-stani-v-garazi-sklep-sedlackova-ulice-brno-lisen-05447",
+        "uid": 22,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19607-b6224ee51e96cf7a4ba2c416a0dc8f0f.jpg",
+        "locality": "Modřická, Brno - Přízřenice",
+        "type_of_flat": "3+kk",
+        "size": "75",
+        "price": 7900000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-spaci-galerie-mezonet-brno-prizrenice-po-kompletni-rekonstrukci-parkovaci-stani-garaz-ul-modricka-05434",
+        "uid": 23,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19604-509a8e187e27a253a0fbf38796bcef13.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "51",
+        "price": 6350000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-ul-bayerova-brno-veveri-vyborna-dostupnost-do-centra-mesta-k-bydleni-ci-investicne-05431",
+        "uid": 24,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19572-33b0bb9b436b9aaddcf288291bf96611.jpg",
+        "locality": "Lipůvka",
+        "type_of_flat": "2+kk",
+        "size": "56",
+        "price": 6760000,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-lipuvka-u-brna-balkon-parkovaci-stani-a-sklep-v-cene-05399",
+        "uid": 25,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19570-da013c7f97ef328f91a8c7adc0f02a64.jpg",
+        "locality": "Lipůvka",
+        "type_of_flat": "3+kk",
+        "size": "56",
+        "price": 6760000,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-3kk-lipuvka-u-brna-balkon-parkovaci-stani-a-sklep-v-cene-05397",
+        "uid": 26,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19548-2c7456d8aa8fe97525d827f6143e992f.jpg",
+        "locality": "Teyschlova, Brno - Bystrc",
+        "type_of_flat": "2+1",
+        "size": "60",
+        "price": 5999000,
+        "link": "https://www.bravis.cz/prodej-byty-21-60-msup2sup-ulic-teyschlova-brno-bystrc-balkon-sklep-05375",
+        "uid": 27,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19546-d3215bddabf2daf7e1e31a6f67542b12.jpg",
+        "locality": "Jihlavská, Brno - Bohunice",
+        "type_of_flat": "2+kk",
+        "size": "61",
+        "price": 6990000,
+        "link": "https://www.bravis.cz/prodej-moderniho-bytu-2kk-61-msup2sup-ulice-jihlavska-brno-bohunice-sklep-parkovani-05373",
+        "uid": 28,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19480-08d706c1ad832d67b854a701515e34aa.jpg",
+        "locality": "Auerswaldova, Brno - Zábrdovice",
+        "type_of_flat": "2+kk",
+        "size": "43",
+        "price": 6249600,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-blizko-centra-moznost-druzstevni-nebo-osobni-vlastnictvi-05307",
+        "uid": 29,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19463-24e6425678441e7a0f6846e3df1091c8.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "3+kk",
+        "size": "77",
+        "price": 8500000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-o-velikosti-77-msup2sup-brno-stred-ulice-bayerova-2-koupelny-satna-blizko-centra-s-vybornou-dostupnosti-05291",
+        "uid": 30,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19466-70ab7d0939922b6636e5e036c7f6933f.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "3+kk",
+        "size": "77",
+        "price": 8300000,
+        "link": "https://www.bravis.cz/prodej-moderniho-bytu-3kk77-msup2sup-exkluzivni-lokalita-ul-bayerova-sklep-blizko-centra-mesta-05294",
+        "uid": 31,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19449-6d69f4a352d46796945e579e7f52cc9e.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "3+kk",
+        "size": "76",
+        "price": 8600000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-o-velikosti-757-msup2sup-brno-stred-ul-bayerova-2-koupelny-satna-blizko-centra-s-vybornou-dostupnosti-05277",
+        "uid": 32,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19442-41b39dc2078e3b6b7196317e8f6c099a.jpg",
+        "locality": "Rostěnice-Zvonovice - Rostěnice",
+        "type_of_flat": "2+kk",
+        "size": "48",
+        "price": 4490000,
+        "link": "https://www.bravis.cz/prodej-nizkoenergeticke-moderne-vybavene-novostavby-bytu-2kk-balkon-sklep-a-parkovaci-stani-v-cene-rostenice-zvonovice-05271",
+        "uid": 33,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19412-643e2d665312b34108ddd7dfa082ae3e.jpg",
+        "locality": "Langrova, Brno - Slatina",
+        "type_of_flat": "3+kk",
+        "size": "101",
+        "price": 11900000,
+        "link": "https://www.bravis.cz/prodej-mezonetoveho-bytu-3kk-104-msup2sup-terasa-452-msup2sup-parkovaci-stani-v-garazi-ul-langrova-brno-slatina-05241",
+        "uid": 34,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19438-2353b5e15ac60de1c210df004b8fd858.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "3+kk",
+        "size": "79",
+        "price": 8600000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-o-velikosti-79-msup2sup-brno-stred-ulice-bayerova-2-koupelny-satna-blizko-centra-s-vybornou-dostupnosti-05267",
+        "uid": 35,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19338-c6e8322c2db9678e35526831f388b07d.jpg",
+        "locality": "Charbulova, Brno - Černovice",
+        "type_of_flat": "2+kk",
+        "size": "58",
+        "price": 7990000,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-ulice-charbulova-balkon-parkovaci-stani-v-cene-podkrovni-ulozny-prostor-65-msup2sup-05168",
+        "uid": 36,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19400-38e4d8ec1ee63e04db2277bb0e2d65ca.jpg",
+        "locality": "Nad Přehradou, Brno - Bystrc",
+        "type_of_flat": "3+kk",
+        "size": "62",
+        "price": 10900000,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-brno-bystrc-ulice-nad-prehradou-rezidence-panorama-terasa-garazove-stani-sklep-05229",
+        "uid": 37,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19394-689ea924838815d5ea5f3e9d31e90b5e.jpg",
+        "locality": "Výsluní, Drnholec",
+        "type_of_flat": "3+kk",
+        "size": "80",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-novostavby-domobytu-ul-vysluni-drnholec-samostatny-vchod-zahrada-05223",
+        "uid": 38,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19372-4b902b730f54a747a26dc339843eedec.jpg",
+        "locality": "Vídeňská, Brno - Štýřice",
+        "type_of_flat": "3+kk",
+        "size": "80",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-204-v-rezidenci-viviena-iii-ul-videnska-brno-styrice-moznost-parkovani-05201",
+        "uid": 39,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19364-7b6101e62a495d2372357ff66b40c65a.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "49",
+        "price": 6050000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05193",
+        "uid": 40,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19319-c46f99caadbcc7c7969c2e0d51994ada.jpg",
+        "locality": "Nachová, Brno - Řečkovice",
+        "type_of_flat": "2+kk",
+        "size": "47",
+        "price": 6650000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-reckovice-ulice-nachova-zarizeny-balkon-2x-sklep-klimatizace-05149",
+        "uid": 41,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19306-b9a9d51237254d2cfe10e2471f888fe7.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "42",
+        "price": 4990000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-o-velikosti-4227-msup2sup-brno-stred-ul-bayerova-sklep-blizko-centra-s-vybornou-dostupnosti-05136",
+        "uid": 42,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19283-9750e6bb918844f604e6c932e5467042.jpg",
+        "locality": "Vranovská, Brno - Husovice",
+        "type_of_flat": "3+kk",
+        "size": "100",
+        "price": 9990000,
+        "link": "https://www.bravis.cz/prodej-zrekonstruovaneho-bytu-3kk-ul-vranovska-brno-husovice-balkon-sklep-05113",
+        "uid": 43,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19271-e9b432c48948be769032ca4497be0d94.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "43",
+        "price": 5800000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ul-bayerova-sklep-blizko-centra-s-vybornou-dostupnosti-05101",
+        "uid": 44,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19057-e4a9431a26cab4a87d48083e5c5ce619.jpg",
+        "locality": "Charbulova, Brno - Černovice",
+        "type_of_flat": "2+kk",
+        "size": "58",
+        "price": 7670000,
+        "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-ulice-charbulova-balkon-parkovaciho-stani-v-cene-04891",
+        "uid": 45,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19224-1f2c172076720417d8b4b0d7bd6c73bd.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "41",
+        "price": 5310000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ul-bayerova-sklep-blizko-centra-s-vybornou-dostupnosti-05055",
+        "uid": 46,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19232-dd0526263a9f59b206430fcc509a40f1.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "44",
+        "price": 5520000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05062",
+        "uid": 47,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19231-933914a9cea5dbe060af23ccdc6a12cf.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "58",
+        "price": 6825000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05061",
+        "uid": 48,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19223-a26d793ac8197e573a73d859d6251375.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "49",
+        "price": 6155000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ul-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05054",
+        "uid": 49,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19157-c73eb5fa333415d7ce883424797ed4c4.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "3+kk",
+        "size": "75",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-o-velikosti-748-msup2sup-brno-stred-ul-bayerova-2-koupelny-sklep-blizko-centra-s-vybornou-dostupnosti-04988",
+        "uid": 50,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19156-632c6a7514ede910445beb55990cf105.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "48",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-o-velikosti-4768-msup2sup-brno-stred-ul-bayerova-sklep-blizko-centra-s-vybornou-dostupnosti-04987",
+        "uid": 51,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19162-ee81510ebf7c9a685e6f81b149d8f769.jpg",
+        "locality": "Vídeňská, Brno - Štýřice",
+        "type_of_flat": "3+kk",
+        "size": "95",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-504-v-rezidenci-viviena-iii-ul-videnska-brno-styrice-terasa-sklep-moznost-parkovani-04993",
+        "uid": 52,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19145-3568815f32ea11d748d1776096ed85da.jpg",
+        "locality": "Bučovice - Kloboučky",
+        "type_of_flat": "2+kk",
+        "size": "52",
+        "price": 4450000,
+        "link": "https://www.bravis.cz/prodej-noveho-bytu-2kk-52-msup2sup-ul-jablonova-bucovice-kloboucky-parkovaci-stani-04976",
+        "uid": 53,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19029-6b3bf1c281ea45728530a1619cc78691.jpg",
+        "locality": "Bayerova, Brno - Veveří",
+        "type_of_flat": "2+kk",
+        "size": "42",
+        "price": 5170000,
+        "link": "https://www.bravis.cz/prodej-bytu-2kk-42-msup2sup-ulice-bayerova-brno-veveri-castecne-zarizeny-sklep-04863",
+        "uid": 54,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/19060-15503479b33564d880ee4cb731c65c3e.jpg",
+        "locality": "Vranovská, Brno - Zábrdovice",
+        "type_of_flat": "2+kk",
+        "size": "46",
+        "price": 6200000,
+        "link": "https://www.bravis.cz/prodej-moderni-jednotky-v-novostavbe-2kk-ulice-vranovska-zarizeny-klimatizace-balkon-04894",
+        "uid": 55,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/18750-a453e02a4c5fa6d5e064b49a6c32f8a4.jpg",
+        "locality": "Trýbova, Brno - Staré Brno",
+        "type_of_flat": "3+1",
+        "size": "73",
+        "price": 7500000,
+        "link": "https://www.bravis.cz/prodej-bytu-31-ul-trybova-brno-stare-brno-balkon-sklep-garaz-04585",
+        "uid": 56,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/18408-b6f59d04f13128d58609c65b46f77ba4.jpg",
+        "locality": "Rostěnice-Zvonovice - Rostěnice",
+        "type_of_flat": "2+kk",
+        "size": "82",
+        "price": 6254350,
+        "link": "https://www.bravis.cz/prodej-noveho-bytu-2kk-82-msup2sup-s-prostornou-terasou-52-msup2sup-parkovacim-stanim-a-sklepem-v-cene-obec-rostenice-04245",
+        "uid": 57,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/18250-f0ca48519eeb559960b475d9ed395ef3.jpg",
+        "locality": "Úvoz, Brno - Veveří",
+        "type_of_flat": "2+1",
+        "size": "53",
+        "price": 6000000,
+        "link": "https://www.bravis.cz/prodej-bytu-21-brno-veveri-ul-uvoz-balkon-sklep-dobra-dostupnost-04087",
+        "uid": 58,
+        "source": "bravis"
+    },
+    {
+        "image": "https://www.bravis.cz/advimg/list/18194-270e766088884882883a229a4cafe3e3.jpg",
+        "locality": "Vídeňská, Brno - Štýřice",
+        "type_of_flat": "3+kk",
+        "size": "81",
+        "price": 0,
+        "link": "https://www.bravis.cz/prodej-bytu-3kk-404-v-rezidenci-viviena-iii-ul-videnska-brno-styrice-moznost-parkovani-04031",
+        "uid": 59,
+        "source": "bravis"
+    }
+]
