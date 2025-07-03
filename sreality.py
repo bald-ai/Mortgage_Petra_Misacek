@@ -13,11 +13,7 @@ def scrape_sreality():
     """
     # --- Config ----------------------------------------------------------
     login_url = "https://login.szn.cz/"
-    base_url = (
-        "https://www.sreality.cz/hledani/prodej/byty?velikost=2%2B1%2C2%2Bkk%2C3%2B1%2C3%2Bkk"
-        "&cena-do=8000000&plocha-od=50&plocha-do=80&region=Brno"
-        "&region-id=5740&region-typ=municipality"
-    )
+    base_url = "https://www.sreality.cz/hledani/prodej/byty?velikost=2%2B1%2C2%2Bkk%2C3%2B1%2C3%2Bkk&cena-do=8000000&plocha-od=50&region=Brno&region-id=5740&region-typ=municipality"
     email = "baldai@hey.com"
     password = "Seznam236"
 
