@@ -7,9 +7,7 @@ from selenium_helper import make_driver
 driver = make_driver()
 
 def scrape_sreality():
-    base = ("https://www.sreality.cz/hledani/prodej/byty"
-            "?velikost=2%2Bkk%2C2%2B1%2C3%2Bkk%2C3%2B1"
-            "&lokality=Brno+město&cena-na=%7E8000000&plocha-na=50~80")
+    base = "https://www.sreality.cz/hledani/prodej/byty?velikost=2%2B1%2C2%2Bkk%2C3%2B1%2C3%2Bkk&cena-do=8000000&plocha-od=50&plocha-do=80&region=Brno&region-id=5740&region-typ=municipality"
     driver.get(base)
     time.sleep(2)
 
