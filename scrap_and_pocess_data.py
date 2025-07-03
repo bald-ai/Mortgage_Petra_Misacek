@@ -21,6 +21,13 @@ def _log(message: str) -> None:
 
 def run_all_scrapers() -> None:
     """Run every scraper module sequentially."""
+    # Ensure per-site stats start from scratch on every pipeline run.
+    try:
+        import run_all_scrapers as ras
+        ras.listing_counts.clear()
+    except Exception:
+        pass
+
     for module_name in SCRAPER_MODULES:
         run_scraper(module_name)
     _log("All scrapers finished.")

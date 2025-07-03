@@ -158,8 +158,15 @@ def index():
         context[key] = SECTION_CACHE[key]
         context[f"{key}_buckets"] = SECTION_BUCKETS[key]
 
-    # Add overall number of listings so the template can show it at the bottom.
+    # Compute per-source counts
+    source_counts: dict[str, int] = {}
+    for rec in RAW_LISTINGS:
+        src = str(rec.get("source", "unknown"))
+        source_counts[src] = source_counts.get(src, 0) + 1
+
+    # Add overall and per-site stats for footer display
     context["total_listings"] = len(RAW_LISTINGS)
+    context["source_counts"] = source_counts
 
     return render_template('index.html', **context)
 
@@ -209,11 +216,24 @@ def run_scrape_endpoint():
     try:
         import scrap_and_pocess_data  # local module with `main()` entry-point
 
-        # Launch the full ETL pipeline (scrape → merge/process JSON).
+        # Run pipeline
         scrap_and_pocess_data.main()
+
+        # After pipeline we can retrieve per-site counts calculated by
+        # run_all_scrapers.listing_counts (populated during the scrape stage).
+        try:
+            import run_all_scrapers  # circular import safe at runtime
+
+            counts = run_all_scrapers.listing_counts
+            total = sum(counts.values())
+        except Exception:
+            counts = {}
+            total = 0
+
         # Hot-reload in-memory data so newly merged JSON is served immediately.
         _refresh_data()
-        return jsonify({"status": "done"})
+
+        return jsonify({"status": "done", "counts": counts, "total": total})
     except Exception as exc:  # noqa: BLE001 – return error details to client
         return (
             jsonify({"status": "error", "message": str(exc)}),

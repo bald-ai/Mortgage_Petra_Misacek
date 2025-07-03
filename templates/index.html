@@ -371,6 +371,9 @@
         <!-- Small note with total listings count -->
         <div style="margin-top:8px;font-size:0.85rem;color:#6b7280;">
             Celkem {{ total_listings }} inzerátů
+            {% for site, cnt in source_counts.items() %}
+                • {{ site.replace('_',' ').title() }} {{ cnt }}
+            {% endfor %}
         </div>
     </footer>
 
@@ -433,7 +436,21 @@
             .then(data => {
                 overlay.style.display = 'none';
                 if (data.status === 'done') {
-                    alert('Hotovo! Obnovte stránku pro zobrazení nových dat.');
+                    // Build a nicely formatted summary of how many listings were scraped per site.
+                    let msg = 'Hotovo!\n\n';
+                    if (data.counts && Object.keys(data.counts).length) {
+                        Object.entries(data.counts).forEach(([site, cnt]) => {
+                            const pretty = site.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                            const pad = pretty.padEnd(15);
+                            msg += `${pad}: ${cnt} inzerátů\n`;
+                        });
+                        msg += '--------------------------\n';
+                        msg += `CELKEM          : ${data.total} inzerátů\n`;
+                    } else {
+                        msg += 'Počet inzerátů se nepodařilo určit.';
+                    }
+                    msg += '\nObnovte stránku pro zobrazení nových dat.';
+                    alert(msg);
                 } else {
                     alert('Nastala chyba: ' + (data.message || 'neznámá'));
                 }

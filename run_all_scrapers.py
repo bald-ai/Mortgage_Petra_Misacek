@@ -25,6 +25,8 @@ SCRAPER_MODULES = [
     "sreality",
 ]
 
+# Hold per-site row counts so we can emit a clean summary at the very end
+listing_counts: dict[str, int] = {}
 
 def _log(msg: str) -> None:
     """Print a message with an ISO-8601 timestamp."""
@@ -50,10 +52,41 @@ def run_scraper(module_name: str) -> None:
         traceback.print_exc()
     else:
         elapsed = time.time() - start_ts
-        _log(f"Finished {func_name}() in {elapsed:.1f} s.")
+        # After successful scrape attempt to count rows in the freshly
+        # produced JSON file. If the file is missing or malformed we record 0.
+        json_file = f"{module_name}.json"
+        rows = 0
+        try:
+            import json, os
+
+            if os.path.exists(json_file):
+                with open(json_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        rows = len(data)
+        except Exception:
+            rows = 0
+
+        listing_counts[module_name] = rows
+
+        _log(f"Finished {func_name}() in {elapsed:.1f} s -> {rows} rows.")
 
 
 if __name__ == "__main__":
+    # Fresh start – drop any previous run's stats
+    listing_counts.clear()
     for mod in SCRAPER_MODULES:
         run_scraper(mod)
+
+    # Pretty summary -------------------------------------------------------
+    _log("\n===== SCRAPE SUMMARY =====")
+    total = 0
+    for mod in SCRAPER_MODULES:
+        cnt = listing_counts.get(mod, 0)
+        total += cnt
+        print(f"• {mod:12}: {cnt:4} ads")
+    print("---------------------------")
+    print(f"TOTAL          : {total:4} ads")
+    print("===========================\n")
+
     _log("All scrapers completed.") 

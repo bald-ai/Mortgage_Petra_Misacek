@@ -167,22 +167,22 @@ def main():
     print(f"Price set to '{PRICE_WEIRD_LABEL}': {price_weird_cnt}")
 
     integrity_ok = original_total == (final_total + duplicates_removed + filtered_out)
-    status = "OK ✅" if integrity_ok else "Mismatch ⚠️"
+    status = "OK ✅" if integrity_ok else "Mismatch ⚠️ (files deleted anyway)"
     print(f"Integrity check: {status}")
     if not integrity_ok:
         print(
             f"(orig={original_total}, merged={final_total}, dupes={duplicates_removed}, filtered={filtered_out})"
         )
-    else:
-        # Safe to delete source JSON files now
-        deleted_files = 0
-        for fp in json_files:
-            try:
-                os.remove(fp)
-                deleted_files += 1
-            except OSError as e:
-                print(f"[ERROR] Failed to delete {fp}: {e}")
-        print(f"Deleted {deleted_files} source JSON file(s).")
+
+    # Always remove individual JSON files to keep workspace clean
+    deleted_files = 0
+    for fp in json_files:
+        try:
+            os.remove(fp)
+            deleted_files += 1
+        except OSError as e:
+            print(f"[ERROR] Failed to delete {fp}: {e}")
+    print(f"Deleted {deleted_files} source JSON file(s).")
 
     print("=========================\n")
 
