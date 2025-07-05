@@ -2,6 +2,7 @@ import json, re, time, pandas as pd
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 
 from selenium_helper import make_driver
 
@@ -19,6 +20,8 @@ def scrape_sreality():
 
     # --------------------------------------------------------------------
     driver = make_driver()
+    # Abort page loads that exceed this many seconds to prevent hangs
+    driver.set_page_load_timeout(25)
     try:
         # -------------------- Step 1: Log-in -----------------------------
         print(f"DEBUG: Navigating to login page → {login_url}")
@@ -38,7 +41,7 @@ def scrape_sreality():
         # -------------------- Step 2: Scrape -----------------------------
         print(f"DEBUG: Login OK, navigating to search URL → {base_url}")
         driver.get(base_url)
-        time.sleep(5)  # allow initial results to load
+        time.sleep(1.5)  # allow initial results to load
 
         all_data: list[dict] = []
 
@@ -68,11 +71,13 @@ def scrape_sreality():
 
             # For page 1 we have already loaded it above; for others load now
             if page_num != 1:
-                driver.get(page_url)
-                time.sleep(5)  # allow page to load
-
-            # Give the browser a short breather so lazy images appear
-            time.sleep(2)
+                try:
+                    driver.get(page_url)
+                except TimeoutException:
+                    print(f"WARN: Page load timeout for {page_url} — proceeding with whatever loaded.")
+                    # Stop the current load so we can continue parsing what's there
+                    driver.execute_script("window.stop();")
+                time.sleep(1.5)  # brief pause to allow page to settle
 
             # Listing cards are lazy-loaded; pull them via Selenium then parse
             listings = driver.find_elements(By.CSS_SELECTOR, "li.MuiGrid2-root.MuiGrid2-direction-xs-row")
