@@ -41,10 +41,37 @@ def scrape_sreality():
         time.sleep(5)  # allow initial results to load
 
         all_data: list[dict] = []
-        page_num = 1
 
-        while True:
-            print(f"\n--- Scraping Page {page_num} ---")
+        # -------------------------------------------------------------
+        # Determine how many pages exist via the paginator <nav> element
+        # -------------------------------------------------------------
+        soup = BeautifulSoup(driver.page_source, "lxml")
+        num_pages = 1
+        pagination = soup.find("nav", {"data-e2e": "pagination"})
+        if pagination:
+            page_anchors = pagination.find_all("a")
+            page_numbers = [
+                int(a.get_text(strip=True))
+                for a in page_anchors
+                if a.get_text(strip=True).isdigit()
+            ]
+            if page_numbers:
+                num_pages = max(page_numbers)
+        print(f"DEBUG: Detected {num_pages} pages total")
+
+        # -------------------------------------------------------------
+        # Iterate over pages by constructing the ?strana=<N> parameter
+        # -------------------------------------------------------------
+        for page_num in range(1, num_pages + 1):
+            page_url = base_url if page_num == 1 else f"{base_url}&strana={page_num}"
+            print(f"\n--- Scraping Page {page_num}/{num_pages} → {page_url} ---")
+
+            # For page 1 we have already loaded it above; for others load now
+            if page_num != 1:
+                driver.get(page_url)
+                time.sleep(5)  # allow page to load
+
+            # Give the browser a short breather so lazy images appear
             time.sleep(2)
 
             # Listing cards are lazy-loaded; pull them via Selenium then parse
@@ -59,8 +86,8 @@ def scrape_sreality():
                     print(f"DEBUG: Screenshot saved to {screenshot_path}")
                 except Exception as e:
                     print(f"WARN: Failed to save screenshot: {e}")
-                print("DEBUG: No listings found → stopping scrape")
-                break
+                print("DEBUG: No listings found on this page — skipping to next")
+                continue
 
             for idx, element in enumerate(listings, 1):
                 try:
@@ -77,31 +104,25 @@ def scrape_sreality():
                     link_anchor = soup.find("a", class_="css-1s6ohwi")
                     if not link_anchor:
                         continue
-
                     href = link_anchor.get("href", "")
                     link = (
                         f"https://www.sreality.cz{href}" if href.startswith("/") else href or "N/A"
                     )
-
                     img_tag = link_anchor.find("img", class_="css-f5kes")
                     image_url = (
                         img_tag.get("srcset", "").split(" ")[0] if img_tag else "N/A"
                     )
                     if image_url.startswith("//"):
                         image_url = f"https:{image_url}"
-
                     text_block = link_anchor.find("div", class_="css-173t8lh")
                     if not text_block:
                         continue
-
                     info_pars = text_block.find_all("p", class_="css-d7upve")
                     price_par = text_block.find("p", class_="css-ca9wwd")
-
                     title_text = info_pars[0].get_text(strip=True) if info_pars else "N/A"
                     locality = info_pars[1].get_text(strip=True) if len(info_pars) > 1 else "N/A"
                     price_text = price_par.get_text(strip=True) if price_par else "0"
                     price = re.sub(r"[^\d]", "", price_text) or "0"
-
                     # Derive flat type and size from title
                     flat_type = "N/A"
                     size = "N/A"
@@ -110,7 +131,6 @@ def scrape_sreality():
                             flat_type = m.group(1).replace(" ", "")
                         if m := re.search(r"(\d+)\s*m²", title_text):
                             size = m.group(1)
-
                     record = {
                         "image": image_url,
                         "locality": locality,
@@ -120,23 +140,11 @@ def scrape_sreality():
                         "link": link,
                     }
                     all_data.append(record)
-
                     print(f"DEBUG: [{len(all_data)}] Extracted → {record}")
                 except Exception as e:
                     print(f"WARN: Error parsing listing #{idx} on page {page_num}: {e}")
 
-            # --------------- Pagination ------------------------------
-            try:
-                next_btn = driver.find_element(By.CSS_SELECTOR, "button[data-e2e='show-more-btn']")
-                driver.execute_script("arguments[0].click();", next_btn)
-                page_num += 1
-                time.sleep(5)
-            except NoSuchElementException:
-                print("DEBUG: No 'Show more' button → reached last page")
-                break
-            except Exception as e:
-                print(f"WARN: Failed to go to next page: {e}")
-                break
+        # End of for-page loop
 
         # -------------------- Step 3: Save -----------------------------
         print("\n--- Scraping complete ---")
