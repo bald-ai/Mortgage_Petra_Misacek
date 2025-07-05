@@ -52,6 +52,13 @@ def scrape_sreality():
             print(f"DEBUG: Found {len(listings)} listing elements on this page")
 
             if not listings:
+                # Capture a screenshot to aid debugging when no listings are found
+                screenshot_path = f"sreality_no_listings_page_{page_num}.png"
+                try:
+                    driver.save_screenshot(screenshot_path)
+                    print(f"DEBUG: Screenshot saved to {screenshot_path}")
+                except Exception as e:
+                    print(f"WARN: Failed to save screenshot: {e}")
                 print("DEBUG: No listings found → stopping scrape")
                 break
 
