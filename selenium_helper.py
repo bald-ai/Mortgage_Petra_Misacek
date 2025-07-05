@@ -71,6 +71,13 @@ def make_driver() -> webdriver.Chrome:
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-gpu")
+    # Reduce memory/IPC usage on constrained servers and avoid tab crashes
+    opts.add_argument("--disable-dev-shm-usage")  # disable /dev/shm usage
+    opts.add_argument("--disable-extensions")
+    opts.add_argument("--no-zygote")
+    opts.add_argument("--renderer-process-limit=1")  # allow only 1 renderer
+    opts.add_argument("--blink-settings=imagesEnabled=false")  # don't load images
+    opts.add_argument("--disable-background-networking")
 
     # Ensure Selenium Manager does not pick the stale chromedriver shipped in
     # /usr/local/bin on PythonAnywhere (v131). We call this *before* touching
