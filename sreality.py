@@ -140,7 +140,6 @@ def scrape_sreality():
                         "link": link,
                     }
                     all_data.append(record)
-                    print(f"DEBUG: [{len(all_data)}] Extracted → {record}")
                 except Exception as e:
                     print(f"WARN: Error parsing listing #{idx} on page {page_num}: {e}")
 
