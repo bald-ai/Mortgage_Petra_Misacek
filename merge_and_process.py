@@ -114,6 +114,83 @@ def assign_sequential_uids(listings: List[Dict]) -> None:
         listing["uid"] = idx
 
 
+def process_specific_files(file_list: List[str]) -> None:
+    """Process only the specified JSON files."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Filter to only existing files
+    json_files = []
+    for filename in file_list:
+        file_path = os.path.join(script_dir, filename)
+        if os.path.exists(file_path):
+            json_files.append(file_path)
+        else:
+            print(f"[WARN] File {filename} not found, skipping.")
+    
+    if not json_files:
+        print("No JSON files found to merge.")
+        return
+
+    print(f"Found {len(json_files)} JSON files. Loading listings ...")
+    listings = load_all_listings(json_files)
+    original_total = len(listings)
+    print(f"Loaded {original_total} listings in total.")
+
+    listings, duplicates_removed = remove_duplicates(listings)
+    after_dedupe_total = len(listings)
+    print(f"Removed {duplicates_removed} duplicate listings. Remaining: {after_dedupe_total}.")
+
+    listings, filtered_out = filter_by_flat_type(listings)
+    final_total = len(listings)
+    print(f"Filtered out {filtered_out} listings by flat type. Remaining: {final_total}.")
+
+    # Adjust price labels as requested
+    price_request_cnt, price_weird_cnt = adjust_prices(listings)
+
+    # Ensure unique, sequential UID values
+    assign_sequential_uids(listings)
+
+    # Determine destination: persistent disk at /data when present (Render.com),
+    # else default to script directory for local runs.
+    output_path = os.path.join(script_dir, "MERGED_LISTINGS.json")
+
+    try:
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(listings, f, ensure_ascii=False, indent=4)
+    except OSError as e:
+        print(f"[ERROR] Failed to write merged listings: {e}")
+
+    # Print clean summary
+    print("\n===== MERGE SUMMARY =====")
+    print(f"Original listings: {original_total}")
+    print(f"Listings after merge: {final_total}")
+    print()
+    print(f"Duplicates removed: {duplicates_removed}")
+    print(f"Filtered out by flat type: {filtered_out}")
+    print(f"Price set to '{PRICE_REQUEST_LABEL}': {price_request_cnt}")
+    print(f"Price set to '{PRICE_WEIRD_LABEL}': {price_weird_cnt}")
+
+    integrity_ok = original_total == (final_total + duplicates_removed + filtered_out)
+    status = "OK ✅" if integrity_ok else "Mismatch ⚠️ (files deleted anyway)"
+    print(f"Integrity check: {status}")
+    if not integrity_ok:
+        print(
+            f"(orig={original_total}, merged={final_total}, dupes={duplicates_removed}, filtered={filtered_out})"
+        )
+
+    # Always remove individual JSON files to keep workspace clean
+    deleted_files = 0
+    for fp in json_files:
+        try:
+            os.remove(fp)
+            deleted_files += 1
+        except OSError as e:
+            print(f"[ERROR] Failed to delete {fp}: {e}")
+    print(f"Deleted {deleted_files} source JSON file(s).")
+
+    print("=========================\n")
+
+
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
 

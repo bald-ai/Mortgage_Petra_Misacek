@@ -1,4 +1,4 @@
-name: Test bravis and sreality scrapers
+name: Test scrape and merge pipeline
 on:
   workflow_dispatch:
 
@@ -14,14 +14,12 @@ jobs:
         run: |
           pip install -r requirements.txt
           playwright install chromium
-      - name: Run bravis scraper
-        run: python bravis.py
-      - name: Run sreality scraper
-        run: python sreality.py
-      - name: Commit and push JSON files
+      - name: Run test pipeline
+        run: python test_pipeline.py
+      - name: Commit and push merged file
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add bravis.json sreality.json
-          git commit -m "Update bravis.json and sreality.json from GitHub Actions" || exit 0
+          git add MERGED_LISTINGS.json
+          git commit -m "Update MERGED_LISTINGS.json from GitHub Actions" || exit 0
           git push
