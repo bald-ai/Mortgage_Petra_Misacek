@@ -1,5 +1,4 @@
 # data
-*.json
 MERGED_LISTINGS.json
 
 # Python artefacts

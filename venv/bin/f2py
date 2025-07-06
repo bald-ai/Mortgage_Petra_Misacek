@@ -1,4 +1,4 @@
-#!/home/baldai/mortgage/Mortgage_Petra_Misacek/venv/bin/python3.10
+#!/Users/michalkrsik/Desktop/windsurf_experiment/mortgage_for_petra/.venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys
