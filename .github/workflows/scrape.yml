@@ -1,6 +1,8 @@
 name: Full scraper pipeline
 on:
-  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'  # Run daily at 2 AM UTC
+  workflow_dispatch:     # Keep manual trigger for testing
 
 jobs:
   scrape:
