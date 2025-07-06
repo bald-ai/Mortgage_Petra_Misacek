@@ -366,8 +366,6 @@
     </section>
 
     <footer>
-        <!-- Button to refresh data by running the scraping pipeline -->
-        <button id="scrapeBtn" class="nav-btn">Aktualizovat data</button>
         <!-- Small note with total listings count -->
         <div style="margin-top:8px;font-size:0.85rem;color:#6b7280;">
             Celkem {{ total_listings }} inzerátů
@@ -413,57 +411,7 @@
         });
     });
 
-    // Handle click on "Aktualizovat data" button
-    const scrapeBtn = document.getElementById('scrapeBtn');
-    scrapeBtn.addEventListener('click', () => {
-        const msg = 'Toto spustí proces stahování dat a potrvá přibližně 1 minutu.\n' +
-                    'Chcete pokračovat?';
 
-        if (!confirm(msg)) {
-            return; // User cancelled
-        }
-
-        // Provide immediate visual feedback
-        scrapeBtn.disabled = true;
-        const originalLabel = scrapeBtn.textContent;
-        scrapeBtn.textContent = 'Probíhá…';
-
-        const overlay = document.getElementById('overlay');
-        overlay.style.display = 'flex';
-
-        fetch('/run-scrape', { method: 'POST' })
-            .then(resp => resp.json())
-            .then(data => {
-                overlay.style.display = 'none';
-                if (data.status === 'done') {
-                    // Build a nicely formatted summary of how many listings were scraped per site.
-                    let msg = 'Hotovo!\n\n';
-                    if (data.counts && Object.keys(data.counts).length) {
-                        Object.entries(data.counts).forEach(([site, cnt]) => {
-                            const pretty = site.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-                            const pad = pretty.padEnd(15);
-                            msg += `${pad}: ${cnt} inzerátů\n`;
-                        });
-                        msg += '--------------------------\n';
-                        msg += `CELKEM          : ${data.total} inzerátů\n`;
-                    } else {
-                        msg += 'Počet inzerátů se nepodařilo určit.';
-                    }
-                    msg += '\nObnovte stránku pro zobrazení nových dat.';
-                    alert(msg);
-                } else {
-                    alert('Nastala chyba: ' + (data.message || 'neznámá'));
-                }
-            })
-            .catch(err => {
-                overlay.style.display = 'none';
-                alert('Nepodařilo se spustit proces: ' + err);
-            })
-            .finally(() => {
-                scrapeBtn.disabled = false;
-                scrapeBtn.textContent = originalLabel;
-            });
-    });
     </script>
 </body>
 </html>
