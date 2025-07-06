@@ -15,3 +15,10 @@ jobs:
           pip install -r requirements.txt
       - name: Run bravis scraper
         run: python bravis.py
+      - name: Commit and push JSON file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add bravis.json
+          git commit -m "Update bravis.json from GitHub Actions" || exit 0
+          git push
