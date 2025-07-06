@@ -114,11 +114,19 @@ def scrape_sreality():
                         f"https://www.sreality.cz{href}" if href.startswith("/") else href or "N/A"
                     )
                     img_tag = link_anchor.find("img", class_="css-f5kes")
-                    image_url = (
-                        img_tag.get("srcset", "").split(" ")[0] if img_tag else "N/A"
-                    )
-                    if image_url.startswith("//"):
-                        image_url = f"https:{image_url}"
+                    image_url = "N/A"
+                    if img_tag:
+                        candidate = (
+                            img_tag.get("srcset")
+                            or img_tag.get("data-srcset")
+                            or img_tag.get("data-src")
+                            or img_tag.get("src")
+                            or ""
+                        )
+                        if candidate:
+                            image_url = candidate.split(" ")[0]
+                            if image_url.startswith("//"):
+                                image_url = f"https:{image_url}"
                     text_block = link_anchor.find("div", class_="css-173t8lh")
                     if not text_block:
                         continue
