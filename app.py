@@ -16,6 +16,18 @@ app = Flask(__name__)
 
 DATA_PATH = Path(__file__).with_name("MERGED_LISTINGS.json")
 
+# All known scraper sources - hardcoded list to always show all sources even if they return 0 listings
+ALL_SCRAPER_SOURCES = [
+    "reality_idnes",
+    "bezrealitky", 
+    "reality_brno",
+    "reality_hn",
+    "bravis",
+    "remax",
+    "ulov_domov",
+    "sreality",
+]
+
 
 def _parse_size(val):
     """Return integer square-meter value or None."""
@@ -158,11 +170,21 @@ def index():
         context[key] = SECTION_CACHE[key]
         context[f"{key}_buckets"] = SECTION_BUCKETS[key]
 
-    # Compute per-source counts
+    # Compute per-source counts - always show all known scrapers, even if they have 0 listings
     source_counts: dict[str, int] = {}
+    
+    # Initialize all known sources with 0
+    for source in ALL_SCRAPER_SOURCES:
+        source_counts[source] = 0
+    
+    # Count actual listings per source
     for rec in RAW_LISTINGS:
         src = str(rec.get("source", "unknown"))
-        source_counts[src] = source_counts.get(src, 0) + 1
+        if src in source_counts:
+            source_counts[src] += 1
+        else:
+            # Handle unknown sources (shouldn't happen with proper scrapers)
+            source_counts[src] = source_counts.get(src, 0) + 1
 
     # Add overall and per-site stats for footer display
     context["total_listings"] = len(RAW_LISTINGS)
