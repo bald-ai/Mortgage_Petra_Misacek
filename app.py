@@ -68,9 +68,6 @@ def _load_listings():
     return data
 
 
-RAW_LISTINGS = _load_listings()
-
-
 # Section filters -----------------------------------------------------------
 
 def _in_reckovice_medlanky(rec):
@@ -91,7 +88,7 @@ SECTION_DEFS = {
 }
 
 
-def _section_list(key):
+def _section_list(raw_listings, key):
     filt = SECTION_DEFS[key]
 
     def _sort(rec):
@@ -102,11 +99,8 @@ def _section_list(key):
         price_key = -price if price is not None else 0
         return (invalid_flag, price_key)
 
-    return sorted((r for r in RAW_LISTINGS if filt(r)), key=_sort)
+    return sorted((r for r in raw_listings if filt(r)), key=_sort)
 
-
-# Pre-compute section data for faster rendering
-SECTION_CACHE = {k: _section_list(k) for k in SECTION_DEFS}
 
 # Compute available price buckets per section (sorted)
 def _sorted_buckets(bucket_set: set[str]):
@@ -116,23 +110,6 @@ def _sorted_buckets(bucket_set: set[str]):
     if "no-price" in bucket_set:
         numeric.append("no-price")
     return numeric
-
-SECTION_BUCKETS = {k: _sorted_buckets({rec["bucket"] for rec in lst}) for k, lst in SECTION_CACHE.items()}
-
-# -------------------------------------------------------------------------
-# Data reloading helper
-# -------------------------------------------------------------------------
-
-
-def _refresh_data() -> None:
-    """Reload MERGED_LISTINGS.json into in-memory caches after scraping."""
-    global RAW_LISTINGS, SECTION_CACHE, SECTION_BUCKETS
-
-    RAW_LISTINGS = _load_listings()
-    SECTION_CACHE = {k: _section_list(k) for k in SECTION_DEFS}
-    SECTION_BUCKETS = {
-        k: _sorted_buckets({rec["bucket"] for rec in lst}) for k, lst in SECTION_CACHE.items()
-    }
 
 
 # -------------------------------------------------------------------------
@@ -160,15 +137,22 @@ app.jinja_env.filters["short_price"] = _short_price
 @app.route('/')
 def index():
     """Render the home page."""
+    # Load fresh data on each request
+    raw_listings = _load_listings()
+    
     # Build context with listings and bucket lists per section.
     context: dict[str, object] = {
         'title': 'Petra & Michal | Bytový Výběr'
     }
 
+    # Generate section data and buckets from fresh data
+    section_cache = {k: _section_list(raw_listings, k) for k in SECTION_DEFS}
+    section_buckets = {k: _sorted_buckets({rec["bucket"] for rec in lst}) for k, lst in section_cache.items()}
+
     # Inject listings and bucket arrays
     for key in SECTION_DEFS:
-        context[key] = SECTION_CACHE[key]
-        context[f"{key}_buckets"] = SECTION_BUCKETS[key]
+        context[key] = section_cache[key]
+        context[f"{key}_buckets"] = section_buckets[key]
 
     # Compute per-source counts - always show all known scrapers, even if they have 0 listings
     source_counts: dict[str, int] = {}
@@ -178,7 +162,7 @@ def index():
         source_counts[source] = 0
     
     # Count actual listings per source
-    for rec in RAW_LISTINGS:
+    for rec in raw_listings:
         src = str(rec.get("source", "unknown"))
         if src in source_counts:
             source_counts[src] += 1
@@ -187,7 +171,7 @@ def index():
             source_counts[src] = source_counts.get(src, 0) + 1
 
     # Add overall and per-site stats for footer display
-    context["total_listings"] = len(RAW_LISTINGS)
+    context["total_listings"] = len(raw_listings)
     context["source_counts"] = source_counts
 
     return render_template('index.html', **context)
