@@ -368,10 +368,33 @@
     <footer>
         <!-- Small note with total listings count -->
         <div style="margin-top:8px;font-size:0.85rem;color:#6b7280;">
-            Celkem {{ total_listings }} inzerátů
+            <strong>Celkem</strong> {{ total_listings }} inzerátů
             {% for site, cnt in source_counts.items() %}
-                • {{ site.replace('_',' ').title() }} {{ cnt }}
+                • 
+                {% if site == 'sreality' %}
+                    <a href="https://www.sreality.cz/hledani/prodej/byty?velikost=2%2B1%2C2%2Bkk%2C3%2B1%2C3%2Bkk&cena-do=8000000&plocha-od=50&region=Brno&region-id=5740&region-typ=municipality" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'bezrealitky' %}
+                    <a href="https://www.bezrealitky.cz/vyhledat?offerType=PRODEJ&estateType=BYT&disposition=DISP_2_KK&disposition=DISP_2_1&disposition=DISP_3_KK&disposition=DISP_3_1&priceTo=8000000&surfaceFrom=50&surfaceTo=80&regionOsmIds=R438171&osm_value=Brno%2C+okres+Brno-m%C4%9Bsto%2C+Jihomoravsk%C3%BD+kraj%2C+Jihov%C3%BDchod%2C+%C4%8Cesko&location=exact&currency=CZK" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'reality_hn' %}
+                    <a href="https://reality.hn.cz/vypis-nabidek/?form%5Badresa_kraj_id%5D%5B%5D=116&form%5Badresa_obec_id%5D=&form%5Badresa_region_id%5D%5B116%5D%5B%5D=3702&form%5Badresa_region_id%5D%5B116%5D%5B%5D=3703&form%5Bcena_mena%5D=&form%5Bcena_normalizovana__from%5D=&form%5Bcena_normalizovana__to%5D=8000000&form%5Bdispozice%5D%5B%5D=3&form%5Bdispozice%5D%5B%5D=10&form%5Bdispozice%5D%5B%5D=4&form%5Bdispozice%5D%5B%5D=11&form%5Bexclusive%5D=&form%5Bfk_rk%5D=&form%5Binzerat_typ%5D=1&form%5Bnemovitost_typ%5D%5B%5D=4&form%5Bplocha__from%5D=50&form%5Bplocha__to%5D=80&form%5Bpodlazi_cislo__from%5D=&form%5Bpodlazi_cislo__to%5D=&form%5Bprojekt_id%5D=&form%5Bsearch_in_city%5D=&form%5Bsearch_in_text%5D=&form%5Bstari_inzeratu%5D=&form%5Bstav_objektu%5D=&form%5Btop_nabidky%5D=" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'reality_idnes' %}
+                    <a href="https://reality.idnes.cz/s/prodej/byty/cena-do-8000000/brno/?s-qc%5BsubtypeFlat%5D%5B0%5D=2k&s-qc%5BsubtypeFlat%5D%5B1%5D=21&s-qc%5BsubtypeFlat%5D%5B2%5D=3k&s-qc%5BsubtypeFlat%5D%5B3%5D=31&s-qc%5BusableAreaMin%5D=50&s-qc%5BusableAreaMax%5D=80&s-qc%5BarticleAge%5D=31" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'reality_brno' %}
+                    <a href="https://www.reality-brno.net/prodej/byty/byty-2-kk/obec-brno/do-8000000/?d_subtyp=205,206,207" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'bravis' %}
+                    <a href="https://www.bravis.cz/prodej-bytu?address=&mesto=&typ-nemovitosti-byt+2=&typ-nemovitosti-byt+3=&action=search&mapa=" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'remax' %}
+                    <a href="https://www.remax-czech.cz/reality/vyhledavani/?area_from=50&area_to=80&desc_text=Brno&hledani=1&price_to=8000000&sale=1" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% elif site == 'ulov_domov' %}
+                    <a href="https://www.ulovdomov.cz/prodej/bytu/brno/2-kk?od=50m2&do=80m2&cena-do=8000000kc&dispozice=2-1%2C3-kk%2C3-1&lokace=Brno" target="_blank" style="color:#3a5683; text-decoration:none;">{{ site.replace('_',' ').title() }}</a>
+                {% else %}
+                    {{ site.replace('_',' ').title() }}
+                {% endif %}
+                {{ cnt }}
             {% endfor %}
+        </div>
+        <div style="margin-top:12px;font-size:0.8rem;color:#9ca3af;font-style:italic;">
+            Pokud si myslíte, že data nebyla dobře stažená, můžete kliknout na konkrétní portál a prohlédnout si je tam manuálně.
         </div>
     </footer>
 
