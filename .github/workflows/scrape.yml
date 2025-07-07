@@ -1,7 +1,7 @@
 name: Full scraper pipeline
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run daily at 12 AM UTC = 2 AM CEST
+    - cron: '0 13 * * *'  # Run daily at 1 PM UTC = 3 PM CEST
   workflow_dispatch:     # Keep manual trigger for testing
 
 jobs:
