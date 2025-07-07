@@ -2,10 +2,33 @@ import json
 import glob
 import os
 from typing import List, Dict, Tuple, Set
+from collections import defaultdict
 
 ALLOWED_TYPES = {"2+kk", "2+1", "3+kk", "3+1", "N/A"}
 PRICE_REQUEST_LABEL = "Price on request (probably)"
 PRICE_WEIRD_LABEL = "Something weird"
+
+
+def load_all_listings_with_stats(json_files: List[str]) -> Tuple[List[Dict], Dict[str, int]]:
+    """Load listings from all provided JSON files and track per-site counts."""
+    all_listings: List[Dict] = []
+    site_counts: Dict[str, int] = {}
+    
+    for file_path in json_files:
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    # Extract site name from filename (e.g., "reality_idnes.json" -> "reality_idnes")
+                    site_name = os.path.splitext(os.path.basename(file_path))[0]
+                    site_counts[site_name] = len(data)
+                    all_listings.extend(data)
+                else:
+                    print(f"[WARN] File {file_path} does not contain a list. Skipping.")
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"[ERROR] Could not read {file_path}: {e}")
+    
+    return all_listings, site_counts
 
 
 def load_all_listings(json_files: List[str]) -> List[Dict]:
@@ -22,6 +45,33 @@ def load_all_listings(json_files: List[str]) -> List[Dict]:
         except (json.JSONDecodeError, OSError) as e:
             print(f"[ERROR] Could not read {file_path}: {e}")
     return all_listings
+
+
+def count_listings_by_site(listings: List[Dict]) -> Dict[str, int]:
+    """Count listings grouped by their source site."""
+    counts = defaultdict(int)
+    for listing in listings:
+        source = listing.get("source", "unknown")
+        counts[source] += 1
+    return dict(counts)
+
+
+def print_site_statistics(title: str, site_counts: Dict[str, int]) -> None:
+    """Print formatted statistics for each site."""
+    total = sum(site_counts.values())
+    print(f"\n===== {title} =====")
+    print(f"Total listings: {total}")
+    print("Per-site breakdown:")
+    
+    # Sort sites by count (descending) for better readability
+    sorted_sites = sorted(site_counts.items(), key=lambda x: x[1], reverse=True)
+    
+    for site, count in sorted_sites:
+        print(f"  {site:15} : {count:4d} listings")
+    
+    if not site_counts:
+        print("  (No listings found)")
+    print("=" * (len(title) + 12))
 
 
 def remove_duplicates(listings: List[Dict]) -> Tuple[List[Dict], int]:
@@ -132,14 +182,16 @@ def process_specific_files(file_list: List[str]) -> None:
         return
 
     print(f"Found {len(json_files)} JSON files. Loading listings ...")
-    listings = load_all_listings(json_files)
+    listings, site_counts = load_all_listings_with_stats(json_files)
     original_total = len(listings)
     print(f"Loaded {original_total} listings in total.")
 
+    print_site_statistics("Before Deduplication", site_counts)
     listings, duplicates_removed = remove_duplicates(listings)
     after_dedupe_total = len(listings)
     print(f"Removed {duplicates_removed} duplicate listings. Remaining: {after_dedupe_total}.")
 
+    print_site_statistics("After Deduplication", count_listings_by_site(listings))
     listings, filtered_out = filter_by_flat_type(listings)
     final_total = len(listings)
     print(f"Filtered out {filtered_out} listings by flat type. Remaining: {final_total}.")
@@ -149,6 +201,8 @@ def process_specific_files(file_list: List[str]) -> None:
 
     # Ensure unique, sequential UID values
     assign_sequential_uids(listings)
+
+    print_site_statistics("Final Results (After All Filtering)", count_listings_by_site(listings))
 
     # Determine destination: persistent disk at /data when present (Render.com),
     # else default to script directory for local runs.
@@ -205,14 +259,16 @@ def main():
         return
 
     print(f"Found {len(json_files)} JSON files. Loading listings ...")
-    listings = load_all_listings(json_files)
+    listings, site_counts = load_all_listings_with_stats(json_files)
     original_total = len(listings)
     print(f"Loaded {original_total} listings in total.")
 
+    print_site_statistics("Before Deduplication", site_counts)
     listings, duplicates_removed = remove_duplicates(listings)
     after_dedupe_total = len(listings)
     print(f"Removed {duplicates_removed} duplicate listings. Remaining: {after_dedupe_total}.")
 
+    print_site_statistics("After Deduplication", count_listings_by_site(listings))
     listings, filtered_out = filter_by_flat_type(listings)
     final_total = len(listings)
     print(f"Filtered out {filtered_out} listings by flat type. Remaining: {final_total}.")
@@ -222,6 +278,8 @@ def main():
 
     # Ensure unique, sequential UID values
     assign_sequential_uids(listings)
+
+    print_site_statistics("Final Results (After All Filtering)", count_listings_by_site(listings))
 
     # Determine destination: persistent disk at /data when present (Render.com),
     # else default to script directory for local runs.
