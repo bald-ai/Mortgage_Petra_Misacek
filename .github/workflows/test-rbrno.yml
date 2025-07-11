@@ -1,0 +1,16 @@
+name: Test Reality Brno Scraper
+on:
+  workflow_dispatch:     # Manual trigger only
+
+jobs:
+  test-rbrno:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml
+      - name: Test Reality Brno scraper
+        run: python scrapers/api_rbrno.py 
