@@ -177,7 +177,7 @@ def index():
     return render_template('index.html', **context)
 
 
-# Name of the placeholder image residing in the project root.
+# Name of the placeholder image residing in the assets folder.
 _PLACEHOLDER_NAME = "image_did_not_load.png"
 
 # NEW_CODE_START
@@ -189,7 +189,7 @@ _BANNER_NAME = "banner.png"
 @app.route(f"/{_BANNER_NAME}")
 def banner_img():
     """Serve the local banner image file for the top-of-page banner."""
-    return send_from_directory(Path(__file__).parent, _BANNER_NAME)
+    return send_from_directory(Path(__file__).parent / "assets", _BANNER_NAME)
 # NEW_CODE_END
 
 # Register a simple route that serves the placeholder file so templates can
@@ -197,7 +197,7 @@ def banner_img():
 @app.route(f"/{_PLACEHOLDER_NAME}")
 def placeholder_img():
     """Serve the local placeholder image file when an image fails to load."""
-    return send_from_directory(Path(__file__).parent, _PLACEHOLDER_NAME)
+    return send_from_directory(Path(__file__).parent / "assets", _PLACEHOLDER_NAME)
 
 # NEW_CODE_START
 _WAITING_NAME = "waiting_image.png"  # change to GIF if available
@@ -205,7 +205,7 @@ _WAITING_NAME = "waiting_image.png"  # change to GIF if available
 @app.route(f"/{_WAITING_NAME}")
 def waiting_img():
     """Serve the waiting overlay image (GIF/PNG)."""
-    return send_from_directory(Path(__file__).parent, _WAITING_NAME)
+    return send_from_directory(Path(__file__).parent / "assets", _WAITING_NAME)
 # NEW_CODE_END
 
 # -------------------------------------------------------------------------
@@ -220,24 +220,21 @@ def run_scrape_endpoint():
     poll/await the response and show a notification afterwards.
     """
     try:
-        import scrap_and_pocess_data  # local module with `main()` entry-point
+        import pipeline  # unified pipeline module
 
         # Run pipeline
-        scrap_and_pocess_data.main()
+        pipeline.main()
 
         # After pipeline we can retrieve per-site counts calculated by
-        # run_all_scrapers.listing_counts (populated during the scrape stage).
+        # pipeline.listing_counts (populated during the scrape stage).
         try:
-            import run_all_scrapers  # circular import safe at runtime
-
-            counts = run_all_scrapers.listing_counts
+            counts = pipeline.listing_counts
             total = sum(counts.values())
         except Exception:
             counts = {}
             total = 0
 
-        # Hot-reload in-memory data so newly merged JSON is served immediately.
-        _refresh_data()
+        # Data will be fresh on next page load since index() calls _load_listings() each time
 
         return jsonify({"status": "done", "counts": counts, "total": total})
     except Exception as exc:  # noqa: BLE001 – return error details to client

@@ -17,7 +17,7 @@ jobs:
           pip install -r requirements.txt
           playwright install chromium
       - name: Run full pipeline
-        run: python test_pipeline.py
+        run: python pipeline.py
       - name: Commit and push merged file
         run: |
           git config --local user.email "action@github.com"
