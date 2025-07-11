@@ -16,6 +16,9 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run full pipeline
         run: python pipeline.py
+        env:
+          ULOV_DOMOV_EMAIL: ${{ secrets.ULOV_DOMOV_EMAIL }}
+          ULOV_DOMOV_PASSWORD: ${{ secrets.ULOV_DOMOV_PASSWORD }}
       - name: Commit and push merged file
         run: |
           git config --local user.email "action@github.com"

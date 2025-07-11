@@ -1,6 +1,7 @@
 import requests
 import json
 import re
+import os
 
 # Use a Session object to automatically handle cookies and headers
 session = requests.Session()
@@ -81,9 +82,18 @@ def main(output_filename="ud.json"):
     # --- Step 1: Log In to Get the Token ---
 
     login_url = 'https://www.ulovdomov.cz/fe-api/auth/login'
+    
+    # Get credentials from environment variables
+    email = os.getenv('ULOV_DOMOV_EMAIL')
+    password = os.getenv('ULOV_DOMOV_PASSWORD')
+    
+    if not email or not password:
+        print("❌ Missing credentials: Please set ULOV_DOMOV_EMAIL and ULOV_DOMOV_PASSWORD environment variables")
+        return
+    
     login_payload = {
-        'email': 'baldai@hey.com',
-        'password': 'krookboh64'
+        'email': email,
+        'password': password
     }
     session.headers.update({
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
