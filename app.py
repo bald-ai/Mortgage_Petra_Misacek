@@ -157,18 +157,33 @@ def index():
     # Compute per-source counts - always show all known scrapers, even if they have 0 listings
     source_counts: dict[str, int] = {}
     
+    # Map new API scraper source names back to old display names
+    source_name_mapping = {
+        "reality.idnes.cz": "reality_idnes",
+        "bezrealitky.cz": "bezrealitky", 
+        "reality-brno.net": "reality_brno",
+        "reality.hn.cz": "reality_hn",
+        "bravis.cz": "bravis",
+        "remax-czech.cz": "remax",
+        "ulov_domov": "ulov_domov",
+        "sreality.cz": "sreality",
+    }
+    
     # Initialize all known sources with 0
     for source in ALL_SCRAPER_SOURCES:
         source_counts[source] = 0
     
-    # Count actual listings per source
+    # Count actual listings per source with mapping
     for rec in raw_listings:
-        src = str(rec.get("source", "unknown"))
-        if src in source_counts:
-            source_counts[src] += 1
+        actual_src = str(rec.get("source", "unknown"))
+        # Map new source name to old display name
+        display_src = source_name_mapping.get(actual_src, actual_src)
+        
+        if display_src in source_counts:
+            source_counts[display_src] += 1
         else:
             # Handle unknown sources (shouldn't happen with proper scrapers)
-            source_counts[src] = source_counts.get(src, 0) + 1
+            source_counts[display_src] = source_counts.get(display_src, 0) + 1
 
     # Add overall and per-site stats for footer display
     context["total_listings"] = len(raw_listings)
