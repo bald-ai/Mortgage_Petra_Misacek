@@ -53,21 +53,20 @@
         
         .scroller {
             display: flex;
-            overflow-x: auto;
+            overflow-x: scroll; /* Force scrollbar even when not needed */
             gap: 25px;
             padding: 15px 5px 25px;
             scroll-behavior: smooth;
-            /* Force scrollbar to always be visible */
-            overflow-x: scroll; /* Force scrollbar even when not needed */
-            /* Firefox scrollbar styling */
-            scrollbar-width: thin;
+            /* Force scrollbar to always be visible - aggressive approach */
+            scrollbar-width: auto; /* Show full scrollbars in Firefox */
             scrollbar-color: #9ca3af #f1f3f5;
         }
         
         /* Style scrollbar for better visibility on PC - always visible */
         .scroller::-webkit-scrollbar {
-            height: 14px;
+            height: 16px;
             -webkit-appearance: none;
+            display: block; /* Force display */
         }
         
         .scroller::-webkit-scrollbar-track {
