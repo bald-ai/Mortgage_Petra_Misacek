@@ -60,14 +60,15 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
       - name: Merge and process JSON
-        run: python - <<'PY'
-import pipeline, sys
-try:
-    pipeline.merge_and_process()
-except Exception as e:
-    print('Merge failed:', e)
-    sys.exit(1)
-PY
+        run: |
+          python - <<'PY'
+          import pipeline, sys
+          try:
+              pipeline.merge_and_process()
+          except Exception as e:
+              print('Merge failed:', e)
+              sys.exit(1)
+          PY
       - name: Commit and push merged file
         if: success()
         run: |
