@@ -1,0 +1,21 @@
+name: Test Individual Scraper
+on:
+  workflow_dispatch:
+    inputs:
+      scraper_name:
+        description: 'Name of the scraper script to run (without .py extension)'
+        required: true
+        type: string
+
+jobs:
+  test-scraper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run scraper
+        run: python scrapers/${{ github.event.inputs.scraper_name }}.py 
