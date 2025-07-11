@@ -7,6 +7,9 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    env:
+      ULOV_DOMOV_EMAIL: ${{ secrets.ULOV_DOMOV_EMAIL }}
+      ULOV_DOMOV_PASSWORD: ${{ secrets.ULOV_DOMOV_PASSWORD }}
     strategy:
       matrix:
         scraper: [api_idnes, api_bezrealitky, api_rbrno, api_rhn, api_bravis, api_remax, api_ud, api_sreality]
