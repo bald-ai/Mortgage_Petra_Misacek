@@ -17,5 +17,15 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: IPv4 / IPv6 connectivity test (reality-brno.net)
+        run: |
+          echo "=== DNS ==="
+          dig +short A www.reality-brno.net || true
+          dig +short AAAA www.reality-brno.net || true
+          echo -e "\n=== cURL ==="
+          time curl -4 -I --connect-timeout 15 https://www.reality-brno.net || true
+          time curl -6 -I --connect-timeout 15 https://www.reality-brno.net || true
+
       - name: Run scraper
         run: python scrapers/${{ github.event.inputs.scraper_name }}.py 
