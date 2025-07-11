@@ -14,8 +14,17 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run full pipeline
-        run: python pipeline.py
+      - name: Run full pipeline with retry logic
+        run: |
+          python pipeline.py
+          if [ $? -ne 0 ]; then
+            echo "Pipeline failed, trying with proxy..."
+            python pipeline.py --proxy
+            if [ $? -ne 0 ]; then
+              echo "Pipeline failed again, exiting..."
+              exit 1
+            fi
+          fi
         env:
           ULOV_DOMOV_EMAIL: ${{ secrets.ULOV_DOMOV_EMAIL }}
           ULOV_DOMOV_PASSWORD: ${{ secrets.ULOV_DOMOV_PASSWORD }}
