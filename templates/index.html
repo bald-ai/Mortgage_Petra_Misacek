@@ -282,9 +282,17 @@
             </button>
             {% endfor %}
         </div>
+        <button class="filter-toggle-btn">Velikostní filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in reckovice_medlanky_size_buckets %}
+            <button class="filter-btn size-filter-btn" data-size-bucket="{{ b }}">
+                {{ 'No size' if b == 'no-size' else b }}
+            </button>
+            {% endfor %}
+        </div>
         <div class="scroller">
             {% for flat in reckovice_medlanky %}
-            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" data-size-bucket="{{ flat.size_bucket }}" href="{{ flat.link }}" target="_blank">
                 <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
                 <div class="meta">
                     <span>{{ flat.size }} m²</span>
@@ -307,9 +315,17 @@
             </button>
             {% endfor %}
         </div>
+        <button class="filter-toggle-btn">Velikostní filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_2kk_size_buckets %}
+            <button class="filter-btn size-filter-btn" data-size-bucket="{{ b }}">
+                {{ 'No size' if b == 'no-size' else b }}
+            </button>
+            {% endfor %}
+        </div>
         <div class="scroller">
             {% for flat in flats_2kk %}
-            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" data-size-bucket="{{ flat.size_bucket }}" href="{{ flat.link }}" target="_blank">
                 <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
                 <div class="meta">
                     <span>{{ flat.size }} m²</span>
@@ -332,9 +348,17 @@
             </button>
             {% endfor %}
         </div>
+        <button class="filter-toggle-btn">Velikostní filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_2plus1_size_buckets %}
+            <button class="filter-btn size-filter-btn" data-size-bucket="{{ b }}">
+                {{ 'No size' if b == 'no-size' else b }}
+            </button>
+            {% endfor %}
+        </div>
         <div class="scroller">
             {% for flat in flats_2plus1 %}
-            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" data-size-bucket="{{ flat.size_bucket }}" href="{{ flat.link }}" target="_blank">
                 <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
                 <div class="meta">
                     <span>{{ flat.size }} m²</span>
@@ -357,9 +381,17 @@
             </button>
             {% endfor %}
         </div>
+        <button class="filter-toggle-btn">Velikostní filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_3kk_size_buckets %}
+            <button class="filter-btn size-filter-btn" data-size-bucket="{{ b }}">
+                {{ 'No size' if b == 'no-size' else b }}
+            </button>
+            {% endfor %}
+        </div>
         <div class="scroller">
             {% for flat in flats_3kk %}
-            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" data-size-bucket="{{ flat.size_bucket }}" href="{{ flat.link }}" target="_blank">
                 <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
                 <div class="meta">
                     <span>{{ flat.size }} m²</span>
@@ -382,9 +414,17 @@
             </button>
             {% endfor %}
         </div>
+        <button class="filter-toggle-btn">Velikostní filtr ▾</button>
+        <div class="filter-bar">
+            {% for b in flats_3plus1_size_buckets %}
+            <button class="filter-btn size-filter-btn" data-size-bucket="{{ b }}">
+                {{ 'No size' if b == 'no-size' else b }}
+            </button>
+            {% endfor %}
+        </div>
         <div class="scroller">
             {% for flat in flats_3plus1 %}
-            <a class="flat-card" data-bucket="{{ flat.bucket }}" href="{{ flat.link }}" target="_blank">
+            <a class="flat-card" data-bucket="{{ flat.bucket }}" data-size-bucket="{{ flat.size_bucket }}" href="{{ flat.link }}" target="_blank">
                 <img src="{{ flat.image }}" alt="Byt" onerror="this.onerror=null;this.src='/image_did_not_load.png';" />
                 <div class="meta">
                     <span>{{ flat.size }} m²</span>
@@ -445,18 +485,33 @@
         });
     });
 
-    // Handle filtering
+    // Handle filtering with both price and size filters
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             btn.classList.toggle('active');
 
             const section = btn.closest('.view-container');
-            const activeBuckets = Array.from(section.querySelectorAll('.filter-btn.active'))
+            
+            // Get active price buckets (regular filter buttons)
+            const activePriceBuckets = Array.from(section.querySelectorAll('.filter-btn.active:not(.size-filter-btn)'))
                 .map(b => b.dataset.bucket);
+            
+            // Get active size buckets (size filter buttons)
+            const activeSizeBuckets = Array.from(section.querySelectorAll('.size-filter-btn.active'))
+                .map(b => b.dataset.sizeBucket);
 
             section.querySelectorAll('.flat-card').forEach(card => {
-                const cardBucket = card.dataset.bucket;
-                if (activeBuckets.length === 0 || activeBuckets.includes(cardBucket)) {
+                const cardPriceBucket = card.dataset.bucket;
+                const cardSizeBucket = card.dataset.sizeBucket;
+                
+                // Check if card matches price filter (or no price filter active)
+                const matchesPrice = activePriceBuckets.length === 0 || activePriceBuckets.includes(cardPriceBucket);
+                
+                // Check if card matches size filter (or no size filter active)
+                const matchesSize = activeSizeBuckets.length === 0 || activeSizeBuckets.includes(cardSizeBucket);
+                
+                // Show card only if it matches both filters
+                if (matchesPrice && matchesSize) {
                     card.style.display = '';
                 } else {
                     card.style.display = 'none';

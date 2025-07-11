@@ -63,6 +63,23 @@ def _load_listings():
         else:
             mil_value = round(rec["price_int"] / 1_000_000, 1)
             rec["bucket"] = f"{int(mil_value)}mil"
+        
+        # Determine size bucket (e.g. "50-59m2" or "no-size") used for size filtering.
+        if rec["size_int"] is None or rec["size_int"] == 0:
+            rec["size_bucket"] = "no-size"
+        elif rec["size_int"] < 40:
+            rec["size_bucket"] = "30-39m2"
+        elif rec["size_int"] < 50:
+            rec["size_bucket"] = "40-49m2"
+        elif rec["size_int"] < 60:
+            rec["size_bucket"] = "50-59m2"
+        elif rec["size_int"] < 70:
+            rec["size_bucket"] = "60-69m2"
+        elif rec["size_int"] < 80:
+            rec["size_bucket"] = "70-79m2"
+        else:
+            rec["size_bucket"] = "80+m2"
+            
         # Normalize location string to lowercase once for quick checks
         rec["_locality_lower"] = str(rec.get("locality", "")).lower()
     return data
@@ -112,6 +129,21 @@ def _sorted_buckets(bucket_set: set[str]):
     return numeric
 
 
+# Compute available size buckets per section (sorted)
+def _sorted_size_buckets(bucket_set: set[str]):
+    # Define the order of size buckets from smallest to largest
+    size_order = ["30-39m2", "40-49m2", "50-59m2", "60-69m2", "70-79m2", "80+m2"]
+    
+    # Filter and sort buckets based on predefined order
+    numeric = [b for b in bucket_set if b in size_order]
+    numeric.sort(key=lambda x: size_order.index(x))
+    
+    # Add 'no-size' at the end if present
+    if "no-size" in bucket_set:
+        numeric.append("no-size")
+    return numeric
+
+
 # -------------------------------------------------------------------------
 # Jinja filters
 # -------------------------------------------------------------------------
@@ -148,11 +180,13 @@ def index():
     # Generate section data and buckets from fresh data
     section_cache = {k: _section_list(raw_listings, k) for k in SECTION_DEFS}
     section_buckets = {k: _sorted_buckets({rec["bucket"] for rec in lst}) for k, lst in section_cache.items()}
+    section_size_buckets = {k: _sorted_size_buckets({rec["size_bucket"] for rec in lst}) for k, lst in section_cache.items()}
 
     # Inject listings and bucket arrays
     for key in SECTION_DEFS:
         context[key] = section_cache[key]
         context[f"{key}_buckets"] = section_buckets[key]
+        context[f"{key}_size_buckets"] = section_size_buckets[key]
 
     # Compute per-source counts - always show all known scrapers, even if they have 0 listings
     source_counts: dict[str, int] = {}
