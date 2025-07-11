@@ -13,9 +13,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          playwright install chromium
+        run: pip install -r requirements.txt
       - name: Run full pipeline
         run: python pipeline.py
       - name: Commit and push merged file

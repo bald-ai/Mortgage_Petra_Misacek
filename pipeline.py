@@ -25,14 +25,14 @@ from pathlib import Path
 
 # Configuration
 SCRAPER_MODULES = [
-    "reality_idnes",
-    "bezrealitky",
-    "reality_brno",
-    "reality_hn",
-    "bravis",
-    "remax",
-    "ulov_domov",
-    "sreality",
+    "api_idnes",
+    "api_bezrealitky", 
+    "api_rbrno",
+    "api_rhn",
+    "api_bravis",
+    "api_remax",
+    "api_ud",
+    "api_sreality",
 ]
 
 ALLOWED_TYPES = {"2+kk", "2+1", "3+kk", "3+1", "N/A"}
@@ -58,7 +58,7 @@ def run_scraper(module_name: str) -> None:
     _log(f"Starting {func_name}() …")
     
     try:
-        # Import from scrapers subdirectory
+        # Import from scrapers subdirectory where new API scrapers are located
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'scrapers'))
         module = importlib.import_module(module_name)
         scrape_func = getattr(module, func_name)
