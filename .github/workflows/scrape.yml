@@ -18,35 +18,47 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
-      # Direct run (2 attempts)
+      # Direct run (up to 2 attempts with 20s delay)
       - name: Run ${{ matrix.scraper }} (direct)
         id: run_plain
+        shell: bash
         run: |
-          python scrapers/${{ matrix.scraper }}.py
+          ATTEMPTS=0
+          until [ $ATTEMPTS -ge 2 ]
+          do
+            python scrapers/${{ matrix.scraper }}.py && break
+            ((ATTEMPTS++))
+            echo "Attempt ${ATTEMPTS} failed, retrying in 20s..." >&2
+            sleep 20
+          done
+
           if [ ! -s "${{ matrix.scraper }}.json" ]; then
             echo "JSON missing/empty – failing step" >&2
             exit 1
           fi
-        retry:
-          max-attempts: 2
-          delay-seconds: 20
         continue-on-error: true
 
-      # Proxy fallback (2 attempts)
+      # Proxy fallback (up to 2 attempts with 20s delay)
       - name: Run ${{ matrix.scraper }} via proxy
         if: steps.run_plain.outcome == 'failure'
         env:
           HTTPS_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
           HTTP_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
+        shell: bash
         run: |
-          python scrapers/${{ matrix.scraper }}.py
+          ATTEMPTS=0
+          until [ $ATTEMPTS -ge 2 ]
+          do
+            python scrapers/${{ matrix.scraper }}.py && break
+            ((ATTEMPTS++))
+            echo "Attempt ${ATTEMPTS} failed, retrying in 20s..." >&2
+            sleep 20
+          done
+
           if [ ! -s "${{ matrix.scraper }}.json" ]; then
             echo "JSON still missing/empty" >&2
             exit 1
           fi
-        retry:
-          max-attempts: 2
-          delay-seconds: 20
 
   merge:
     if: ${{ always() }}
