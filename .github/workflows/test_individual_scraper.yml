@@ -25,8 +25,34 @@ jobs:
           echo "Testing proxy authentication…"
           curl -x "$PROXY" -I https://www.google.com --connect-timeout 10 || exit 1
 
-      - name: Run scraper
+      # 1️⃣ Direct attempt with up to 2 tries (initial + 1 retry)
+      - name: Run scraper (direct)
+        id: run_plain
+        run: |
+          python scrapers/${{ github.event.inputs.scraper_name }}.py
+          # Fail if output JSON absent or empty (0 bytes)
+          if [ ! -s "${{ github.event.inputs.scraper_name }}.json" ]; then
+            echo "JSON output missing or empty – failing step" >&2
+            exit 1
+          fi
+        retry:
+          max-attempts: 2   # 1 original + 1 retry
+          delay-seconds: 20
+        continue-on-error: true
+
+      # 2️⃣ Proxy fallback, up to 2 tries, only if direct run failed
+      - name: Run scraper via proxy
+        if: steps.run_plain.outcome == 'failure'
         env:
           HTTPS_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
           HTTP_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
-        run: python scrapers/${{ github.event.inputs.scraper_name }}.py 
+        run: |
+          echo "Retrying through proxy…"
+          python scrapers/${{ github.event.inputs.scraper_name }}.py
+          if [ ! -s "${{ github.event.inputs.scraper_name }}.json" ]; then
+            echo "JSON output missing or empty after proxy attempt" >&2
+            exit 1
+          fi
+        retry:
+          max-attempts: 2
+          delay-seconds: 20

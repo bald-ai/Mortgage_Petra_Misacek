@@ -24,17 +24,8 @@ def scrape_and_save_listings(base_search_url, output_filename):
 
     try:
         # --- 1. Determine Total Number of Pages ---
-        print(f"🔎 Accessing first page to determine total number of pages...")
-        # Try with longer timeout and retry logic
-        for attempt in range(3):
-            try:
-                first_page_response = requests.get(base_search_url, headers=headers, timeout=30)
-                break
-            except requests.exceptions.Timeout:
-                print(f"⏱️ Timeout on attempt {attempt + 1}/3, retrying...")
-                if attempt == 2:
-                    raise
-                time.sleep(5)
+        print("🔎 Accessing first page to determine total number of pages…")
+        first_page_response = requests.get(base_search_url, headers=headers, timeout=30)
         first_page_response.raise_for_status()
         soup = BeautifulSoup(first_page_response.content, 'html.parser')
 
