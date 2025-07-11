@@ -29,9 +29,46 @@ jobs:
           ULOV_DOMOV_EMAIL: ${{ secrets.ULOV_DOMOV_EMAIL }}
           ULOV_DOMOV_PASSWORD: ${{ secrets.ULOV_DOMOV_PASSWORD }}
       - name: Commit and push merged file
+        if: success()
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add MERGED_LISTINGS.json
           git commit -m "Update MERGED_LISTINGS.json from GitHub Actions" || exit 0
           git push
+
+      # 3️⃣ Email notification on success
+      - name: Send success email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
+          subject: "Mortgage Scrape - Success"
+          to: "baldai@hey.com"
+          from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          content_type: text/html
+          secure: true
+          body: |
+            <p>The daily mortgage scrape finished <strong>successfully</strong>.</p>
+            <p><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">View workflow logs</a></p>
+
+      # 4️⃣ Email notification on failure
+      - name: Send failure email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
+          subject: "Mortgage Scrape - Failure"
+          to: "baldai@hey.com"
+          from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          content_type: text/html
+          secure: true
+          body: |
+            <p>The daily mortgage scrape <strong>failed</strong>.</p>
+            <p><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">View workflow logs</a></p>
