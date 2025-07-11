@@ -57,29 +57,43 @@
             gap: 25px;
             padding: 15px 5px 25px;
             scroll-behavior: smooth;
+            /* Force scrollbar to always be visible */
+            overflow-x: scroll; /* Force scrollbar even when not needed */
             /* Firefox scrollbar styling */
             scrollbar-width: thin;
-            scrollbar-color: #c1c8d1 #f1f3f5;
+            scrollbar-color: #9ca3af #f1f3f5;
         }
         
-        /* Style scrollbar for better visibility on PC */
+        /* Style scrollbar for better visibility on PC - always visible */
         .scroller::-webkit-scrollbar {
-            height: 12px;
+            height: 14px;
+            -webkit-appearance: none;
         }
         
         .scroller::-webkit-scrollbar-track {
             background: #f1f3f5;
-            border-radius: 6px;
+            border-radius: 7px;
+            border: 1px solid #e1e5e9;
         }
         
         .scroller::-webkit-scrollbar-thumb {
-            background: #c1c8d1;
-            border-radius: 6px;
+            background: #9ca3af;
+            border-radius: 7px;
             border: 2px solid #f1f3f5;
+            min-width: 30px;
         }
         
         .scroller::-webkit-scrollbar-thumb:hover {
-            background: #a1a9b3;
+            background: #6b7280;
+        }
+        
+        .scroller::-webkit-scrollbar-thumb:active {
+            background: #4b5563;
+        }
+        
+        /* Force scrollbar to always be visible */
+        .scroller::-webkit-scrollbar-corner {
+            background: #f1f3f5;
         }
         
         .flat-card {
