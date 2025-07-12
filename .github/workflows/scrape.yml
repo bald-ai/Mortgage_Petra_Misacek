@@ -1,125 +1,67 @@
-name: Scraper pipeline (per-site retries)
+name: Full scraper pipeline
 on:
   schedule:
-    - cron: '0 13 * * *'
-  workflow_dispatch:
+    - cron: '0 13 * * *'  # Run daily at 1 PM UTC = 3 PM CEST
+  workflow_dispatch:     # Manual trigger
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    env:
-      ULOV_DOMOV_EMAIL: ${{ secrets.ULOV_DOMOV_EMAIL }}
-      ULOV_DOMOV_PASSWORD: ${{ secrets.ULOV_DOMOV_PASSWORD }}
-    strategy:
-      matrix:
-        scraper: [api_idnes, api_bezrealitky, api_rbrno, api_rhn, api_bravis, api_remax, api_ud, api_sreality]
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install deps
-        run: pip install -r requirements.txt
 
-      # Direct run (up to 2 attempts with 20s delay)
-      - name: Run ${{ matrix.scraper }} (direct)
-        id: run_plain
-        shell: bash
+      - name: Install dependencies
         run: |
-          ATTEMPTS=0
-          until [ $ATTEMPTS -ge 2 ]
-          do
-            python scrapers/${{ matrix.scraper }}.py && break
-            ((ATTEMPTS++))
-            echo "Attempt ${ATTEMPTS} failed, retrying in 20s..." >&2
-            sleep 20
-          done
+          pip install -r requirements.txt
+          playwright install chromium
 
-          if [ ! -s "${{ matrix.scraper }}.json" ]; then
-            echo "JSON missing/empty – failing step" >&2
-            exit 1
-          fi
+      - name: Run full pipeline
+        id: run_pipeline
+        run: python test_pipeline.py
         continue-on-error: true
 
-      # Proxy fallback (up to 2 attempts with 20s delay)
-      - name: Run ${{ matrix.scraper }} via proxy
-        if: steps.run_plain.outcome == 'failure'
-        env:
-          HTTPS_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
-          HTTP_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
-        shell: bash
-        run: |
-          ATTEMPTS=0
-          until [ $ATTEMPTS -ge 2 ]
-          do
-            python scrapers/${{ matrix.scraper }}.py && break
-            ((ATTEMPTS++))
-            echo "Attempt ${ATTEMPTS} failed, retrying in 20s..." >&2
-            sleep 20
-          done
-
-          if [ ! -s "${{ matrix.scraper }}.json" ]; then
-            echo "JSON still missing/empty" >&2
-            exit 1
-          fi
-
-  merge:
-    if: ${{ always() }}
-    needs: scrape
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Install deps
-        run: pip install -r requirements.txt
-      - name: Merge and process JSON
-        run: |
-          python - <<'PY'
-          import pipeline, sys
-          try:
-              pipeline.merge_and_process()
-          except Exception as e:
-              print('Merge failed:', e)
-              sys.exit(1)
-          PY
       - name: Commit and push merged file
-        if: success()
+        if: always()
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add MERGED_LISTINGS.json
-          git commit -m "Update listings" || exit 0
+          git commit -m "Update MERGED_LISTINGS.json from GitHub Actions" || exit 0
           git push
 
-      - name: Email success
-        if: success()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-          password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
-          subject: "Mortgage Scrape - Success"
-          to: "baldai@hey.com"
-          from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-          secure: true
-          html_body: |
-            <p>Scrape succeeded. <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">View logs</a></p>
-
-      - name: Email failure
-        if: failure()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-          password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
-          subject: "Mortgage Scrape - Failure"
-          to: "baldai@hey.com"
-          from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-          secure: true
-          html_body: |
-            <p>Scrape failed. <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">View logs</a></p>
+# -----------------------------------------------------------------------------
+# 👇 Legacy proxy / email notifications (kept for reference)
+#
+# env:
+#   HTTPS_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
+#   HTTP_PROXY:  "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
+#
+# - name: Email success
+#   uses: dawidd6/action-send-mail@v3
+#   with:
+#     server_address: smtp.gmail.com
+#     server_port: 465
+#     username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+#     password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
+#     subject: "Mortgage Scrape - Success"
+#     to: "baldai@hey.com"
+#     from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+#     secure: true
+#
+# - name: Email failure
+#   uses: dawidd6/action-send-mail@v3
+#   with:
+#     server_address: smtp.gmail.com
+#     server_port: 465
+#     username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+#     password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
+#     subject: "Mortgage Scrape - Failure"
+#     to: "baldai@hey.com"
+#     from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+#     secure: true
+# -----------------------------------------------------------------------------
 
