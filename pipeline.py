@@ -48,6 +48,50 @@ def _log(msg: str) -> None:
     print(f"[{datetime.now().isoformat(timespec='seconds')}] {msg}")
 
 
+# -----------------------------------------------------------------------------
+# Proxy helper & retry wrapper
+# -----------------------------------------------------------------------------
+
+def _build_proxy_url() -> str | None:
+    """Construct proxy URL from env vars, or return None if not set."""
+    host = os.getenv("PROXY_HOST")
+    if not host:
+        return None
+    username = os.getenv("PROXY_USERNAME", "")
+    password = os.getenv("PROXY_PASSWORD", "")
+    port = os.getenv("PROXY_PORT", "80")
+    return f"http://{username}:{password}@{host}:{port}"
+
+
+def run_scraper_with_retries(module_name: str) -> bool:
+    """Run a scraper up to 4× (2× direct, 2× via proxy).
+
+    Returns True if the scraper produced >0 rows, False otherwise.
+    """
+    attempts_cfg = [False, False, True, True]  # False=direct, True=proxy
+    for idx, use_proxy in enumerate(attempts_cfg, start=1):
+        if use_proxy:
+            proxy_url = _build_proxy_url()
+            if proxy_url:
+                os.environ["HTTPS_PROXY"] = proxy_url
+                os.environ["HTTP_PROXY"] = proxy_url
+            else:
+                _log("Proxy requested but env vars not present – skipping proxy setup.")
+        else:
+            os.environ.pop("HTTPS_PROXY", None)
+            os.environ.pop("HTTP_PROXY", None)
+
+        _log(f"Attempt {idx}/4 ({'proxy' if use_proxy else 'direct'}) for {module_name} …")
+        run_scraper(module_name)
+
+        if listing_counts.get(module_name, 0) > 0:
+            return True  # success
+
+        _log(f"{module_name}: 0 rows after attempt {idx}. Waiting 30 s before retry …")
+        time.sleep(30)
+
+    return False  # all attempts failed
+
 # =============================================================================
 # SCRAPING FUNCTIONS
 # =============================================================================
@@ -95,14 +139,18 @@ def run_scraper(module_name: str) -> None:
         _log(f"Finished {func_name}() in {elapsed:.1f} s -> {rows} rows.")
 
 
-def run_all_scrapers() -> None:
-    """Run every scraper module sequentially."""
-    # Ensure per-site stats start from scratch on every pipeline run.
+def run_all_scrapers() -> bool:
+    """Run every scraper module sequentially with retries.
+
+    Returns True if *all* scrapers succeeded (≥1 row each), False otherwise.
+    """
     listing_counts.clear()
+    all_ok = True
 
     for module_name in SCRAPER_MODULES:
-        run_scraper(module_name)
-    
+        success = run_scraper_with_retries(module_name)
+        all_ok = all_ok and success
+
     # Pretty summary
     _log("\n===== SCRAPE SUMMARY =====")
     total = 0
@@ -114,6 +162,7 @@ def run_all_scrapers() -> None:
     print(f"TOTAL          : {total:4} ads")
     print("===========================\n")
     _log("All scrapers completed.")
+    return all_ok
 
 
 # =============================================================================
@@ -329,7 +378,11 @@ def main() -> None:
     _log("Starting full scrape → process pipeline …")
 
     # Step 1: Run all scrapers
-    run_all_scrapers()
+    all_ok = run_all_scrapers()
+
+    if not all_ok:
+        _log("One or more scrapers failed after retries – skipping merge & exiting with code 1.")
+        sys.exit(1)
 
     # Step 2: Merge & post-process
     _log("Launching merge and processing …")
