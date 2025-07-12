@@ -38,35 +38,32 @@ jobs:
           git commit -m "Update MERGED_LISTINGS.json from GitHub Actions" || exit 0
           git push
 
-# -----------------------------------------------------------------------------
-# 👇 Legacy proxy / email notifications (kept for reference)
-#
-# env:
-#   HTTPS_PROXY: "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
-#   HTTP_PROXY:  "http://${{ secrets.PROXY_USERNAME }}:${{ secrets.PROXY_PASSWORD }}@${{ secrets.PROXY_HOST }}:${{ secrets.PROXY_PORT }}"
-#
-# - name: Email success
-#   uses: dawidd6/action-send-mail@v3
-#   with:
-#     server_address: smtp.gmail.com
-#     server_port: 465
-#     username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-#     password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
-#     subject: "Mortgage Scrape - Success"
-#     to: "baldai@hey.com"
-#     from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-#     secure: true
-#
-# - name: Email failure
-#   uses: dawidd6/action-send-mail@v3
-#   with:
-#     server_address: smtp.gmail.com
-#     server_port: 465
-#     username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-#     password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
-#     subject: "Mortgage Scrape - Failure"
-#     to: "baldai@hey.com"
-#     from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
-#     secure: true
-# -----------------------------------------------------------------------------
+      - name: Email success
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
+          subject: "Mortgage Scrape - Success"
+          to: "baldai@hey.com"
+          from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          secure: true
+          html_body: |
+            <p>Scrape succeeded. <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">View logs</a></p>
 
+      - name: Email failure
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          password: ${{ secrets.MORTGAGE_EMAIL_PASSWORD }}
+          subject: "Mortgage Scrape - Failure"
+          to: "baldai@hey.com"
+          from: ${{ secrets.MORTGAGE_EMAIL_NAME }}
+          secure: true
+          html_body: |
+            <p>Scrape failed. <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">View logs</a></p>
