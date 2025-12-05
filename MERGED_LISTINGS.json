@@ -11,6 +11,16 @@
     },
     {
         "uid": 2,
+        "link": "https://reality.idnes.cz/detail/prodej/byt/brno-belohorska/69320c7d04d7a008c30ede45/",
+        "type_of_flat": "2+kk",
+        "size": "60",
+        "price": 7490000,
+        "locality": "Bělohorská, Brno - Židenice",
+        "image": "https://sta-reality2.1gr.cz/sta/compile/thumbs/7/f/1/1261bba97ec6bea30a35d711ec13c.jpg",
+        "source": "reality.idnes.cz"
+    },
+    {
+        "uid": 3,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-slunna/691cecf3ac6fd47091002cd5/",
         "type_of_flat": "2+1",
         "size": "59",
@@ -20,7 +30,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 3,
+        "uid": 4,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-karlova/69220c9ee4bf18746c0e82b2/",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -30,7 +40,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 4,
+        "uid": 5,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-strnadova/6924014bb8f4759518044884/",
         "type_of_flat": "3+1",
         "size": "75",
@@ -40,7 +50,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 5,
+        "uid": 6,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-turgenevova/6930354031638314690506ec/",
         "type_of_flat": "3+1",
         "size": "73",
@@ -50,7 +60,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 6,
+        "uid": 7,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-palackeho-trida/6926bb007db444388b00070a/",
         "type_of_flat": "2+1",
         "size": "62",
@@ -60,7 +70,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 7,
+        "uid": 8,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-horacke-namesti/692843fc91457143a00f8674/",
         "type_of_flat": "3+1",
         "size": "70",
@@ -70,7 +80,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 8,
+        "uid": 9,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-jugoslavska/690df28d76356dbb460d1ef4/",
         "type_of_flat": "2+kk",
         "size": "57",
@@ -80,7 +90,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 9,
+        "uid": 10,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-horacke-namesti/6926cd8b1101e68785049deb/",
         "type_of_flat": "2+1",
         "size": "69",
@@ -90,7 +100,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 10,
+        "uid": 11,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-rencova/6909364fe86cd3c0100ef324/",
         "type_of_flat": "3+1",
         "size": "71",
@@ -100,7 +110,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 11,
+        "uid": 12,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-za-skolou/690bc3561e2c9274b80a58f9/",
         "type_of_flat": "3+1",
         "size": "74",
@@ -110,7 +120,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 12,
+        "uid": 13,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-hybesova/692471bcb7fc6f51830ee024/",
         "type_of_flat": "2+1",
         "size": "79",
@@ -120,23 +130,13 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 13,
+        "uid": 14,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-stara/692df61eab261224a0036faa/",
         "type_of_flat": "2+kk",
         "size": "68",
         "price": 7619063,
         "locality": "Stará, Brno - Zábrdovice",
         "image": "https://sta-reality2.1gr.cz/sta/compile/thumbs/0/6/2/8817ca665b52efa40d4df53213164.jpg",
-        "source": "reality.idnes.cz"
-    },
-    {
-        "uid": 14,
-        "link": "https://reality.idnes.cz/detail/prodej/byt/brno-milenova/691600bd873bb73f040c5e95/",
-        "type_of_flat": "3+1",
-        "size": "79",
-        "price": 7600000,
-        "locality": "Milénova, Brno - Lesná",
-        "image": "https://sta-reality2.1gr.cz/sta/compile/thumbs/b/1/5/dc492e815c4050777d8ad76ee33e2.jpg",
         "source": "reality.idnes.cz"
     },
     {
@@ -291,16 +291,6 @@
     },
     {
         "uid": 30,
-        "link": "https://reality.idnes.cz/detail/prodej/byt/brno-merhautova/6908e7bddf47fefa610f87a6/",
-        "type_of_flat": "2+kk",
-        "size": "61",
-        "price": 6990000,
-        "locality": "Merhautova, Brno - Černá Pole",
-        "image": "https://sta-reality2.1gr.cz/sta/compile/thumbs/6/a/0/98c03483d8cc7f3ef224181c45e33.jpg",
-        "source": "reality.idnes.cz"
-    },
-    {
-        "uid": 31,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-bystrcka/691da34afc89224aab0dcfc7/",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -310,7 +300,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 32,
+        "uid": 31,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-cermakova/691b7891c6a61a56170bc3a7/",
         "type_of_flat": "3+1",
         "size": "77",
@@ -320,7 +310,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 33,
+        "uid": 32,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-psenik/691739d5df8d2396fa09c92b/",
         "type_of_flat": "2+kk",
         "size": "59",
@@ -330,7 +320,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 34,
+        "uid": 33,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-axmanova/6916e2506284ab1713099bb7/",
         "type_of_flat": "3+1",
         "size": "73",
@@ -340,7 +330,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 35,
+        "uid": 34,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-dvorskeho/6912d6aca6f4cb4204090d55/",
         "type_of_flat": "2+1",
         "size": "55",
@@ -350,7 +340,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 36,
+        "uid": 35,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-ostopovicka/6912306f365ac83abb06ecb9/",
         "type_of_flat": "3+kk",
         "size": "67",
@@ -360,7 +350,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 37,
+        "uid": 36,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-vltavska/691215febb76cead9c057d14/",
         "type_of_flat": "3+1",
         "size": "68",
@@ -370,7 +360,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 38,
+        "uid": 37,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-sramkova/6911d0f2b3cbc276500b8bb3/",
         "type_of_flat": "2+1",
         "size": "56",
@@ -380,7 +370,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 39,
+        "uid": 38,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-provaznikova/691f2c1726911a3ff1024dce/",
         "type_of_flat": "2+1",
         "size": "55",
@@ -390,7 +380,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 40,
+        "uid": 39,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-koliste/690f3d487a444e54f300087c/",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -400,7 +390,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 41,
+        "uid": 40,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno/690ee393a37876d9250f5180/",
         "type_of_flat": "3+kk",
         "size": "73",
@@ -410,7 +400,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 42,
+        "uid": 41,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-famerovo-namesti/690cbfb62b3fe3aba50db461/",
         "type_of_flat": "2+kk",
         "size": "68",
@@ -420,7 +410,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 43,
+        "uid": 42,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-spitalka/690bb5038d3eb8394e0430d0/",
         "type_of_flat": "3+1",
         "size": "78",
@@ -430,17 +420,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 44,
-        "link": "https://reality.idnes.cz/detail/prodej/byt/brno-uvoz/6908ac41422cb9b5bc0b6895/",
-        "type_of_flat": "2+kk",
-        "size": "66",
-        "price": 7700000,
-        "locality": "Úvoz, Brno - Staré Brno",
-        "image": "https://sta-reality2.1gr.cz/sta/compile/thumbs/1/d/4/8c46f434025cc119b880bf379e274.jpg",
-        "source": "reality.idnes.cz"
-    },
-    {
-        "uid": 45,
+        "uid": 43,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno/6930622aad985ba79002b22d/",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -450,7 +430,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 46,
+        "uid": 44,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno/693062ee6d0f21f48c0d9db2/",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -460,7 +440,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 47,
+        "uid": 45,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno/693067045991be1e2e0a8b9d/",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -470,7 +450,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 48,
+        "uid": 46,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno/69306718916353d0f401ca81/",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -480,7 +460,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 49,
+        "uid": 47,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno/69306961445ceb80520080d7/",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -490,7 +470,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 50,
+        "uid": 48,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-vomackova/691c4dc97ce0367d1105cbfc/",
         "type_of_flat": "2+kk",
         "size": "66",
@@ -500,7 +480,7 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 51,
+        "uid": 49,
         "link": "https://reality.idnes.cz/detail/prodej/byt/brno-renneska-trida/6925a4fddb089dd0ef0099ba/",
         "type_of_flat": "2+1",
         "size": "57",
@@ -510,7 +490,17 @@
         "source": "reality.idnes.cz"
     },
     {
-        "uid": 52,
+        "uid": 50,
+        "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-trnita-fuchsova-3-kk/5640813",
+        "type_of_flat": "3+kk",
+        "size": "76",
+        "price": null,
+        "locality": "Fuchsova, Brno - Trnitá",
+        "image": "https://photo.ulovdomov.cz/5h/hyXF2WLs1l22414045",
+        "source": "ulov_domov"
+    },
+    {
+        "uid": 51,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-cernovice-turgenevova-2-kk/5632645",
         "type_of_flat": "2+kk",
         "size": "67",
@@ -520,7 +510,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 53,
+        "uid": 52,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-slapanice-slapanice-brnenska-pole-2-kk/5616277",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -530,7 +520,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 54,
+        "uid": 53,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-trnita-spitalka-3-1/5635287",
         "type_of_flat": "3+1",
         "size": "78",
@@ -540,7 +530,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 55,
+        "uid": 54,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-brno-mesto-uvoz-2-kk/5634555",
         "type_of_flat": "2+kk",
         "size": "65",
@@ -550,7 +540,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 56,
+        "uid": 55,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-zidenice-stara-osada-2-1/5631743",
         "type_of_flat": "2+1",
         "size": "63",
@@ -560,7 +550,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 57,
+        "uid": 56,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-bilovice-nad-svitavou-bilovice-nad-svitavou-u-hrusek-2-kk/5631301",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -570,7 +560,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 58,
+        "uid": 57,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-bystrc-filipova-2-1/5631089",
         "type_of_flat": "2+1",
         "size": "58",
@@ -580,7 +570,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 59,
+        "uid": 58,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-veveri-bayerova-3-kk/5630545",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -590,7 +580,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 60,
+        "uid": 59,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-cernovice-turgenevova-3-1/5630509",
         "type_of_flat": "3+1",
         "size": "71",
@@ -600,7 +590,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 61,
+        "uid": 60,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-zebetin-besuvka-2-kk/5630063",
         "type_of_flat": "2+kk",
         "size": "56",
@@ -610,7 +600,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 62,
+        "uid": 61,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-bystrc-jakuba-obrovskeho-2-1/5629357",
         "type_of_flat": "2+1",
         "size": "61",
@@ -620,7 +610,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 63,
+        "uid": 62,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-lisen-zikova-3-1/5624507",
         "type_of_flat": "3+1",
         "size": "76",
@@ -630,7 +620,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 64,
+        "uid": 63,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-2-kk/5591559",
         "type_of_flat": "2+kk",
         "size": "65",
@@ -640,7 +630,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 65,
+        "uid": 64,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-prizrenice-modricka-3-kk/5619135",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -650,7 +640,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 66,
+        "uid": 65,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-veverska-bityska-veverska-bityska-na-bityskach-3-1/5614163",
         "type_of_flat": "3+1",
         "size": "72",
@@ -660,7 +650,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 67,
+        "uid": 66,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-reckovice-kremlickova-3-1/5608491",
         "type_of_flat": "3+1",
         "size": "72",
@@ -670,7 +660,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 68,
+        "uid": 67,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-zebetin-jerlinova-2-kk/5601131",
         "type_of_flat": "2+kk",
         "size": "53",
@@ -680,7 +670,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 69,
+        "uid": 68,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-stare-brno-hybesova-2-kk/5573898",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -690,7 +680,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 70,
+        "uid": 69,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-zabrdovice-spolkova-2-kk/5570246",
         "type_of_flat": "2+kk",
         "size": "55",
@@ -700,7 +690,7 @@
         "source": "ulov_domov"
     },
     {
-        "uid": 71,
+        "uid": 70,
         "link": "https://www.ulovdomov.cz/inzerat/prodej-brno-reckovice-kunstatska-2-1/5554273",
         "type_of_flat": "2+1",
         "size": "65",
@@ -710,7 +700,47 @@
         "source": "ulov_domov"
     },
     {
+        "uid": 71,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/2996113996",
+        "type_of_flat": "2+kk",
+        "size": 53,
+        "price": 7400000,
+        "locality": "Jerlínová, Brno - Žebětín",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oW_C/kObgaqJNMnVbj243CaAapU/2c2b.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
         "uid": 72,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-mokra-hora-tumananova/2795950924",
+        "type_of_flat": "2+kk",
+        "size": 99,
+        "price": 7700000,
+        "locality": "Tumaňanova, Brno - Mokrá Hora",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGB5Rk1BHDEzidBs/6b8a.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 73,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-husovice-cacovicka/3500593996",
+        "type_of_flat": "2+kk",
+        "size": 79,
+        "price": 6800000,
+        "locality": "Cacovická, Brno - Husovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYD289DBHBEzidj8/b327.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 74,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zidenice-svatoplukova/2136728396",
+        "type_of_flat": "2+kk",
+        "size": 60,
+        "price": 7950000,
+        "locality": "Svatoplukova, Brno - Židenice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoDuFBcBq2Eomlrg/bf40.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 75,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-cerna-pole-/2432185164",
         "type_of_flat": "2+1",
         "size": 76,
@@ -720,827 +750,87 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 73,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-lesna-barvy/3637785420",
-        "type_of_flat": "2+1",
-        "size": 59,
-        "price": 6050000,
-        "locality": "Barvy, Brno - Lesná",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTBLrRleTFB31mq/ee0d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "uid": 76,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-zidenice-bzenecka/305279820",
+        "type_of_flat": "3+1",
+        "size": 66,
+        "price": 6900000,
+        "locality": "Bzenecká, Brno - Židenice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGXuqXBGNEzhCCF/c8fa.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
-        "uid": 74,
+        "uid": 77,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-husovice-vranovska/1320760140",
+        "type_of_flat": "2+kk",
+        "size": 56,
+        "price": 6690000,
+        "locality": "Vranovská, Brno - Husovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBuCN3EBdEujuWf/ef96.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 78,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bosonohy-prazska/4223767372",
         "type_of_flat": "2+kk",
         "size": 54,
         "price": 6790000,
         "locality": "Pražská, Brno - Bosonohy",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqD86wCCtqFC8Z3w/f138.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 75,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-obrany-frycajova/3473810252",
-        "type_of_flat": "3+kk",
-        "size": 72,
-        "price": 7890000,
-        "locality": "Fryčajova, Brno - Obřany",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1Bv3F0eZE78kUb/11e4.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 76,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-trnita-/3910411084",
-        "type_of_flat": "2+kk",
-        "size": 53,
-        "price": 6050000,
-        "locality": "Brno - Trnitá, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTBCGZ9CV8FGCwwz/6d56.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 77,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-slovinska/1596334924",
-        "type_of_flat": "2+kk",
-        "size": 123,
-        "price": 7853000,
-        "locality": "Slovinská, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTQzPhBONFDm1BX/c25f.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 78,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zidenice-belohorska/3560575820",
-        "type_of_flat": "2+kk",
-        "size": 60,
-        "price": 7490000,
-        "locality": "Bělohorská, Brno - Židenice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqCemGmCkSFG181G/486c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_B/nO0bgvR9rXY0p3GC5ESU9Qz/bc32.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
         "uid": 79,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-skacelova/1889518412",
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-reckovice-medlanecka/1601385292",
         "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 5890000,
-        "locality": "Skácelova, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoC2bQR7LEmQW0H/148b.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "size": 62,
+        "price": 7850000,
+        "locality": "Medlánecká, Brno - Řečkovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kOzmiQlmfoDiQhqHAtEy8T0m/c95b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
         "uid": 80,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-bystrc-filipova/1128928076",
-        "type_of_flat": "2+1",
-        "size": 58,
-        "price": 5490000,
-        "locality": "Filipova, Brno - Bystrc",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTCNNSBClVFGswsG/d1f9.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-stary-liskovec-u-leskavy/3918345036",
+        "type_of_flat": "2+kk",
+        "size": 53,
+        "price": 6990000,
+        "locality": "U Leskavy, Brno - Starý Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_E/nO1Ur3YPjBB25f7BB6ExXRKG/5347.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
         "uid": 81,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-pradlacka/186594124",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 6800000,
-        "locality": "Přadlácká, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBsRXRHDgEwDfdM/3dbc.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 82,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kohoutovice-libusina-trida/1796485964",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 7650000,
-        "locality": "Libušina třída, Brno - Kohoutovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECQXE3mlL1/3aba.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 83,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-novy-liskovec-plachty/720622156",
-        "type_of_flat": "2+kk",
-        "size": 60,
-        "price": 7490000,
-        "locality": "Plachty, Brno - Nový Lískovec",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqD86wCC0JFDLEya/ade3.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 84,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--kalova/921957196",
-        "type_of_flat": "2+kk",
-        "size": 58,
-        "price": 7113000,
-        "locality": "Kalová, Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_C/nPvSisOTaMBIFC6CEoEHxIpJ/654c.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 85,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-brno-bosonohy-/57447244",
-        "type_of_flat": "2+kk",
-        "size": 51,
-        "price": 6922000,
-        "locality": "Brno - Brno-Bosonohy, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_ob_B/kCWc7jgk5BEo27ULDsipOz/d9c7.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 86,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--lazaretni/2139939404",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 6674000,
-        "locality": "Lazaretní, Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_m2_B/kO1SI6eo54BXtk4VAxHs4/4927.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 87,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bosonohy-/704496460",
-        "type_of_flat": "2+kk",
-        "size": 54,
-        "price": 7541000,
-        "locality": "Brno - Bosonohy, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdoBRKEnTeD0/95ef.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 88,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bosonohy-/1829557068",
-        "type_of_flat": "2+kk",
-        "size": 50,
-        "price": 6972000,
-        "locality": "Brno - Bosonohy, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nClkYSBV8Ecu9Zc/35c0.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 89,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-brno-bosonohy-/2991821644",
-        "type_of_flat": "2+1",
-        "size": 57,
-        "price": 7482000,
-        "locality": "Brno - Brno-Bosonohy, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_ob_B/kCWc7jgk5NX6Oe6DtNRPA/ce00.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 90,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-spolkova/3304592972",
-        "type_of_flat": "2+kk",
-        "size": 59,
-        "price": 7400000,
-        "locality": "Spolková, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdokaElEo23/2883.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 91,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-krizikova/3204502092",
-        "type_of_flat": "2+kk",
-        "size": 66,
-        "price": 7650000,
-        "locality": "Křižíkova, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1lTbrmHE8U9Rc/d194.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 92,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-krizikova/2937115212",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 6950000,
-        "locality": "Křižíkova, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1DuJ87qIE8V9Dr/3b66.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 93,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zabrdovice-kuldova/636912460",
-        "type_of_flat": "3+kk",
-        "size": 52,
-        "price": 6725000,
-        "locality": "Kuldova, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nD0izvCbdEcTQ68/20ab.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 94,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-lisen-simackova/4094673740",
-        "type_of_flat": "2+kk",
-        "size": 67,
-        "price": 6990000,
-        "locality": "Šimáčkova, Brno - Líšeň",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBEqdwmaElOB5u/844d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 95,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cernovice-charbulova/2779816780",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 7158375,
-        "locality": "Charbulova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDrUk0DR2E5ieR4/ea73.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 96,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-stare-brno-zednikova/1859945292",
-        "type_of_flat": "2+1",
-        "size": 51,
-        "price": 6750000,
-        "locality": "Zedníkova, Brno - Staré Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_ob_E/nPTQKDwGerpxkyCeCD5Bmht/ee2b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 97,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-bratislavska/3740005708",
-        "type_of_flat": "2+kk",
-        "size": 57,
-        "price": 7490000,
-        "locality": "Bratislavská, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDN2yrB5kEn2lWo/7de0.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 98,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-kralovo-pole-krizikova/3667808844",
-        "type_of_flat": "3+kk",
-        "size": 64,
-        "price": 7750000,
-        "locality": "Křižíkova, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1EEOp8wLE8VkBl/4426.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 99,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-cerna-pole-provaznikova/3056264012",
-        "type_of_flat": "3+1",
-        "size": 79,
-        "price": 7800000,
-        "locality": "Provazníkova, Brno - Černá Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDiQhqdHEku9bD/8e4b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 100,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-bystrc-kachlikova/1136575308",
-        "type_of_flat": "3+1",
-        "size": 72,
-        "price": 7640000,
-        "locality": "Kachlíkova, Brno - Bystrc",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqb3AyEa6FF87Go/070c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 101,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bohunice-na-piskove-ceste/3181912908",
-        "type_of_flat": "2+kk",
-        "size": 60,
-        "price": 7986000,
-        "locality": "Na Pískové cestě, Brno - Bohunice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTDPt7S6gFDGMNN/c3f1.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 102,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-kralovo-pole-palackeho-trida/2432381772",
-        "type_of_flat": "2+1",
-        "size": 60,
-        "price": 7490000,
-        "locality": "Palackého třída, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoKFXEDLyEsj5dv/0768.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 103,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-zabovresky-fricova/1984377676",
-        "type_of_flat": "2+1",
-        "size": 54,
-        "price": 6680000,
-        "locality": "Fričova, Brno - Žabovřesky",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlDgPvvB5pE3CX5i/baf4.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 104,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zidenice-svatoplukova/2136728396",
-        "type_of_flat": "2+kk",
-        "size": 86,
-        "price": 7660000,
-        "locality": "Svatoplukova, Brno - Židenice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqD86wCEogFGLmZE/3fae.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 105,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cerna-pole-zemedelska/2400842572",
-        "type_of_flat": "3+kk",
-        "size": 64,
-        "price": 7549900,
-        "locality": "Zemědělská, Brno - Černá Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/kOzkBkwYBTBv5vzrAE9pO2t/14c2.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 106,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-trnita-koliste/2103780172",
-        "type_of_flat": "2+kk",
-        "size": 54,
-        "price": 6239500,
-        "locality": "Koliště, Brno - Trnitá",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqDjvpWE6oFFp91Y/8e18.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 107,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-francouzska/1112421196",
-        "type_of_flat": "2+kk",
-        "size": 57,
-        "price": 6750000,
-        "locality": "Francouzská, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nOztZkD4ZlCAK9gDeME5p5Tu/e680.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 108,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-mokra-hora-tumananova/2795950924",
-        "type_of_flat": "2+kk",
-        "size": 99,
-        "price": 7700000,
-        "locality": "Tumaňanova, Brno - Mokrá Hora",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqBMnoODRsFD0ttk/de94.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 109,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-zabrdovice-prikop/4092130124",
         "type_of_flat": "2+1",
         "size": 50,
         "price": 6490000,
         "locality": "Příkop, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqD86wCEMlFFaaXr/e206.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoBuCN3Da6EtJWci/79bb.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
-        "uid": 110,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-slatina-ponetovicka/3707884364",
-        "type_of_flat": "2+1",
-        "size": 54,
-        "price": 6495000,
-        "locality": "Ponětovická, Brno - Slatina",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqBf89nBujFFeE4t/ef2d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 111,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-stary-liskovec-oderska/1739973452",
-        "type_of_flat": "3+1",
-        "size": 68,
-        "price": 5999999,
-        "locality": "Oderská, Brno - Starý Lískovec",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqCaOxZEc9FF6ryj/6020.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 112,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-cejl/4080595788",
-        "type_of_flat": "2+kk",
-        "size": 58,
-        "price": 6190000,
-        "locality": "Cejl, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_B/kcukOQcMmDmihgCjUEDtQQx/fa2d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 113,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-novy-liskovec-obla/4293780300",
-        "type_of_flat": "2+kk",
-        "size": 56,
-        "price": 5800000,
-        "locality": "Oblá, Brno - Nový Lískovec",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqD86wCEK8FFYMtO/9bd3.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 114,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-stary-liskovec-cermakova/1473585996",
-        "type_of_flat": "2+1",
-        "size": 67,
-        "price": 6999000,
-        "locality": "Čermákova, Brno - Starý Lískovec",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqBMnoOFVVFHLQ2y/4519.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 115,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-zabrdovice-spitalka/3741770572",
-        "type_of_flat": "2+1",
-        "size": 78,
-        "price": 7399000,
-        "locality": "Špitálka, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_od_C/kOy0N9usHcDOyVfBGzEWe6UJ/d186.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 116,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-zidenice-velkopavlovicka/1649722188",
-        "type_of_flat": "3+1",
-        "size": 70,
-        "price": 6790000,
-        "locality": "Velkopavlovická, Brno - Židenice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBY4BlC4tE45Bl1/415f.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 117,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cernovice-huskova/1461056332",
-        "type_of_flat": "3+kk",
-        "size": 57,
-        "price": 7400000,
-        "locality": "Húskova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/nPSV1TXV2nClkYSEr5Ej0wvg/8c8e.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 118,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--krenova/1516512076",
-        "type_of_flat": "2+kk",
-        "size": 55,
-        "price": 6049000,
-        "locality": "Křenová, Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqx7ONEnjFFpfjw/04b5.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 119,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-brnenske-ivanovice-zezulova/3003958092",
-        "type_of_flat": "3+kk",
-        "size": 63,
-        "price": 7100000,
-        "locality": "Zezulova, Brno - Brněnské Ivanovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDmHSdB4fEn0FDM/b708.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 120,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-brnenske-ivanovice-zezulova/3054289740",
-        "type_of_flat": "3+kk",
-        "size": 57,
-        "price": 6980000,
-        "locality": "Zezulova, Brno - Brněnské Ivanovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDN2yrB4kEnz2Zt/e105.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 121,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-stary-liskovec-kyjevska/585229132",
-        "type_of_flat": "3+1",
-        "size": 77,
-        "price": 6990000,
-        "locality": "Kyjevská, Brno - Starý Lískovec",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO1Ur3YPjBDq6KHBiJEyZfi7/6897.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 122,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cernovice-charbulova/1302618700",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 7543598,
-        "locality": "Charbulova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nOztZkD4ZlB2dle9HE1WA76/96eb.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 123,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-kralovo-pole-palackeho-trida/1007612748",
-        "type_of_flat": "2+1",
-        "size": 54,
-        "price": 7700000,
-        "locality": "Palackého třída, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/kOdLsFJxntDxhpev4E8aF4A/33ff.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 124,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-bohunice-spodni/4186317644",
-        "type_of_flat": "3+1",
-        "size": 72,
-        "price": 7149000,
-        "locality": "Spodní, Brno - Bohunice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_E/kOzkBkwYBTqAqfBdjFELRGt/703c.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 125,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-lesna-blazkova/666248012",
-        "type_of_flat": "3+1",
-        "size": 72,
-        "price": 7890000,
-        "locality": "Blažkova, Brno - Lesná",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTCNNSBBWSFD0uLO/dcbb.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 126,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-stare-brno-hlinky/545968972",
-        "type_of_flat": "2+1",
-        "size": 54,
-        "price": 6990000,
-        "locality": "Hlinky, Brno - Staré Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nDJ4VEZEqD86wCsdE9luJ6/af76.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 127,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-cernovice-charbulova/3525702476",
-        "type_of_flat": "2+1",
-        "size": 65,
-        "price": 7740000,
-        "locality": "Charbulova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTCNNSBCv5FHJSlQ/42ca.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 128,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cernovice-charbulova/3836068684",
-        "type_of_flat": "3+kk",
-        "size": 64,
-        "price": 7110000,
-        "locality": "Charbulova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTDqlCCDBcFHJSNG/9f4c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 129,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-cernovice-charbulova/3617964876",
-        "type_of_flat": "2+1",
-        "size": 64,
-        "price": 7110000,
-        "locality": "Charbulova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTCNNSBCw6FHJRzY/f917.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 130,
+        "uid": 82,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-lesna-brozikova/1364341580",
         "type_of_flat": "2+1",
         "size": 55,
-        "price": 6290000,
+        "price": 6100000,
         "locality": "Brožíkova, Brno - Lesná",
         "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBEAEzR6BF/7231.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
-        "uid": 131,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-cernovice-rehorova/3907396428",
-        "type_of_flat": "3+1",
-        "size": 81,
-        "price": 7500000,
-        "locality": "Řehořova, Brno - Černovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqBMnoODMtFDsAnz/b0f7.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 132,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-bratislavska/4012954444",
-        "type_of_flat": "2+kk",
-        "size": 56,
-        "price": 6500000,
-        "locality": "Bratislavská, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_E/kOzkBkwYBTQzPhBtoFE1JT4/3b72.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 133,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-bratislavska/334357324",
-        "type_of_flat": "2+kk",
-        "size": 66,
-        "price": 7999000,
-        "locality": "Bratislavská, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqCaOxZDGiFDvDdE/ffc2.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 134,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabovresky-kovarovicova/3602883404",
+        "uid": 83,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cerna-pole-merhautova/3312595788",
         "type_of_flat": "2+kk",
         "size": 52,
-        "price": 5950000,
-        "locality": "Kovařovicova, Brno - Žabovřesky",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nOztZkD4ZlB2dleU4E0NlBP/dab1.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 135,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-kralovo-pole-kubesova/2236031820",
-        "type_of_flat": "2+1",
-        "size": 56,
-        "price": 5950000,
-        "locality": "Kubešova, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqb3AyCfhFCnvXk/bf97.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 136,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cerna-pole-merhautova/459744076",
-        "type_of_flat": "3+kk",
-        "size": 72,
-        "price": 7590000,
+        "price": 7397000,
         "locality": "Merhautova, Brno - Černá Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTDqlCC0OFClhCH/f8e5.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBMLzceCEzMYMJ/9d6e.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
-        "uid": 137,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-stare-brno-veletrzni/3284677452",
-        "type_of_flat": "3+1",
-        "size": 65,
-        "price": 6850000,
-        "locality": "Veletržní, Brno - Staré Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoC2bQRFbuEvuHn3/ab1b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 138,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-horni-herspice-repova/3029017164",
-        "type_of_flat": "2+kk",
-        "size": 58,
-        "price": 7290000,
-        "locality": "Řepova, Brno - Horní Heršpice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oV_B/naUHOyYNpCP7JGWpCE2kiQ/3181.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 139,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cerna-pole-zemedelska/371663436",
-        "type_of_flat": "2+kk",
-        "size": 77,
-        "price": 7550000,
-        "locality": "Zemědělská, Brno - Černá Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTBLrRlBA8FDB1Sw/eaec.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 140,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bystrc-cerneho/4026606412",
-        "type_of_flat": "2+kk",
-        "size": 52,
-        "price": 6340000,
-        "locality": "Černého, Brno - Bystrc",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqD86wCB6cFBj4ia/fc60.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 141,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-styrice-vsetinska/1194775116",
-        "type_of_flat": "3+1",
-        "size": 56,
-        "price": 6590000,
-        "locality": "Vsetínská, Brno - Štýřice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8zSZiBr1EcNlJX/b686.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 142,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-jundrov-veslarska/2676671052",
-        "type_of_flat": "2+kk",
-        "size": 104,
-        "price": 7200000,
-        "locality": "Veslařská, Brno - Jundrov",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTEBlmaVsFBdWgO/89b3.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 143,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-chrlice-pekna/1622262604",
-        "type_of_flat": "2+1",
-        "size": 62,
-        "price": 6890000,
-        "locality": "Pěkná, Brno - Chrlice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoQAuLCVaEqcIoz/d2a2.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 144,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-komin-urbankova/977347404",
-        "type_of_flat": "2+1",
-        "size": 55,
-        "price": 6698000,
-        "locality": "Urbánkova, Brno - Komín",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTxrzzThFBbpNd/70e5.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 145,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-husovice-vranovska/2134278988",
-        "type_of_flat": "2+kk",
-        "size": 53,
-        "price": 7883000,
-        "locality": "Vranovská, Brno - Husovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqxQDMB7pFB02Sg/dccf.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 146,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-novy-liskovec-/844870476",
-        "type_of_flat": "3+kk",
-        "size": 74,
-        "price": 7185770,
-        "locality": "Brno - Nový Lískovec, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oZ_D/kBkJRwehYBM7PHBKaDSzox4/e695.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 147,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-trnita-zderadova/1977299788",
-        "type_of_flat": "2+kk",
-        "size": 53,
-        "price": 6490000,
-        "locality": "Zderadova, Brno - Trnitá",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_E/nO1Ur3YPjBBJ2Z00QExQEMA/cd6c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 148,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zidenice-rokycanova/419636044",
-        "type_of_flat": "3+kk",
-        "size": 70,
-        "price": 7600000,
-        "locality": "Rokycanova, Brno - Židenice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/kOzkBkwYBTBPz35sWE9t6SS/dba5.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 149,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zabrdovice-cejl/3689853772",
-        "type_of_flat": "3+kk",
-        "size": 105,
-        "price": 7990000,
-        "locality": "Cejl, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_D/nO0bgvR9rXDo1QgCxMEMeaVA/1f3a.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 150,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--kalova/1730388812",
-        "type_of_flat": "2+kk",
-        "size": 50,
-        "price": 7889000,
-        "locality": "Kalová, Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oa_D/nO7kYQIzllCpKXPqrDha6qa/0020.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 151,
-        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zabrdovice-kuldova/2680017740",
-        "type_of_flat": "3+kk",
-        "size": 54,
-        "price": 6990000,
-        "locality": "Kuldova, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nCJGajCeZEcTTUl/da6b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 152,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno--triskalova/581772108",
-        "type_of_flat": "2+1",
-        "size": 55,
-        "price": 6650000,
-        "locality": "Třískalova, Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_E/kOzkBkwYBTxrzzBneFEw1DR/9b18.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 153,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-kralovo-pole-galandauerova/1631007564",
-        "type_of_flat": "2+1",
-        "size": 57,
-        "price": 7300000,
-        "locality": "Galandauerova, Brno - Královo Pole",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPRtHkVQLlB5hiytjE07bQY/420f.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 154,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--/65221452",
-        "type_of_flat": "2+kk",
-        "size": 59,
-        "price": 6355000,
-        "locality": "Brno, okres Brno-město",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu4VwEzFOuY/990e.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 155,
+        "uid": 84,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--/375534412",
         "type_of_flat": "2+kk",
         "size": 59,
@@ -1550,7 +840,727 @@
         "source": "sreality.cz"
     },
     {
+        "uid": 85,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno--provaznikova/736899916",
+        "type_of_flat": "3+kk",
+        "size": 54,
+        "price": 5800000,
+        "locality": "Provazníkova, Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kOzmiQlmfoKFXEFy8EyWWm2/550a.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 86,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cerna-pole-alesova/345191244",
+        "type_of_flat": "3+kk",
+        "size": 60,
+        "price": 6900000,
+        "locality": "Alešova, Brno - Černá Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBKAreevEzJjy9/3675.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 87,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-novy-liskovec-plachty/3053892172",
+        "type_of_flat": "2+kk",
+        "size": 69,
+        "price": 7490000,
+        "locality": "Plachty, Brno - Nový Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_gU_4/Ep7lh0.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 88,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-novy-liskovec-plachty/720622156",
+        "type_of_flat": "2+kk",
+        "size": 66,
+        "price": 7490000,
+        "locality": "Plachty, Brno - Nový Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_C/kcukOQcMmmtzdDUBEGohQn/6d33.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 89,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-pradlacka/186594124",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 7800000,
+        "locality": "Přadlácká, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBsRXRHDgEwDfdM/3dbc.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 90,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-zabrdovice-cejl/1824703308",
+        "type_of_flat": "3+1",
+        "size": 59,
+        "price": 6299000,
+        "locality": "Cejl, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYBKAreVzEzG1rB/0ca6.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 91,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-trnita-koliskova/2865967948",
+        "type_of_flat": "2+1",
+        "size": 66,
+        "price": 5690000,
+        "locality": "Kolískova, Brno - Trnitá",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYCbv7JeHEzKdqt/e919.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 92,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-stare-brno-uvoz/3116577612",
+        "type_of_flat": "2+kk",
+        "size": 67,
+        "price": 8000000,
+        "locality": "Úvoz, Brno - Staré Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGEEwhJVHEzFfs7/c9d5.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 93,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-stary-liskovec-sevastopolska/2935173964",
+        "type_of_flat": "3+1",
+        "size": 77,
+        "price": 7999000,
+        "locality": "Sevastopolská, Brno - Starý Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGmo7fVHEzE0Ys/33fe.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 94,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bohunice-ukrajinska/2602877772",
+        "type_of_flat": "2+kk",
+        "size": 56,
+        "price": 7519680,
+        "locality": "Ukrajinská, Brno - Bohunice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBNaf8GdmEu22di/6049.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 95,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-kralovo-pole-krizikova/3667808844",
+        "type_of_flat": "3+kk",
+        "size": 64,
+        "price": 7750000,
+        "locality": "Křižíkova, Brno - Královo Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8BFAxJB2XEcvKfw/fd19.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 96,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-krizikova/2937115212",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 6950000,
+        "locality": "Křižíkova, Brno - Královo Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nClkYSBWhEcvMQM/35fe.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 97,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zabrdovice-kuldova/636912460",
+        "type_of_flat": "3+kk",
+        "size": 52,
+        "price": 6725000,
+        "locality": "Kuldova, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nD0izvCbdEcTQ68/20ab.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 98,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-lesna-barvy/3637785420",
+        "type_of_flat": "2+1",
+        "size": 59,
+        "price": 6050000,
+        "locality": "Barvy, Brno - Lesná",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqx7ONCWbFB31ns/7c77.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 99,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-obrany-frycajova/3473810252",
+        "type_of_flat": "3+kk",
+        "size": 72,
+        "price": 7890000,
+        "locality": "Fryčajova, Brno - Obřany",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1Bv3F0eZE78kUb/11e4.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 100,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-skacelova/1889518412",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 5890000,
+        "locality": "Skácelova, Brno - Královo Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoC2bQR7LEmQW0H/148b.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 101,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-bystrc-filipova/1128928076",
+        "type_of_flat": "2+1",
+        "size": 58,
+        "price": 5490000,
+        "locality": "Filipova, Brno - Bystrc",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTCNNSBClVFGswsG/d1f9.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 102,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-pradlacka/186594124",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 6800000,
+        "locality": "Přadlácká, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/nO1Ur3YPjBsRXRHDgEwDfdM/3dbc.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 103,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kohoutovice-libusina-trida/1796485964",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 7650000,
+        "locality": "Libušina třída, Brno - Kohoutovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlC2Y2ECQXE3mlL1/3aba.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 104,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-novy-liskovec-plachty/720622156",
+        "type_of_flat": "2+kk",
+        "size": 60,
+        "price": 7490000,
+        "locality": "Plachty, Brno - Nový Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqD86wCC0JFDLEya/ade3.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 105,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--kalova/921957196",
+        "type_of_flat": "2+kk",
+        "size": 58,
+        "price": 7113000,
+        "locality": "Kalová, Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_C/nPvSisOTaMBIFC6CEoEHxIpJ/654c.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 106,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-spolkova/3304592972",
+        "type_of_flat": "2+kk",
+        "size": 59,
+        "price": 7400000,
+        "locality": "Spolková, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDdPdokaElEo23/2883.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 107,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kralovo-pole-krizikova/3204502092",
+        "type_of_flat": "2+kk",
+        "size": 66,
+        "price": 7650000,
+        "locality": "Křižíkova, Brno - Královo Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nPadKnN9M1lTbrmHE8U9Rc/d194.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 108,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-lisen-simackova/4094673740",
+        "type_of_flat": "2+kk",
+        "size": 67,
+        "price": 6990000,
+        "locality": "Šimáčkova, Brno - Líšeň",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoBEqdwmaElOB5u/844d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 109,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-stare-brno-zednikova/1859945292",
+        "type_of_flat": "2+1",
+        "size": 51,
+        "price": 6750000,
+        "locality": "Zedníkova, Brno - Staré Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_ob_E/nPTQKDwGerpxkyCeCD5Bmht/ee2b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 110,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-cerna-pole-provaznikova/3056264012",
+        "type_of_flat": "3+1",
+        "size": 79,
+        "price": 7800000,
+        "locality": "Provazníkova, Brno - Černá Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/kOzmiQlmfoDiQhqdHEku9bD/8e4b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 111,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-bystrc-kachlikova/1136575308",
+        "type_of_flat": "3+1",
+        "size": 72,
+        "price": 7640000,
+        "locality": "Kachlíkova, Brno - Bystrc",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqb3AyEa6FF87Go/070c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 112,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bohunice-na-piskove-ceste/3181912908",
+        "type_of_flat": "2+kk",
+        "size": 60,
+        "price": 7986000,
+        "locality": "Na Pískové cestě, Brno - Bohunice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTDPt7S6gFDGMNN/c3f1.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 113,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-francouzska/1112421196",
+        "type_of_flat": "2+kk",
+        "size": 57,
+        "price": 6750000,
+        "locality": "Francouzská, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nOztZkD4ZlCAK9gDeME5p5Tu/e680.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 114,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-lesna-milenova/878256972",
+        "type_of_flat": "3+1",
+        "size": 79,
+        "price": 7600000,
+        "locality": "Milénova, Brno - Lesná",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBY4BlC8SE5ABYw/df82.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 115,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-slatina-ponetovicka/3707884364",
+        "type_of_flat": "2+1",
+        "size": 54,
+        "price": 6495000,
+        "locality": "Ponětovická, Brno - Slatina",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqBf89nBujFFeE4t/ef2d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 116,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-cejl/4080595788",
+        "type_of_flat": "2+kk",
+        "size": 58,
+        "price": 6190000,
+        "locality": "Cejl, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_B/kcukOQcMmDmihgCjUEDtQQx/fa2d.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 117,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-stary-liskovec-cermakova/1473585996",
+        "type_of_flat": "2+1",
+        "size": 67,
+        "price": 6999000,
+        "locality": "Čermákova, Brno - Starý Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTBCGZ9DO4FHtmNZ/01eb.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 118,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-zabrdovice-spitalka/3741770572",
+        "type_of_flat": "2+1",
+        "size": 78,
+        "price": 7399000,
+        "locality": "Špitálka, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_C/kOy0N9usHcDOyVfBGzEWe6UJ/d186.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 119,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-zidenice-velkopavlovicka/1649722188",
+        "type_of_flat": "3+1",
+        "size": 70,
+        "price": 6790000,
+        "locality": "Velkopavlovická, Brno - Židenice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/nOztZkD4ZlBY4BlC4tE45Bl1/415f.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 120,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cernovice-huskova/1461056332",
+        "type_of_flat": "3+kk",
+        "size": 57,
+        "price": 7400000,
+        "locality": "Húskova, Brno - Černovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_B/nPSV1TXV2nClkYSEr5Ej0wvg/8c8e.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 121,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--krenova/1516512076",
+        "type_of_flat": "2+kk",
+        "size": 55,
+        "price": 6049000,
+        "locality": "Křenová, Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqx7ONEnjFFpfjw/04b5.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 122,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-brnenske-ivanovice-zezulova/3003958092",
+        "type_of_flat": "3+kk",
+        "size": 63,
+        "price": 7100000,
+        "locality": "Zezulova, Brno - Brněnské Ivanovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDmHSdB4fEn0FDM/b708.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 123,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-brnenske-ivanovice-zezulova/3054289740",
+        "type_of_flat": "3+kk",
+        "size": 57,
+        "price": 6980000,
+        "locality": "Zezulova, Brno - Brněnské Ivanovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/nO1Ur3YPjBDN2yrB4kEnz2Zt/e105.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 124,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-stary-liskovec-kyjevska/585229132",
+        "type_of_flat": "3+1",
+        "size": 77,
+        "price": 6990000,
+        "locality": "Kyjevská, Brno - Starý Lískovec",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/nDJ4VEZEqxQDMFiBFHoD1m/9858.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 125,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cernovice-charbulova/1302618700",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 7543598,
+        "locality": "Charbulova, Brno - Černovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nOztZkD4ZlB2dle9HE1WA76/96eb.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 126,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-bohunice-spodni/4186317644",
+        "type_of_flat": "3+1",
+        "size": 72,
+        "price": 7149000,
+        "locality": "Spodní, Brno - Bohunice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_E/kOzkBkwYBTqAqfBdjFELRGt/703c.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 127,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-lesna-blazkova/666248012",
+        "type_of_flat": "3+1",
+        "size": 72,
+        "price": 7890000,
+        "locality": "Blažkova, Brno - Lesná",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTCNNSBBWSFD0uLO/dcbb.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 128,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-stare-brno-hlinky/545968972",
+        "type_of_flat": "2+1",
+        "size": 54,
+        "price": 6990000,
+        "locality": "Hlinky, Brno - Staré Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/nDJ4VEZEqD86wCsdE9luJ6/af76.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 129,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-cernovice-charbulova/3525702476",
+        "type_of_flat": "2+1",
+        "size": 65,
+        "price": 7740000,
+        "locality": "Charbulova, Brno - Černovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTCNNSBCv5FHJSlQ/42ca.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 130,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cernovice-charbulova/3836068684",
+        "type_of_flat": "3+kk",
+        "size": 64,
+        "price": 7110000,
+        "locality": "Charbulova, Brno - Černovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTDqlCCDBcFHJSNG/9f4c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 131,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-cernovice-charbulova/3617964876",
+        "type_of_flat": "2+1",
+        "size": 64,
+        "price": 7110000,
+        "locality": "Charbulova, Brno - Černovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTCNNSBCw6FHJRzY/f917.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 132,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-lesna-brozikova/1364341580",
+        "type_of_flat": "2+1",
+        "size": 55,
+        "price": 6290000,
+        "locality": "Brožíkova, Brno - Lesná",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nO5OZtPbfGBGYXtBEAEzR6BF/7231.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 133,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-cernovice-rehorova/3907396428",
+        "type_of_flat": "3+1",
+        "size": 81,
+        "price": 7500000,
+        "locality": "Řehořova, Brno - Černovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqBMnoODMtFDsAnz/b0f7.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 134,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--lazaretni/2139939404",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 6674000,
+        "locality": "Lazaretní, Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_m2_B/kO1SI6eo54BXtk4VAxHs4/4927.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 135,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-bratislavska/4012954444",
+        "type_of_flat": "2+kk",
+        "size": 56,
+        "price": 6500000,
+        "locality": "Bratislavská, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_E/kOzkBkwYBTQzPhBtoFE1JT4/3b72.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 136,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabovresky-kovarovicova/3602883404",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 5950000,
+        "locality": "Kovařovicova, Brno - Žabovřesky",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/nOztZkD4ZlB2dleU4E0NlBP/dab1.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 137,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-kralovo-pole-kubesova/2236031820",
+        "type_of_flat": "2+1",
+        "size": 56,
+        "price": 5950000,
+        "locality": "Kubešova, Brno - Královo Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqb3AyCfhFCnvXk/bf97.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 138,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-cerna-pole-merhautova/459744076",
+        "type_of_flat": "3+kk",
+        "size": 72,
+        "price": 7590000,
+        "locality": "Merhautova, Brno - Černá Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTDqlCC0OFClhCH/f8e5.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 139,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-stare-brno-veletrzni/3284677452",
+        "type_of_flat": "3+1",
+        "size": 65,
+        "price": 6850000,
+        "locality": "Veletržní, Brno - Staré Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_D/kOzmiQlmfoC2bQRFbuEvuHn3/ab1b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 140,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-horni-herspice-repova/3029017164",
+        "type_of_flat": "2+kk",
+        "size": 58,
+        "price": 7290000,
+        "locality": "Řepova, Brno - Horní Heršpice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oV_B/naUHOyYNpCP7JGWpCE2kiQ/3181.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 141,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cerna-pole-zemedelska/371663436",
+        "type_of_flat": "2+kk",
+        "size": 77,
+        "price": 7550000,
+        "locality": "Zemědělská, Brno - Černá Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTBLrRlBA8FDB1Sw/eaec.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 142,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-bystrc-cerneho/4026606412",
+        "type_of_flat": "2+kk",
+        "size": 52,
+        "price": 6340000,
+        "locality": "Černého, Brno - Bystrc",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqD86wCB6cFBj4ia/fc60.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 143,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-styrice-vsetinska/1194775116",
+        "type_of_flat": "3+1",
+        "size": 56,
+        "price": 6590000,
+        "locality": "Vsetínská, Brno - Štýřice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/kBlLbSfl8zSZiBr1EcNlJX/b686.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 144,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-jundrov-veslarska/2676671052",
+        "type_of_flat": "2+kk",
+        "size": 104,
+        "price": 7200000,
+        "locality": "Veslařská, Brno - Jundrov",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTEBlmaVsFBdWgO/89b3.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 145,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-chrlice-pekna/1622262604",
+        "type_of_flat": "2+1",
+        "size": 62,
+        "price": 6890000,
+        "locality": "Pěkná, Brno - Chrlice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_C/kOzmiQlmfoQAuLCVaEqcIoz/d2a2.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 146,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-komin-urbankova/977347404",
+        "type_of_flat": "2+1",
+        "size": 55,
+        "price": 6698000,
+        "locality": "Urbánkova, Brno - Komín",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/kOzkBkwYBTxrzzThFBbpNd/70e5.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 147,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-husovice-vranovska/2134278988",
+        "type_of_flat": "2+kk",
+        "size": 53,
+        "price": 7883000,
+        "locality": "Vranovská, Brno - Husovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_D/nDJ4VEZEqxQDMB7pFB02Sg/dccf.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 148,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-novy-liskovec-/844870476",
+        "type_of_flat": "3+kk",
+        "size": 74,
+        "price": 7185770,
+        "locality": "Brno - Nový Lískovec, okres Brno-město",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oZ_D/kBkJRwehYBM7PHBKaDSzox4/e695.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 149,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-trnita-zderadova/1977299788",
+        "type_of_flat": "2+kk",
+        "size": 53,
+        "price": 6490000,
+        "locality": "Zderadova, Brno - Trnitá",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oe_E/nO1Ur3YPjBBJ2Z00QExQEMA/cd6c.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 150,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zidenice-rokycanova/419636044",
+        "type_of_flat": "3+kk",
+        "size": 70,
+        "price": 7600000,
+        "locality": "Rokycanova, Brno - Židenice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_C/kOzkBkwYBTBPz35sWE9t6SS/dba5.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 151,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zabrdovice-cejl/3689853772",
+        "type_of_flat": "3+kk",
+        "size": 105,
+        "price": 7990000,
+        "locality": "Cejl, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_D/nO0bgvR9rXDo1QgCxMEMeaVA/1f3a.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 152,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--kalova/1730388812",
+        "type_of_flat": "2+kk",
+        "size": 50,
+        "price": 7889000,
+        "locality": "Kalová, Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oa_D/nO7kYQIzllCpKXPqrDha6qa/0020.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 153,
+        "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-zabrdovice-kuldova/2680017740",
+        "type_of_flat": "3+kk",
+        "size": 54,
+        "price": 6990000,
+        "locality": "Kuldova, Brno - Zábrdovice",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_od_D/nPSV1TXV2nCJGajCeZEcTTUl/da6b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 154,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno--triskalova/581772108",
+        "type_of_flat": "2+1",
+        "size": 55,
+        "price": 6650000,
+        "locality": "Třískalova, Brno",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_E/kOzkBkwYBTxrzzBneFEw1DR/9b18.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 155,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-kralovo-pole-galandauerova/1631007564",
+        "type_of_flat": "2+1",
+        "size": 57,
+        "price": 7300000,
+        "locality": "Galandauerova, Brno - Královo Pole",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPRtHkVQLlB5hiytjE07bQY/420f.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
         "uid": 156,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno--/65221452",
+        "type_of_flat": "2+kk",
+        "size": 59,
+        "price": 6355000,
+        "locality": "Brno, okres Brno-město",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_of_A/kPSgqAbxVYDxpu4VwEzFOuY/990e.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 157,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-brno-bosonohy-/4000195404",
         "type_of_flat": "2+kk",
         "size": 59,
@@ -1560,7 +1570,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 157,
+        "uid": 158,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-lesna-vyhlidka/878027596",
         "type_of_flat": "2+kk",
         "size": 52,
@@ -1570,7 +1580,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 158,
+        "uid": 159,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-obrany-frycajova/2482103116",
         "type_of_flat": "2+1",
         "size": 54,
@@ -1580,7 +1590,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 159,
+        "uid": 160,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-veveri-grohova/732742476",
         "type_of_flat": "2+1",
         "size": 54,
@@ -1590,7 +1600,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 160,
+        "uid": 161,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-spolkova/3895715148",
         "type_of_flat": "2+kk",
         "size": 64,
@@ -1600,7 +1610,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 161,
+        "uid": 162,
         "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-jundrov-veslarska/3342086988",
         "type_of_flat": "3+kk",
         "size": 72,
@@ -1610,7 +1620,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 162,
+        "uid": 163,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-turany-farni/1885614924",
         "type_of_flat": "2+1",
         "size": 67,
@@ -1620,23 +1630,13 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 163,
+        "uid": 164,
         "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-dvorska-/3338023756",
         "type_of_flat": "3+kk",
         "size": 73,
         "price": 6990000,
         "locality": "Brno - Dvorska, okres Brno-město",
         "image": "https://d18-a.sdn.cz/d_18/c_img_of_B/kPRtHkVQLlBaYpXBL6E2RVEI/8a14.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 164,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno--renneska-trida/1414984524",
-        "type_of_flat": "2+1",
-        "size": 57,
-        "price": 6950000,
-        "locality": "Renneská třída, Brno",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_D/nO0bgvR9rXBOILnCPiELTCuF/4a8a.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
@@ -1851,6 +1851,16 @@
     },
     {
         "uid": 186,
+        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/4266197580",
+        "type_of_flat": "2+kk",
+        "size": 53,
+        "price": 7430000,
+        "locality": "Jerlínová, Brno - Žebětín",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_oW_C/nOzqs9nZOdC1m45ToCcu62H/19c8.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "source": "sreality.cz"
+    },
+    {
+        "uid": 187,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-cernovice-charbulova/857199436",
         "type_of_flat": "2+kk",
         "size": 53,
@@ -1860,7 +1870,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 187,
+        "uid": 188,
         "link": "https://www.sreality.cz/detail/prodej/byt/3+kk/brno-ponava-klatovska/477156172",
         "type_of_flat": "3+kk",
         "size": 67,
@@ -1870,23 +1880,13 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 188,
+        "uid": 189,
         "link": "https://www.sreality.cz/detail/prodej/byt/3+1/brno-zidenice-krasneho/3051017036",
         "type_of_flat": "3+1",
         "size": 57,
         "price": 6450000,
         "locality": "Krásného, Brno - Židenice",
         "image": "https://d18-a.sdn.cz/d_18/c_img_od_C/nPSV1TXV2nD0mTJ5eEY0dAw/b159.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 189,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+1/brno-reckovice-boskovicka/970847052",
-        "type_of_flat": "2+1",
-        "size": 60,
-        "price": 6590000,
-        "locality": "Boskovická, Brno - Řečkovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oc_C/kcukOQcMmCfTdKDaXEGnQox/8d23.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
@@ -2296,7 +2296,7 @@
         "size": 71,
         "price": 7200000,
         "locality": "Cejl, Brno - Zábrdovice",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTBCGZ9C1CFHJun7/0b9b.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
+        "image": "https://d18-a.sdn.cz/d_18/c_img_og_A/kOzkBkwYBTxrzzDIdFHcIUL/423a.jpeg?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
         "source": "sreality.cz"
     },
     {
@@ -2331,26 +2331,6 @@
     },
     {
         "uid": 234,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/4266197580",
-        "type_of_flat": "2+kk",
-        "size": 53,
-        "price": 7430000,
-        "locality": "Jerlínová, Brno - Žebětín",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oW_C/nOzqs9nZOdC1m45ToCcu62H/19c8.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 235,
-        "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/3622437452",
-        "type_of_flat": "2+kk",
-        "size": 53,
-        "price": 7400000,
-        "locality": "Jerlínová, Brno - Žebětín",
-        "image": "https://d18-a.sdn.cz/d_18/c_img_oW_C/kObgaqJNMnwQ71TqCcRsCu/3cbc.png?fl=res,400,300,3%7Cshr,,20%7Cjpg,90",
-        "source": "sreality.cz"
-    },
-    {
-        "uid": 236,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/4130996812",
         "type_of_flat": "2+kk",
         "size": 53,
@@ -2360,7 +2340,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 237,
+        "uid": 235,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/4232708684",
         "type_of_flat": "2+kk",
         "size": 53,
@@ -2370,7 +2350,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 238,
+        "uid": 236,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-kninicky-ondrova/1796477516",
         "type_of_flat": "2+kk",
         "size": 61,
@@ -2380,7 +2360,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 239,
+        "uid": 237,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zebetin-jerlinova/1419453004",
         "type_of_flat": "2+kk",
         "size": 53,
@@ -2390,7 +2370,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 240,
+        "uid": 238,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-hvezdova/135647820",
         "type_of_flat": "2+kk",
         "size": 58,
@@ -2400,7 +2380,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 241,
+        "uid": 239,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-zabrdovice-hvezdova/4021727820",
         "type_of_flat": "2+kk",
         "size": 51,
@@ -2410,7 +2390,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 242,
+        "uid": 240,
         "link": "https://www.sreality.cz/detail/prodej/byt/2+kk/brno-horni-herspice-jizni/2567009612",
         "type_of_flat": "2+kk",
         "size": 53,
@@ -2420,67 +2400,7 @@
         "source": "sreality.cz"
     },
     {
-        "uid": 243,
-        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/964700-nabidka-prodej-bytu-vomackova-brno",
-        "type_of_flat": "2+kk",
-        "size": "67",
-        "price": 7580000,
-        "locality": "Vomáčkova, Brno - Dolní Heršpice, Jihomoravský kraj",
-        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/964k/964700/1763028133-nxqkfrddsq-1000006808.jpg",
-        "source": "bezrealitky.cz"
-    },
-    {
-        "uid": 244,
-        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/967543-nabidka-prodej-bytu-cermakova-brno",
-        "type_of_flat": "2+1",
-        "size": "60",
-        "price": 6999000,
-        "locality": "Čermákova, Brno - Starý Lískovec, Jihomoravský kraj",
-        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/967k/967543/1763889961-yobybwrmlt-img-2891.jpg",
-        "source": "bezrealitky.cz"
-    },
-    {
-        "uid": 245,
-        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/965388-nabidka-prodej-bytu-svatopluka-cecha-brno",
-        "type_of_flat": "3+1",
-        "size": "69",
-        "price": 7900000,
-        "locality": "Svatopluka Čecha, Brno - Královo Pole, Jihomoravský kraj",
-        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/965k/965388/1764782797-bauchdkxbf-pokoj2-3.jpg",
-        "source": "bezrealitky.cz"
-    },
-    {
-        "uid": 246,
-        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/950777-nabidka-prodej-bytu-ponetovicka-brno",
-        "type_of_flat": "2+1",
-        "size": "67",
-        "price": 6400000,
-        "locality": "Ponětovická, Brno - Slatina, Jihomoravský kraj",
-        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/950k/950777/1759259044-awlrpypyjb-20250124-152038.jpg",
-        "source": "bezrealitky.cz"
-    },
-    {
-        "uid": 247,
-        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/879208-nabidka-prodej-bytu-krizova-brno",
-        "type_of_flat": "3+1",
-        "size": "72",
-        "price": 7900000,
-        "locality": "Křížová, Brno - Staré Brno, Jihomoravský kraj",
-        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/879k/879208/1761413975-vrnsdulcqz-dsc1593-hdr-1-jpg-compressed.jpg",
-        "source": "bezrealitky.cz"
-    },
-    {
-        "uid": 248,
-        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/959262-nabidka-prodej-bytu-stara",
-        "type_of_flat": "2+kk",
-        "size": "68",
-        "price": 7619063,
-        "locality": "Stará, Brno - Zábrdovice, Jihomoravský kraj",
-        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/959k/959262/959262-1764619803-foto-1.jpg",
-        "source": "bezrealitky.cz"
-    },
-    {
-        "uid": 249,
+        "uid": 241,
         "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/967159-nabidka-prodej-bytu-stara-brno",
         "type_of_flat": "3+kk",
         "size": "53",
@@ -2490,7 +2410,67 @@
         "source": "bezrealitky.cz"
     },
     {
-        "uid": 250,
+        "uid": 242,
+        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/964700-nabidka-prodej-bytu-vomackova-brno",
+        "type_of_flat": "2+kk",
+        "size": "67",
+        "price": 7580000,
+        "locality": "Vomáčkova, Brno - Dolní Heršpice, Jihomoravský kraj",
+        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/964k/964700/1763028133-nxqkfrddsq-1000006808.jpg",
+        "source": "bezrealitky.cz"
+    },
+    {
+        "uid": 243,
+        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/967543-nabidka-prodej-bytu-cermakova-brno",
+        "type_of_flat": "2+1",
+        "size": "60",
+        "price": 6999000,
+        "locality": "Čermákova, Brno - Starý Lískovec, Jihomoravský kraj",
+        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/967k/967543/1763889961-yobybwrmlt-img-2891.jpg",
+        "source": "bezrealitky.cz"
+    },
+    {
+        "uid": 244,
+        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/965388-nabidka-prodej-bytu-svatopluka-cecha-brno",
+        "type_of_flat": "3+1",
+        "size": "69",
+        "price": 7900000,
+        "locality": "Svatopluka Čecha, Brno - Královo Pole, Jihomoravský kraj",
+        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/965k/965388/1764782797-bauchdkxbf-pokoj2-3.jpg",
+        "source": "bezrealitky.cz"
+    },
+    {
+        "uid": 245,
+        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/950777-nabidka-prodej-bytu-ponetovicka-brno",
+        "type_of_flat": "2+1",
+        "size": "67",
+        "price": 6400000,
+        "locality": "Ponětovická, Brno - Slatina, Jihomoravský kraj",
+        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/950k/950777/1759259044-awlrpypyjb-20250124-152038.jpg",
+        "source": "bezrealitky.cz"
+    },
+    {
+        "uid": 246,
+        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/879208-nabidka-prodej-bytu-krizova-brno",
+        "type_of_flat": "3+1",
+        "size": "72",
+        "price": 7900000,
+        "locality": "Křížová, Brno - Staré Brno, Jihomoravský kraj",
+        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/879k/879208/1761413975-vrnsdulcqz-dsc1593-hdr-1-jpg-compressed.jpg",
+        "source": "bezrealitky.cz"
+    },
+    {
+        "uid": 247,
+        "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/959262-nabidka-prodej-bytu-stara",
+        "type_of_flat": "2+kk",
+        "size": "68",
+        "price": 7619063,
+        "locality": "Stará, Brno - Zábrdovice, Jihomoravský kraj",
+        "image": "https://api.bezrealitky.cz/media/cache/record_main/data/images/advert/959k/959262/959262-1764619803-foto-1.jpg",
+        "source": "bezrealitky.cz"
+    },
+    {
+        "uid": 248,
         "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/958981-nabidka-prodej-bytu-cejl-brno",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -2500,7 +2480,7 @@
         "source": "bezrealitky.cz"
     },
     {
-        "uid": 251,
+        "uid": 249,
         "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/957124-nabidka-prodej-bytu-pekna-brno",
         "type_of_flat": "2+1",
         "size": "62",
@@ -2510,7 +2490,7 @@
         "source": "bezrealitky.cz"
     },
     {
-        "uid": 252,
+        "uid": 250,
         "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/955380-nabidka-prodej-bytu-trida-kpt-jarose-brno",
         "type_of_flat": "2+1",
         "size": "52",
@@ -2520,7 +2500,7 @@
         "source": "bezrealitky.cz"
     },
     {
-        "uid": 253,
+        "uid": 251,
         "link": "https://www.bezrealitky.cz/nemovitosti-byty-domy/941292-nabidka-prodej-bytu-krasneho-brno",
         "type_of_flat": "3+1",
         "size": "57",
@@ -2530,7 +2510,37 @@
         "source": "bezrealitky.cz"
     },
     {
+        "uid": 252,
+        "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-55-m-brno-ul-videnska-8428897.html",
+        "type_of_flat": "2+1",
+        "size": "55",
+        "price": 5990000,
+        "locality": "Vídeňská, Brno-jih, Brno, Brno-město",
+        "image": "https://st.rmix.cz/i/1472754/8428897/nab_476723921_detail.jpg",
+        "source": "reality.hn.cz"
+    },
+    {
+        "uid": 253,
+        "link": "https://reality.hn.cz/detail/brno/prodej-moderniho-bytu-3-kk-ulice-fuchsova-brno-stred-terasa-balkon-sklep-klimatizace-8455811.html",
+        "type_of_flat": "3+kk",
+        "size": "76",
+        "price": null,
+        "locality": "Fuchsova, Brno-střed, Brno, Brno-město",
+        "image": "https://st.rmix.cz/i/160672/8455811/nab_478966159_detail.jpg",
+        "source": "reality.hn.cz"
+    },
+    {
         "uid": 254,
+        "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-1-s-balkonem-66-m-mendlovo-namesti-brno-stred-8455123.html",
+        "type_of_flat": "3+1",
+        "size": "66",
+        "price": 7900000,
+        "locality": "Mendlovo náměstí, Brno-střed, Brno, Brno-město",
+        "image": "https://st.rmix.cz/i/1813591/8455123/nab_478963223_detail.jpg",
+        "source": "reality.hn.cz"
+    },
+    {
+        "uid": 255,
         "link": "https://reality.hn.cz/detail/brno/komfortni-bydleni-jen-par-minut-od-centra-brna-8453833.html",
         "type_of_flat": "3+1",
         "size": "73",
@@ -2540,7 +2550,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 255,
+        "uid": 256,
         "link": "https://reality.hn.cz/detail/brno/prodej-3-1-bystrc-ul-kursova-75-m2-lodzie-satna-8451381.html",
         "type_of_flat": "3+1",
         "size": "75",
@@ -2550,27 +2560,27 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 256,
+        "uid": 257,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-cp-70m-brno-zidenice-8454283.html",
         "type_of_flat": "2+kk",
         "size": "70",
         "price": 7490000,
         "locality": "Bělohorská, Brno-Židenice, Brno, Brno-město",
-        "image": "https://st.rmix.cz/i/66683021/8454283/nab_478856525_detail.jpg",
+        "image": "https://st.rmix.cz/i/66683021/8454283/nab_478932261_detail.jpg",
         "source": "reality.hn.cz"
     },
     {
-        "uid": 257,
+        "uid": 258,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-44-7-m2-v-novem-projektu-spica-bydleni-brno-turany-sklep-balkon-parkovani-8452431.html",
         "type_of_flat": "2+kk",
         "size": "54",
         "price": 6290000,
         "locality": "Brno-Tuřany, Brno, Brno-město",
-        "image": "https://st.rmix.cz/i/160672/8452431/nab_478704155_detail.jpg",
+        "image": "https://st.rmix.cz/i/160672/8452431/nab_478959747_detail.jpg",
         "source": "reality.hn.cz"
     },
     {
-        "uid": 258,
+        "uid": 259,
         "link": "https://reality.hn.cz/detail/brno/prodej-byty-2-kk-56-m-brno-zebetin-8413227.html",
         "type_of_flat": "2+kk",
         "size": "56",
@@ -2580,7 +2590,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 259,
+        "uid": 260,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-ulice-cihlarska-8451577.html",
         "type_of_flat": "2+1",
         "size": "66",
@@ -2590,7 +2600,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 260,
+        "uid": 261,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-75-m-brno-ul-babickova-8344501.html",
         "type_of_flat": "2+1",
         "size": "75",
@@ -2600,7 +2610,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 261,
+        "uid": 262,
         "link": "https://reality.hn.cz/detail/kurim/prodej-bytu-2-1-58-m-kurim-ul-jungmannova-8450767.html",
         "type_of_flat": "2+1",
         "size": "58",
@@ -2610,7 +2620,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 262,
+        "uid": 263,
         "link": "https://reality.hn.cz/detail/brno/prodej-byty-2-1-73-m2-lucni-61600-brno-brno-mesto-id-79755-8453571.html",
         "type_of_flat": "2+1",
         "size": "73",
@@ -2620,7 +2630,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 263,
+        "uid": 264,
         "link": "https://reality.hn.cz/detail/brno/utulny-byt-2-kk-s-lodzii-brno-kralovo-pole-8450023.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -2630,7 +2640,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 264,
+        "uid": 265,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-60-m-8449505.html",
         "type_of_flat": "2+1",
         "size": "60",
@@ -2640,7 +2650,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 265,
+        "uid": 266,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-68-76-m-brno-ul-horacke-namesti-8448823.html",
         "type_of_flat": "2+1",
         "size": "69",
@@ -2650,7 +2660,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 266,
+        "uid": 267,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-s-balkonem-62-m-palackeho-trida-198-72-brno-kralovo-pole-8448739.html",
         "type_of_flat": "2+1",
         "size": "62",
@@ -2660,7 +2670,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 267,
+        "uid": 268,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-52-m-po-kompletni-rekonstrukci-velky-balkon-skvela-adresa-brno-ulice-letni-8448593.html",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -2670,7 +2680,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 268,
+        "uid": 269,
         "link": "https://reality.hn.cz/detail/brno/na-prodej-byt-k-rekonstrukci-8346583.html",
         "type_of_flat": "2+1",
         "size": "55",
@@ -2680,7 +2690,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 269,
+        "uid": 270,
         "link": "https://reality.hn.cz/detail/brno/prodej-prostorneho-bytu-3-kk-na-ulici-zezulova-8414757.html",
         "type_of_flat": "3+kk",
         "size": "63",
@@ -2690,7 +2700,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 270,
+        "uid": 271,
         "link": "https://reality.hn.cz/detail/brno/prodej-svetleho-bytu-3-kk-na-ulici-zezulova-8414747.html",
         "type_of_flat": "3+kk",
         "size": "57",
@@ -2700,7 +2710,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 271,
+        "uid": 272,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-50-m-brno-bystrc-8447381.html",
         "type_of_flat": "2+kk",
         "size": "53",
@@ -2710,7 +2720,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 272,
+        "uid": 273,
         "link": "https://reality.hn.cz/detail/brno/prodej-byt-3-1-75m2-brno-lisen-8446599.html",
         "type_of_flat": "3+1",
         "size": "75",
@@ -2720,7 +2730,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 273,
+        "uid": 274,
         "link": "https://reality.hn.cz/detail/veverska-bityska/prodej-velkeho-bytu-3-1-ve-veverske-bitysce-8446449.html",
         "type_of_flat": "3+1",
         "size": "75",
@@ -2730,7 +2740,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 274,
+        "uid": 275,
         "link": "https://reality.hn.cz/detail/brno/prodej-moderniho-bytu-3-kk-v-exkluzivni-lokalite-ul-bayerova-77-m2-sklep-blizko-centra-mesta-8446121.html",
         "type_of_flat": "3+kk",
         "size": "77",
@@ -2740,7 +2750,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 275,
+        "uid": 276,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-64-m-brno-ul-kunstatska-8059981.html",
         "type_of_flat": "2+1",
         "size": "64",
@@ -2750,7 +2760,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 276,
+        "uid": 277,
         "link": "https://reality.hn.cz/detail/ketkovice/prodej-bytu-2-1-56-m-ketkovice-8444577.html",
         "type_of_flat": "2+1",
         "size": "56",
@@ -2760,7 +2770,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 277,
+        "uid": 278,
         "link": "https://reality.hn.cz/detail/veverska-bityska/prodej-bytu-3-1-66-9-m-s-balkonem-a-nadhernym-vyhledem-veverska-bityska-8442935.html",
         "type_of_flat": "3+1",
         "size": "71",
@@ -2770,7 +2780,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 278,
+        "uid": 279,
         "link": "https://reality.hn.cz/detail/brno/prodej-byt-2-1-54-m-brno-ul-jilova-8442167.html",
         "type_of_flat": "2+1",
         "size": "54",
@@ -2780,23 +2790,13 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 279,
+        "uid": 280,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-s-terasou-v-novostavbe-na-exkluzivni-adrese-v-cernych-polich-8442051.html",
         "type_of_flat": "2+kk",
         "size": "78",
         "price": null,
         "locality": "Antonína Slavíka, Brno-sever, Brno, Brno-město",
         "image": "https://st.rmix.cz/i/66672532/8442051/nab_477827371_detail.jpg",
-        "source": "reality.hn.cz"
-    },
-    {
-        "uid": 280,
-        "link": "https://reality.hn.cz/detail/brno/prakticke-2-kk-s-balkonem-8440849.html",
-        "type_of_flat": "2+kk",
-        "size": "52",
-        "price": 7316000,
-        "locality": "Plynárenská, Brno-střed, Brno, Brno-město",
-        "image": "https://st.rmix.cz/i/66667851/8440849/nab_477716979_detail.jpg",
         "source": "reality.hn.cz"
     },
     {
@@ -2891,12 +2891,12 @@
     },
     {
         "uid": 290,
-        "link": "https://reality.hn.cz/detail/mokra-horakov/prodej-bytu-3-1-75-m-mokra-horakov-8436565.html",
-        "type_of_flat": "3+1",
-        "size": "75",
-        "price": 6490000,
-        "locality": "Mokrá, Brno-venkov",
-        "image": "https://st.rmix.cz/i/1269965/8436565/nab_478177727_detail.jpg",
+        "link": "https://reality.hn.cz/detail/brno/prakticke-2-kk-s-balkonem-8440849.html",
+        "type_of_flat": "2+kk",
+        "size": "52",
+        "price": 7316000,
+        "locality": "Plynárenská, Brno-střed, Brno, Brno-město",
+        "image": "https://st.rmix.cz/i/66667851/8440849/nab_477716979_detail.jpg",
         "source": "reality.hn.cz"
     },
     {
@@ -3051,26 +3051,6 @@
     },
     {
         "uid": 306,
-        "link": "https://reality.hn.cz/detail/ivancice/prodej-krasneho-bytu-2-kk-v-klidne-lokalite-ivancic-idealni-investicni-prilezitost-51-m-8424331.html",
-        "type_of_flat": "2+kk",
-        "size": "51",
-        "price": 5190000,
-        "locality": "Okružní, Ivančice, Brno-venkov",
-        "image": "https://st.rmix.cz/i/66671522/8424331/nab_477816527_detail.jpg",
-        "source": "reality.hn.cz"
-    },
-    {
-        "uid": 307,
-        "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-55-m-brno-ul-videnska-8428897.html",
-        "type_of_flat": "2+1",
-        "size": "55",
-        "price": 5990000,
-        "locality": "Vídeňská, Brno-jih, Brno, Brno-město",
-        "image": "https://st.rmix.cz/i/1472754/8428897/nab_476723921_detail.jpg",
-        "source": "reality.hn.cz"
-    },
-    {
-        "uid": 308,
         "link": "https://reality.hn.cz/detail/brno/moderni-prostorny-byt-prakticka-dispozice-2-5-kk-cernovice-turgenevova-balkon-satna-pracovn-8423051.html",
         "type_of_flat": "2+kk",
         "size": "67",
@@ -3080,7 +3060,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 309,
+        "uid": 307,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-62-m-8422251.html",
         "type_of_flat": "2+1",
         "size": "62",
@@ -3090,7 +3070,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 310,
+        "uid": 308,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-cp-53-m-ul-zderadova-brno-trnita-8422095.html",
         "type_of_flat": "2+kk",
         "size": "53",
@@ -3100,7 +3080,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 311,
+        "uid": 309,
         "link": "https://reality.hn.cz/detail/brno/prodej-byt-2-1-60-8421979.html",
         "type_of_flat": "2+1",
         "size": "60",
@@ -3110,7 +3090,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 312,
+        "uid": 310,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-1-s-balkonem-sidliste-vinohrady-brno-8420693.html",
         "type_of_flat": "3+1",
         "size": "64",
@@ -3120,7 +3100,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 313,
+        "uid": 311,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-48-m-stara-brno-zabrdovice-8399397.html",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -3130,7 +3110,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 314,
+        "uid": 312,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-66-3-m2-brno-stara-osada-8419713.html",
         "type_of_flat": "2+1",
         "size": "66",
@@ -3140,7 +3120,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 315,
+        "uid": 313,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-52-m-8417333.html",
         "type_of_flat": "2+1",
         "size": "52",
@@ -3150,7 +3130,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 316,
+        "uid": 314,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-58-m-brno-bystrc-8416859.html",
         "type_of_flat": "2+1",
         "size": "61",
@@ -3160,7 +3140,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 317,
+        "uid": 315,
         "link": "https://reality.hn.cz/detail/kobylnice/prodej-bytu-3-kk-70-m-8416499.html",
         "type_of_flat": "3+kk",
         "size": "70",
@@ -3170,17 +3150,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 318,
-        "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-boskovicka-8366095.html",
-        "type_of_flat": "2+1",
-        "size": "60",
-        "price": 6590000,
-        "locality": "Boskovická, Brno-Řečkovice a Mokrá Hora, Brno, Brno-město",
-        "image": "https://st.rmix.cz/i/66667303/8366095/nab_469840533_detail.jpg",
-        "source": "reality.hn.cz"
-    },
-    {
-        "uid": 319,
+        "uid": 316,
         "link": "https://reality.hn.cz/detail/brno/prodej-nadstandartniho-bytu-2-kk-65m2-v-centru-brna-8384517.html",
         "type_of_flat": "2+kk",
         "size": "65",
@@ -3190,7 +3160,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 320,
+        "uid": 317,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-kk-75-m2-brno-stred-ulice-bayerova-2-koupelny-satna-blizko-centra-s-vybornou-d-8415025.html",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -3200,7 +3170,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 321,
+        "uid": 318,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-1-brno-cernovice-ul-turgenevova-lodzie-sklep-8414931.html",
         "type_of_flat": "3+1",
         "size": "71",
@@ -3210,7 +3180,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 322,
+        "uid": 319,
         "link": "https://reality.hn.cz/detail/brno/prodej-db-na-ul-provaznikova-2-1-57m2-8412501.html",
         "type_of_flat": "2+1",
         "size": "57",
@@ -3220,7 +3190,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 323,
+        "uid": 320,
         "link": "https://reality.hn.cz/detail/nedvedice/prodej-bytu-2-1-63-m-nedvedice-8411617.html",
         "type_of_flat": "2+1",
         "size": "63",
@@ -3230,7 +3200,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 324,
+        "uid": 321,
         "link": "https://reality.hn.cz/detail/brno/prodej-byt-2-kk-49-jihomoravsky-kraj-brno-mesto-brno-brno-zebetin-zebetin-krepelci-1098-14-8411267.html",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -3240,7 +3210,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 325,
+        "uid": 322,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2kk-s-lodzii-brno-malomerice-8408309.html",
         "type_of_flat": "2+kk",
         "size": "55",
@@ -3250,7 +3220,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 326,
+        "uid": 323,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3kk-s-lodzii-obrany-8408157.html",
         "type_of_flat": "3+kk",
         "size": "63",
@@ -3260,7 +3230,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 327,
+        "uid": 324,
         "link": "https://reality.hn.cz/detail/brno/novy-byt-2kk-s-lodzii-v-rezidenci-obranska-8407623.html",
         "type_of_flat": "2+kk",
         "size": "59",
@@ -3270,7 +3240,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 328,
+        "uid": 325,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-67-m-8405615.html",
         "type_of_flat": "2+1",
         "size": "67",
@@ -3280,7 +3250,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 329,
+        "uid": 326,
         "link": "https://reality.hn.cz/detail/zastavka/prodej-byt-2-1-54-8403409.html",
         "type_of_flat": "2+1",
         "size": "54",
@@ -3290,7 +3260,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 330,
+        "uid": 327,
         "link": "https://reality.hn.cz/detail/brno/byt-2-1-spitalka-brno-zabrdovice-8389421.html",
         "type_of_flat": "2+1",
         "size": "80",
@@ -3300,7 +3270,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 331,
+        "uid": 328,
         "link": "https://reality.hn.cz/detail/brno/prodej-byty-2-kk-75-m2-brno-trnita-7199094.html",
         "type_of_flat": "2+kk",
         "size": "75",
@@ -3310,7 +3280,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 332,
+        "uid": 329,
         "link": "https://reality.hn.cz/detail/brno/prodej-byty-2-1-50m2-7096355.html",
         "type_of_flat": "2+1",
         "size": "50",
@@ -3320,7 +3290,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 333,
+        "uid": 330,
         "link": "https://reality.hn.cz/detail/pohorelice/prodej-byt-3-kk-s-balkony-druzstevni-pohorelice-8385507.html",
         "type_of_flat": "3+kk",
         "size": "65",
@@ -3330,7 +3300,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 334,
+        "uid": 331,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-v-ov-2-1-s-lodzii-satnou-a-sklepem-ul-jakuba-obrovskeho-brno-bystrc-8380823.html",
         "type_of_flat": "2+1",
         "size": "61",
@@ -3340,7 +3310,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 335,
+        "uid": 332,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-kk-spaci-galerie-mezonet-brno-prizrenice-po-kompletni-rekonstrukci-parkovaci-8374527.html",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -3350,7 +3320,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 336,
+        "uid": 333,
         "link": "https://reality.hn.cz/detail/tisnov/prodej-bytu-2-kk-s-balkonem-v-projektu-rezidence-ametyst-tisnov-8374187.html",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -3360,7 +3330,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 337,
+        "uid": 334,
         "link": "https://reality.hn.cz/detail/tisnov/prodej-novostavby-bytu-2-kk-s-garazi-bytovy-dum-rybnicek-tisnov-8371607.html",
         "type_of_flat": "2+kk",
         "size": "65",
@@ -3370,7 +3340,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 338,
+        "uid": 335,
         "link": "https://reality.hn.cz/detail/brno/reckovice-byt-2-1-brno-8036198.html",
         "type_of_flat": "2+1",
         "size": "65",
@@ -3380,7 +3350,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 339,
+        "uid": 336,
         "link": "https://reality.hn.cz/detail/slapanice/prodej-utulneho-bytu-2-kk-55-m-slapanice-8365787.html",
         "type_of_flat": "2+kk",
         "size": "55",
@@ -3390,7 +3360,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 340,
+        "uid": 337,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-51-m-dve-terasy-brno-kohoutovice-ulice-jirovcova-8364763.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -3400,7 +3370,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 341,
+        "uid": 338,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-1-54-m-brno-ul-palackeho-trida-8364667.html",
         "type_of_flat": "2+1",
         "size": "54",
@@ -3410,7 +3380,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 342,
+        "uid": 339,
         "link": "https://reality.hn.cz/detail/brno/krasny-byt-z-roku-2016-s-dispozici-2-kk-celkova-plocha-58-m2-sklep-parkovani-cejl-brno-8362587.html",
         "type_of_flat": "2+kk",
         "size": "54",
@@ -3420,17 +3390,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 343,
-        "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-kk-v-brne-ul-zemedelska-8361691.html",
-        "type_of_flat": "3+kk",
-        "size": "64",
-        "price": 7549900,
-        "locality": "Zemědělská, Brno-sever, Brno, Brno-město",
-        "image": "https://st.rmix.cz/i/1472754/8361691/nab_469495693_detail.jpg",
-        "source": "reality.hn.cz"
-    },
-    {
-        "uid": 344,
+        "uid": 340,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-kk-67-m-brno-ul-ostopovicka-8365233.html",
         "type_of_flat": "3+kk",
         "size": "67",
@@ -3440,7 +3400,17 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 345,
+        "uid": 341,
+        "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-kk-v-brne-ul-zemedelska-8361691.html",
+        "type_of_flat": "3+kk",
+        "size": "64",
+        "price": 7549900,
+        "locality": "Zemědělská, Brno-sever, Brno, Brno-město",
+        "image": "https://st.rmix.cz/i/1472754/8361691/nab_469495693_detail.jpg",
+        "source": "reality.hn.cz"
+    },
+    {
+        "uid": 342,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-64m-brno-ul-cacovicka-8357869.html",
         "type_of_flat": "2+kk",
         "size": "64",
@@ -3450,7 +3420,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 346,
+        "uid": 343,
         "link": "https://reality.hn.cz/detail/zbysov/prodej-bytu-3-kk-74-83-m2-lodzie-8-86-m2-8348491.html",
         "type_of_flat": "3+kk",
         "size": "74",
@@ -3460,7 +3430,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 347,
+        "uid": 344,
         "link": "https://reality.hn.cz/detail/zbysov/prodej-bytu-3-kk-72-48-m2-zahrada-18-m2-terasa-23-m2-8348487.html",
         "type_of_flat": "3+kk",
         "size": "72",
@@ -3470,7 +3440,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 348,
+        "uid": 345,
         "link": "https://reality.hn.cz/detail/brno/byt-2-1-s-vyhrazenym-parkovanim-54m-brno-kralovo-pole-8345589.html",
         "type_of_flat": "2+1",
         "size": "54",
@@ -3480,7 +3450,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 349,
+        "uid": 346,
         "link": "https://reality.hn.cz/detail/sokolnice/prodej-bytu-3-kk-62-m2-v-sokolnicich-brno-venkov-8344467.html",
         "type_of_flat": "3+kk",
         "size": "62",
@@ -3490,7 +3460,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 350,
+        "uid": 347,
         "link": "https://reality.hn.cz/detail/sokolnice/prodej-bytu-2-kk-51-m2-v-sokolnicich-brno-venkov-8344461.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -3500,7 +3470,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 351,
+        "uid": 348,
         "link": "https://reality.hn.cz/detail/zastavka/byt-2-kk-70-m2-zastavka-u-brna-8343873.html",
         "type_of_flat": "2+1",
         "size": "70",
@@ -3510,7 +3480,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 352,
+        "uid": 349,
         "link": "https://reality.hn.cz/detail/brno/prodej-druzstevniho-bytu-3-1-s-garazi-kremlickova-8-brno-72-m2-8340175.html",
         "type_of_flat": "3+1",
         "size": "72",
@@ -3520,7 +3490,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 353,
+        "uid": 350,
         "link": "https://reality.hn.cz/detail/brno/2-1-videnska-8326223.html",
         "type_of_flat": "2+1",
         "size": "56",
@@ -3530,7 +3500,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 354,
+        "uid": 351,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-s-prostornym-balkonem-brno-zebetin-8321801.html",
         "type_of_flat": "2+kk",
         "size": "69",
@@ -3540,7 +3510,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 355,
+        "uid": 352,
         "link": "https://reality.hn.cz/detail/brno/prodej-byt-2-kk-60-8310735.html",
         "type_of_flat": "2+kk",
         "size": "60",
@@ -3550,7 +3520,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 356,
+        "uid": 353,
         "link": "https://reality.hn.cz/detail/brno/prodej-prostorneho-apartmanu-3-kk-bydleni-krizikova-8266509.html",
         "type_of_flat": "3+kk",
         "size": "64",
@@ -3560,7 +3530,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 357,
+        "uid": 354,
         "link": "https://reality.hn.cz/detail/tisnov/prodej-bytu-2-kk-s-balkonem-v-projektu-rezidence-ametyst-tisnov-8235889.html",
         "type_of_flat": "2+kk",
         "size": "59",
@@ -3570,7 +3540,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 358,
+        "uid": 355,
         "link": "https://reality.hn.cz/detail/pravlov/prodej-bytu-ov-2-kk-brno-venkov-pravlov-cp-50-9m2-novostavba-8206587.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -3580,7 +3550,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 359,
+        "uid": 356,
         "link": "https://reality.hn.cz/detail/tisnov/moderni-byt-3-kk-v-rezidenci-ametyst-tisnov-8222817.html",
         "type_of_flat": "3+kk",
         "size": "66",
@@ -3590,7 +3560,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 360,
+        "uid": 357,
         "link": "https://reality.hn.cz/detail/tisnov/moderni-byt-2-kk-v-rezidenci-ametyst-tisnov-8222533.html",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -3600,7 +3570,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 361,
+        "uid": 358,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-bytovy-dum-lido-ii-8191237.html",
         "type_of_flat": "2+kk",
         "size": "55",
@@ -3610,7 +3580,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 362,
+        "uid": 359,
         "link": "https://reality.hn.cz/detail/brno/prodej-apartmanu-2-kk-s-terasou-bydleni-krizikova-8166827.html",
         "type_of_flat": "2+kk",
         "size": "60",
@@ -3620,7 +3590,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 363,
+        "uid": 360,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-3-kk-v-novostavbe-na-exkluzivni-adrese-v-cernych-polich-v-brne-na-ulici-antonina-slavika-8157651.html",
         "type_of_flat": "3+kk",
         "size": "60",
@@ -3630,7 +3600,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 364,
+        "uid": 361,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-v-novostavbe-na-exkluzivni-adrese-v-cernych-polich-v-brne-na-ulici-antonina-slavika-8157643.html",
         "type_of_flat": "2+kk",
         "size": "54",
@@ -3640,7 +3610,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 365,
+        "uid": 362,
         "link": "https://reality.hn.cz/detail/brno/prodej-apartmanu-2-kk-s-vetsi-terasou-bydleni-krizikova-8141381.html",
         "type_of_flat": "2+kk",
         "size": "64",
@@ -3650,7 +3620,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 366,
+        "uid": 363,
         "link": "https://reality.hn.cz/detail/brno/prodej-apartmanu-2-kk-bydleni-krizikova-8141279.html",
         "type_of_flat": "2+kk",
         "size": "66",
@@ -3660,7 +3630,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 367,
+        "uid": 364,
         "link": "https://reality.hn.cz/detail/zbraslav/prodej-byty-2-kk-55-m-zbraslav-8046419.html",
         "type_of_flat": "2+kk",
         "size": "55",
@@ -3670,7 +3640,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 368,
+        "uid": 365,
         "link": "https://reality.hn.cz/detail/brno/byt-2-kk-s-balkonem-bytovy-dum-lido-ii-7980077.html",
         "type_of_flat": "2+kk",
         "size": "64",
@@ -3680,7 +3650,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 369,
+        "uid": 366,
         "link": "https://reality.hn.cz/detail/brno/prodej-bytu-2-kk-s-balkonem-bytovy-dum-lido-ii-7770113.html",
         "type_of_flat": "2+kk",
         "size": "68",
@@ -3690,7 +3660,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 370,
+        "uid": 367,
         "link": "https://reality.hn.cz/detail/brno/prodej-o-2-1-brno-centrum-7190826.html",
         "type_of_flat": "2+1",
         "size": "52",
@@ -3700,7 +3670,7 @@
         "source": "reality.hn.cz"
     },
     {
-        "uid": 371,
+        "uid": 368,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-zabovresky/realityspolu-broker-consulting-prodej-bytu-2-1-73-m2-lucni-3593054.html",
         "type_of_flat": "2+1",
         "size": "73",
@@ -3710,7 +3680,27 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 372,
+        "uid": 369,
+        "link": "https://www.reality-brno.net/drazby/byty/byty-2-1/brno/brno-kralovo-pole/realitni-spolecnost-mesta-brna-drazba-bytu-2-1-48-m2-purkynova-3594413.html",
+        "type_of_flat": "2+1",
+        "size": "48",
+        "price": 4050000,
+        "locality": "Purkyňova, Brno",
+        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/77407/69/693189f188ae5.webp",
+        "source": "reality-brno.net"
+    },
+    {
+        "uid": 370,
+        "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-kralovo-pole/rksting-prodej-bytu-2-kk-48-m2-skacelova-3595264.html",
+        "type_of_flat": "2+kk",
+        "size": "48",
+        "price": 6940000,
+        "locality": "Skácelova, Brno",
+        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/200631/d0/d0d8f511247db6236c9cbcb380df8047.webp",
+        "source": "reality-brno.net"
+    },
+    {
+        "uid": 371,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/reality-zizka-brno-prodej-bytu-2-kk-60-m2-belohorska-3593900.html",
         "type_of_flat": "2+kk",
         "size": "60",
@@ -3720,7 +3710,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 373,
+        "uid": 372,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-48-m2-3593668.html",
         "type_of_flat": "2+kk",
         "size": "48",
@@ -3730,7 +3720,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 374,
+        "uid": 373,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-41-m2-3593630.html",
         "type_of_flat": "2+kk",
         "size": "41",
@@ -3740,7 +3730,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 375,
+        "uid": 374,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-48-m2-3593627.html",
         "type_of_flat": "2+kk",
         "size": "48",
@@ -3750,7 +3740,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 376,
+        "uid": 375,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-41-m2-3593609.html",
         "type_of_flat": "2+kk",
         "size": "41",
@@ -3760,7 +3750,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 377,
+        "uid": 376,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-45-m2-3593579.html",
         "type_of_flat": "2+kk",
         "size": "45",
@@ -3770,7 +3760,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 378,
+        "uid": 377,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-kralovo-pole/david-raus-realitni-sluzby-brno-prodej-bytu-2-1-62-m2-palackeho-trida-3586442.html",
         "type_of_flat": "2+1",
         "size": "62",
@@ -3780,7 +3770,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 379,
+        "uid": 378,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-cernovice/century21-4fin-reality-prodej-bytu-3-1-73-m2-turgenevova-3593357.html",
         "type_of_flat": "3+1",
         "size": "73",
@@ -3790,7 +3780,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 380,
+        "uid": 379,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-1-40-m2-plynarenska-3591233.html",
         "type_of_flat": "2+1",
         "size": "40",
@@ -3800,7 +3790,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 381,
+        "uid": 380,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-1-47-m2-plynarenska-3591921.html",
         "type_of_flat": "2+1",
         "size": "47",
@@ -3810,7 +3800,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 382,
+        "uid": 381,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zebetin/framireal-prodej-bytu-2-kk-56-m2-besuvka-3545663.html",
         "type_of_flat": "2+kk",
         "size": "56",
@@ -3820,17 +3810,17 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 383,
+        "uid": 382,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/bravis-prodej-bytu-2-kk-45-m2-3590801.html",
         "type_of_flat": "2+kk",
         "size": "45",
         "price": 6290000,
         "locality": "Brno",
-        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/202542/5b/5b0b50b144507aae9f9521f0a4e9f6bd.webp",
+        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/202542/ce/ce20e8c2bf7625c0bd37220d4bbb8117.webp",
         "source": "reality-brno.net"
     },
     {
-        "uid": 384,
+        "uid": 383,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-reckovice/century21-4fin-reality-prodej-bytu-3-1-71-m2-rencova-3590885.html",
         "type_of_flat": "3+1",
         "size": "71",
@@ -3840,7 +3830,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 385,
+        "uid": 384,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-ponava/bidli-reality-prodej-bytu-2-kk-51-m2-stankova-3593138.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -3850,7 +3840,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 386,
+        "uid": 385,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-stary-liskovec/bezrealitky-prodej-bytu-2-1-60-m2-cermakova-3587318.html",
         "type_of_flat": "2+1",
         "size": "60",
@@ -3860,7 +3850,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 387,
+        "uid": 386,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-reckovice/mmreality-prodej-bytu-2-1-69-m2-horacke-namesti-3586687.html",
         "type_of_flat": "2+1",
         "size": "69",
@@ -3870,7 +3860,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 388,
+        "uid": 387,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/gepard-reality-kyjonka-reality-hypoteky-brno-prodej-bytu-2-kk-46-m2-letni-3586281.html",
         "type_of_flat": "2+kk",
         "size": "46",
@@ -3880,7 +3870,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 389,
+        "uid": 388,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-bohunice/remax-g8-reality-brno-prodej-bytu-2-kk-58-m2-cenka-ruzicky-3586232.html",
         "type_of_flat": "2+kk",
         "size": "58",
@@ -3890,7 +3880,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 390,
+        "uid": 389,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-cerna-pole/mmreality-prodej-bytu-3-kk-49-m2-kladivova-3585293.html",
         "type_of_flat": "3+kk",
         "size": "49",
@@ -3900,7 +3890,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 391,
+        "uid": 390,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-bystrc/jrs-real-prodej-bytu-2-kk-50-m2-jakuba-obrovskeho-3584961.html",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -3910,7 +3900,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 392,
+        "uid": 391,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-trnita/reality-zizka-brno-prodej-bytu-2-kk-53-m2-zderadova-3556414.html",
         "type_of_flat": "2+kk",
         "size": "53",
@@ -3920,7 +3910,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 393,
+        "uid": 392,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-novy-liskovec/realitni-spolecnost-mesta-brna-prodej-bytu-3-kk-74-m2-petra-krivky-3391851.html",
         "type_of_flat": "3+kk",
         "size": "74",
@@ -3930,7 +3920,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 394,
+        "uid": 393,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-lisen/rksting-prodej-bytu-3-1-75-m2-strnadova-3584151.html",
         "type_of_flat": "3+1",
         "size": "75",
@@ -3940,7 +3930,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 395,
+        "uid": 394,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-veveri/bravis-prodej-bytu-3-kk-77-m2-bayerova-3583582.html",
         "type_of_flat": "3+kk",
         "size": "77",
@@ -3950,7 +3940,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 396,
+        "uid": 395,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-46-m2-plynarenska-3580810.html",
         "type_of_flat": "2+kk",
         "size": "46",
@@ -3960,8 +3950,8 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 397,
-        "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-43-m2-plynarenska-3586425.html",
+        "uid": 396,
+        "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-43-m2-plynarenska-3595294.html",
         "type_of_flat": "2+kk",
         "size": "43",
         "price": 6782000,
@@ -3970,7 +3960,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 398,
+        "uid": 397,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-41-m2-plynarenska-3580744.html",
         "type_of_flat": "2+kk",
         "size": "41",
@@ -3980,7 +3970,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 399,
+        "uid": 398,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-41-m2-plynarenska-3580727.html",
         "type_of_flat": "2+kk",
         "size": "41",
@@ -3990,7 +3980,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 400,
+        "uid": 399,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-42-m2-plynarenska-3582300.html",
         "type_of_flat": "2+kk",
         "size": "42",
@@ -4000,7 +3990,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 401,
+        "uid": 400,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-dolni-herspice/remax-delta-brno-prodej-bytu-2-kk-66-m2-vomackova-3579397.html",
         "type_of_flat": "2+kk",
         "size": "66",
@@ -4010,7 +4000,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 402,
+        "uid": 401,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-styrice/mmreality-prodej-bytu-2-1-54-m2-jilova-3579082.html",
         "type_of_flat": "2+1",
         "size": "54",
@@ -4020,7 +4010,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 403,
+        "uid": 402,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-43-m2-plynarenska-3577563.html",
         "type_of_flat": "2+kk",
         "size": "43",
@@ -4030,7 +4020,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 404,
+        "uid": 403,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-46-m2-plynarenska-3577492.html",
         "type_of_flat": "2+kk",
         "size": "46",
@@ -4040,7 +4030,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 405,
+        "uid": 404,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-lesna/century21-coloseum-praha-prodej-bytu-3-1-79-m2-milenova-3576465.html",
         "type_of_flat": "3+1",
         "size": "79",
@@ -4050,7 +4040,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 406,
+        "uid": 405,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-cerna-pole/bravis-prodej-bytu-2-kk-47-m2-trida-generala-piky-3574977.html",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4060,7 +4050,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 407,
+        "uid": 406,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-medlanky/bezrealitky-prodej-bytu-2-kk-45-m2-hrazka-3573175.html",
         "type_of_flat": "2+kk",
         "size": "45",
@@ -4070,7 +4060,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 408,
+        "uid": 407,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-stary-liskovec/qara-sro-prodej-bytu-3-1-68-m2-vltavska-3572995.html",
         "type_of_flat": "3+1",
         "size": "68",
@@ -4080,7 +4070,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 409,
+        "uid": 408,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/mmreality-prodej-bytu-2-kk-62-m2-bratislavska-3571798.html",
         "type_of_flat": "2+kk",
         "size": "62",
@@ -4090,7 +4080,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 410,
+        "uid": 409,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-cerna-pole/next-reality-prodej-bytu-2-kk-57-m2-jugoslavska-3570652.html",
         "type_of_flat": "2+kk",
         "size": "57",
@@ -4100,7 +4090,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 411,
+        "uid": 410,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-zabrdovice/realitni-agentura-proradost-prodej-bytu-3-1-78-m2-spitalka-3568716.html",
         "type_of_flat": "3+1",
         "size": "78",
@@ -4110,7 +4100,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 412,
+        "uid": 411,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-zidenice/century21-vase-reality-prodej-bytu-3-1-70-m2-velkopavlovicka-3568160.html",
         "type_of_flat": "3+1",
         "size": "70",
@@ -4120,7 +4110,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 413,
+        "uid": 412,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/bydli-v-novem-prodej-bytu-2-kk-42-m2-cejl-3566229.html",
         "type_of_flat": "2+kk",
         "size": "42",
@@ -4130,7 +4120,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 414,
+        "uid": 413,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/home-hunters-sro-prodej-bytu-2-kk-49-m2-stefanikova-3566382.html",
         "type_of_flat": "2+kk",
         "size": "49",
@@ -4140,7 +4130,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 415,
+        "uid": 414,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-stary-liskovec/mmreality-prodej-bytu-3-1-68-m2-oderska-3563354.html",
         "type_of_flat": "3+1",
         "size": "68",
@@ -4150,7 +4140,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 416,
+        "uid": 415,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-veveri/prokonzulta-prodej-bytu-2-kk-35-m2-jiraskova-3563286.html",
         "type_of_flat": "2+kk",
         "size": "35",
@@ -4160,7 +4150,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 417,
+        "uid": 416,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/bezrealitky-prodej-bytu-2-kk-50-m2-cejl-3561459.html",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -4170,7 +4160,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 418,
+        "uid": 417,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-chrlice/bezrealitky-prodej-bytu-2-1-62-m2-pekna-3556543.html",
         "type_of_flat": "2+1",
         "size": "62",
@@ -4180,7 +4170,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 419,
+        "uid": 418,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-kralovo-pole/next-reality-prodej-bytu-2-1-60-m2-palackeho-trida-3556311.html",
         "type_of_flat": "2+1",
         "size": "60",
@@ -4190,7 +4180,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 420,
+        "uid": 419,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/next-reality-prodej-bytu-2-kk-42-m2-cejl-3528679.html",
         "type_of_flat": "2+kk",
         "size": "42",
@@ -4200,7 +4190,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 421,
+        "uid": 420,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/next-reality-prodej-bytu-2-kk-60-m2-soudni-3410976.html",
         "type_of_flat": "2+kk",
         "size": "60",
@@ -4210,7 +4200,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 422,
+        "uid": 421,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-zidenice/prodejme-to-reamis-reality-prodej-bytu-2-1-63-m2-stara-osada-3553706.html",
         "type_of_flat": "2+1",
         "size": "63",
@@ -4220,7 +4210,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 423,
+        "uid": 422,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-45-m2-3552793.html",
         "type_of_flat": "2+kk",
         "size": "45",
@@ -4230,7 +4220,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 424,
+        "uid": 423,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-45-m2-3552785.html",
         "type_of_flat": "2+kk",
         "size": "45",
@@ -4240,7 +4230,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 425,
+        "uid": 424,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-45-m2-3552778.html",
         "type_of_flat": "2+kk",
         "size": "45",
@@ -4250,7 +4240,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 426,
+        "uid": 425,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/yit-stavo-praha-prodej-bytu-2-kk-46-m2-3552775.html",
         "type_of_flat": "2+kk",
         "size": "46",
@@ -4260,7 +4250,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 427,
+        "uid": 426,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-cerna-pole/bezrealitky-prodej-bytu-2-1-52-m2-trida-kpt-jarose-3550748.html",
         "type_of_flat": "2+1",
         "size": "52",
@@ -4270,7 +4260,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 428,
+        "uid": 427,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-husovice/avrioreal-prodej-bytu-2-kk-47-m2-vranovska-3547993.html",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4280,7 +4270,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 429,
+        "uid": 428,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-veveri/bravis-prodej-bytu-3-kk-75-m2-bayerova-3547916.html",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -4290,7 +4280,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 430,
+        "uid": 429,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-cernovice/bravis-prodej-bytu-3-1-71-m2-turgenevova-3547812.html",
         "type_of_flat": "3+1",
         "size": "71",
@@ -4300,7 +4290,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 431,
+        "uid": 430,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/century21-bonus-brno-prodej-bytu-3-1-79-m2-provaznikova-3559534.html",
         "type_of_flat": "3+1",
         "size": "79",
@@ -4310,7 +4300,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 432,
+        "uid": 431,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-bystrc/coloseum-nemovitosti-prodej-bytu-3-1-72-m2-kachlikova-3545700.html",
         "type_of_flat": "3+1",
         "size": "72",
@@ -4320,7 +4310,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 433,
+        "uid": 432,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-cerna-pole/century21-4fin-reality-prodej-bytu-2-kk-46-m2-trida-generala-piky-3577757.html",
         "type_of_flat": "2+kk",
         "size": "46",
@@ -4330,7 +4320,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 434,
+        "uid": 433,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-slatina/bezrealitky-prodej-bytu-2-1-67-m2-ponetovicka-3535904.html",
         "type_of_flat": "2+1",
         "size": "67",
@@ -4340,7 +4330,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 435,
+        "uid": 434,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-ponava/remax-delta-brno-prodej-bytu-3-kk-67-m2-klatovska-3532140.html",
         "type_of_flat": "3+kk",
         "size": "67",
@@ -4350,7 +4340,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 436,
+        "uid": 435,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-stare-brno/century21-coloseum-praha-prodej-bytu-2-kk-40-m2-hybesova-3566880.html",
         "type_of_flat": "2+kk",
         "size": "40",
@@ -4360,7 +4350,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 437,
+        "uid": 436,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-husovice/avrioreal-prodej-bytu-2-kk-53-m2-vranovska-3529983.html",
         "type_of_flat": "2+kk",
         "size": "53",
@@ -4370,7 +4360,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 438,
+        "uid": 437,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-reckovice/ostrovreality-zabreh-prodej-bytu-2-1-58-m2-kunstatska-3444527.html",
         "type_of_flat": "2+1",
         "size": "58",
@@ -4380,7 +4370,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 439,
+        "uid": 438,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-1/brno/brno-veveri/bravis-prodej-bytu-3-1-67-m2-bayerova-3527362.html",
         "type_of_flat": "3+1",
         "size": "67",
@@ -4390,7 +4380,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 440,
+        "uid": 439,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabovresky/allrisk-reality-brno-prodej-bytu-2-kk-52-m2-kovarovicova-3522042.html",
         "type_of_flat": "2+kk",
         "size": "52",
@@ -4400,7 +4390,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 441,
+        "uid": 440,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-cernovice/century21-all-inclusive-prodej-bytu-3-kk-86-m2-trzni-3522318.html",
         "type_of_flat": "3+kk",
         "size": "86",
@@ -4410,7 +4400,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 442,
+        "uid": 441,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-pisarky/swiss-life-reality-prodej-bytu-2-1-54-m2-hlinky-3542830.html",
         "type_of_flat": "2+1",
         "size": "54",
@@ -4420,7 +4410,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 443,
+        "uid": 442,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/real-home-partners-sro-prodej-bytu-2-kk-65-m2-3517058.html",
         "type_of_flat": "2+kk",
         "size": "65",
@@ -4430,7 +4420,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 444,
+        "uid": 443,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-zabrdovice/bidli-reality-prodej-bytu-2-1-80-m2-spitalka-3514201.html",
         "type_of_flat": "2+1",
         "size": "80",
@@ -4440,7 +4430,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 445,
+        "uid": 444,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-stare-brno/handel-reality-sro-prodej-bytu-2-kk-47-m2-naplavka-3505814.html",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4450,17 +4440,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 446,
-        "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-kralovo-pole/rksting-prodej-bytu-2-kk-48-m2-skacelova-3503965.html",
-        "type_of_flat": "2+kk",
-        "size": "48",
-        "price": 6940000,
-        "locality": "Skácelova, Brno",
-        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/200631/d0/d0d8f511247db6236c9cbcb380df8047.webp",
-        "source": "reality-brno.net"
-    },
-    {
-        "uid": 447,
+        "uid": 445,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zidenice/avrioreal-prodej-bytu-2-kk-35-m2-lisenska-3501601.html",
         "type_of_flat": "2+kk",
         "size": "35",
@@ -4470,7 +4450,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 448,
+        "uid": 446,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-prizrenice/bravis-prodej-bytu-3-kk-75-m2-modricka-3496980.html",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -4480,17 +4460,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 449,
-        "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-slatina/remax-delta-brno-prodej-bytu-2-kk-48-m2-tilhonova-3546517.html",
-        "type_of_flat": "2+kk",
-        "size": "48",
-        "price": 5998000,
-        "locality": "Tilhonova, Brno",
-        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/5026346/d9/d98c6a848bb8080b5cf5d12a709dc404.webp",
-        "source": "reality-brno.net"
-    },
-    {
-        "uid": 450,
+        "uid": 447,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-husovice/avrioreal-prodej-bytu-2-kk-47-m2-vranovska-3529990.html",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4500,7 +4470,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 451,
+        "uid": 448,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-47-m2-plynarenska-3445185.html",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4510,7 +4480,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 452,
+        "uid": 449,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-kohoutovice/century21-all-inclusive-prodej-bytu-2-kk-51-m2-jirovcova-3533447.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -4520,7 +4490,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 453,
+        "uid": 450,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/real-home-partners-sro-prodej-bytu-2-kk-81-m2-3525916.html",
         "type_of_flat": "2+kk",
         "size": "81",
@@ -4530,7 +4500,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 454,
+        "uid": 451,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-trnita/anomia-real-estate-prodej-bytu-2-kk-57-m2-3435596.html",
         "type_of_flat": "2+kk",
         "size": "57",
@@ -4540,7 +4510,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 455,
+        "uid": 452,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-47-m2-plynarenska-3568466.html",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4550,7 +4520,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 456,
+        "uid": 453,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-48-m2-plynarenska-3556306.html",
         "type_of_flat": "2+kk",
         "size": "48",
@@ -4560,7 +4530,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 457,
+        "uid": 454,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-zabrdovice/prazska-sprava-nemovitosti-prodej-bytu-2-kk-39-m2-plynarenska-3573402.html",
         "type_of_flat": "2+kk",
         "size": "39",
@@ -4570,7 +4540,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 458,
+        "uid": 455,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-trnita/anomia-real-estate-prodej-bytu-2-kk-53-m2-3434685.html",
         "type_of_flat": "2+kk",
         "size": "53",
@@ -4580,7 +4550,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 459,
+        "uid": 456,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-zabrdovice/realitni-agentura-proradost-prodej-bytu-3-kk-105-m2-cejl-3393131.html",
         "type_of_flat": "3+kk",
         "size": "105",
@@ -4590,7 +4560,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 460,
+        "uid": 457,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-stare-brno/real-home-partners-sro-prodej-bytu-2-kk-51-m2-hybesova-3366531.html",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -4600,17 +4570,17 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 461,
+        "uid": 458,
         "link": "https://www.reality-brno.net/prodej/byty/byty-3-kk/brno/brno-zabrdovice/edo-reality-praha4-nusle-prodej-bytu-3-kk-71-m2-cejl-3301441.html",
         "type_of_flat": "3+kk",
         "size": "71",
         "price": 7200000,
         "locality": "Cejl, Brno",
-        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/5046501/a6/a62c8be534776717e3edd58d6c96328d.webp",
+        "image": "https://img-cache.ceskereality.cz/nemovitosti/320x320_webp/5046501/cb/cb2612f50ede1f1f8e2b58f42ff6cd2f.webp",
         "source": "reality-brno.net"
     },
     {
-        "uid": 462,
+        "uid": 459,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-kk/brno/brno-husovice/balareal-prodej-bytu-2-kk-50-m2-provaznikova-3057320.html",
         "type_of_flat": "2+kk",
         "size": "50",
@@ -4620,7 +4590,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 463,
+        "uid": 460,
         "link": "https://www.reality-brno.net/prodej/byty/byty-2-1/brno/brno-reckovice/ochodek-estates-brodek-u-konice-prodej-bytu-2-1-65-m2-kunstatska-2939313.html",
         "type_of_flat": "2+1",
         "size": "65",
@@ -4630,7 +4600,7 @@
         "source": "reality-brno.net"
     },
     {
-        "uid": 464,
+        "uid": 461,
         "link": "https://www.remax-czech.cz/reality/detail/428308/prodej-bytu-2-1-v-osobnim-vlastnictvi-66-m2-brno",
         "type_of_flat": "2+1",
         "size": "66",
@@ -4640,7 +4610,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 465,
+        "uid": 462,
         "link": "https://www.remax-czech.cz/reality/detail/428234/prodej-bytu-3-1-v-osobnim-vlastnictvi-80-m2-brno",
         "type_of_flat": "3+1",
         "size": "80",
@@ -4650,7 +4620,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 466,
+        "uid": 463,
         "link": "https://www.remax-czech.cz/reality/detail/427992/prodej-bytu-2-kk-v-osobnim-vlastnictvi-62-m2-brno",
         "type_of_flat": "2+kk",
         "size": "62",
@@ -4660,7 +4630,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 467,
+        "uid": 464,
         "link": "https://www.remax-czech.cz/reality/detail/426291/prodej-chaty-chalupy-60-m2-brno",
         "type_of_flat": "N/A",
         "size": "60",
@@ -4670,17 +4640,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 468,
-        "link": "https://www.remax-czech.cz/reality/detail/425187/prodej-bytu-2-kk-v-osobnim-vlastnictvi-61-m2-brno",
-        "type_of_flat": "2+kk",
-        "size": "61",
-        "price": 6990000,
-        "locality": "ulice Merhautova, Brno – městská část Brno-sever",
-        "image": "https://mlsf.remax-czech.cz/data//zs/425187/3074813_th350.jpg",
-        "source": "remax-czech.cz"
-    },
-    {
-        "uid": 469,
+        "uid": 465,
         "link": "https://www.remax-czech.cz/reality/detail/428305/prodej-bytu-2-1-v-osobnim-vlastnictvi-55-m2-brno",
         "type_of_flat": "2+1",
         "size": "55",
@@ -4690,7 +4650,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 470,
+        "uid": 466,
         "link": "https://www.remax-czech.cz/reality/detail/424268/prodej-domu-57-m2-brno",
         "type_of_flat": "N/A",
         "size": "57",
@@ -4700,7 +4660,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 471,
+        "uid": 467,
         "link": "https://www.remax-czech.cz/reality/detail/423820/prodej-bytu-3-kk-v-osobnim-vlastnictvi-67-m2-brno",
         "type_of_flat": "3+kk",
         "size": "67",
@@ -4710,7 +4670,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 472,
+        "uid": 468,
         "link": "https://www.remax-czech.cz/reality/detail/425325/prodej-bytu-3-1-v-osobnim-vlastnictvi-65-m2-brno",
         "type_of_flat": "3+1",
         "size": "65",
@@ -4720,17 +4680,17 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 473,
+        "uid": 469,
         "link": "https://www.remax-czech.cz/reality/detail/418364/prodej-bytu-3-1-v-druzstevnim-vlastnictvi-77-m2-brno",
         "type_of_flat": "3+1",
         "size": "77",
         "price": 6990000,
         "locality": "ulice Kyjevská, Brno – městská část Brno-Starý Lískovec",
-        "image": "https://mlsf.remax-czech.cz/data//zs/418364/2991153_th350.jpg",
+        "image": "https://mlsf.remax-czech.cz/data//zs/418364/3120696_th350.png",
         "source": "remax-czech.cz"
     },
     {
-        "uid": 474,
+        "uid": 470,
         "link": "https://www.remax-czech.cz/reality/detail/422116/prodej-bytu-2-kk-v-osobnim-vlastnictvi-69-m2-brno",
         "type_of_flat": "2+kk",
         "size": "69",
@@ -4740,7 +4700,17 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 475,
+        "uid": 471,
+        "link": "https://www.remax-czech.cz/reality/detail/425187/prodej-bytu-2-kk-v-osobnim-vlastnictvi-61-m2-brno",
+        "type_of_flat": "2+kk",
+        "size": "61",
+        "price": 6990000,
+        "locality": "ulice Merhautova, Brno – městská část Brno-sever",
+        "image": "https://mlsf.remax-czech.cz/data//zs/425187/3074813_th350.jpg",
+        "source": "remax-czech.cz"
+    },
+    {
+        "uid": 472,
         "link": "https://www.remax-czech.cz/reality/detail/410606/prodej-bytu-2-kk-v-osobnim-vlastnictvi-71-m2-brno",
         "type_of_flat": "2+kk",
         "size": "71",
@@ -4750,7 +4720,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 476,
+        "uid": 473,
         "link": "https://www.remax-czech.cz/reality/detail/426129/prodej-bytu-2-1-v-osobnim-vlastnictvi-54-m2-brno",
         "type_of_flat": "2+1",
         "size": "54",
@@ -4760,7 +4730,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 477,
+        "uid": 474,
         "link": "https://www.remax-czech.cz/reality/detail/421066/prodej-bytu-3-1-v-osobnim-vlastnictvi-77-m2-brno",
         "type_of_flat": "3+1",
         "size": "77",
@@ -4770,7 +4740,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 478,
+        "uid": 475,
         "link": "https://www.remax-czech.cz/reality/detail/416701/prodej-bytu-3-1-v-druzstevnim-vlastnictvi-77-m2-brno",
         "type_of_flat": "3+1",
         "size": "77",
@@ -4780,7 +4750,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 479,
+        "uid": 476,
         "link": "https://www.remax-czech.cz/reality/detail/419172/prodej-bytu-2-1-v-osobnim-vlastnictvi-76-m2-brno",
         "type_of_flat": "2+1",
         "size": "76",
@@ -4790,7 +4760,7 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 480,
+        "uid": 477,
         "link": "https://www.remax-czech.cz/reality/detail/414012/prodej-bytu-2-1-v-osobnim-vlastnictvi-58-m2-brno",
         "type_of_flat": "2+1",
         "size": "58",
@@ -4800,37 +4770,57 @@
         "source": "remax-czech.cz"
     },
     {
-        "uid": 481,
+        "uid": 478,
+        "link": "https://www.bravis.cz/prodej-moderniho-bytu-3kk-ulice-fuchsova-brno-stred-terasa-balkon-sklep-klimatizace-06284",
+        "type_of_flat": "3+kk",
+        "size": "76",
+        "price": null,
+        "locality": "Fuchsova, Brno - Staré Brno",
+        "image": "https://www.bravis.cz/advimg/list/20463-29d22322ed29556d939aba04d93827ce.jpg",
+        "source": "bravis.cz"
+    },
+    {
+        "uid": 479,
+        "link": "https://www.bravis.cz/exkluzivni-prodej-bytu-3kk-brno-centrum-jakubske-namesti-balkon-zimni-zahrada-06255",
+        "type_of_flat": "3+kk",
+        "size": "81",
+        "price": null,
+        "locality": "Jakubské náměstí, Brno - Brno-město",
+        "image": "https://www.bravis.cz/advimg/list/20433-08c0092e323d136d939aba04d93827ce.jpg",
+        "source": "bravis.cz"
+    },
+    {
+        "uid": 480,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-665-msup2sup-v-novem-projektu-spica-bydleni-brno-turany-sklep-balkon-parkovani-06263",
         "type_of_flat": "3+kk",
         "size": "67",
         "price": 8790000,
         "locality": "Brno",
-        "image": "https://www.bravis.cz/advimg/list/20442-d395312a1614e5b851b4de1eea43fc66.jpg",
+        "image": "https://www.bravis.cz/advimg/list/20442-e0d3c5c344015061939aba04d93827ce.jpg",
         "source": "bravis.cz"
     },
     {
-        "uid": 482,
+        "uid": 481,
         "link": "https://www.bravis.cz/prodej-bytu-2kk-447-msup2sup-v-novem-projektu-spica-bydleni-brno-turany-sklep-balkon-parkovani-06248",
         "type_of_flat": "2+kk",
         "size": "42",
         "price": 6290000,
         "locality": "Brno",
-        "image": "https://www.bravis.cz/advimg/list/20426-9c60d4d03ea43ee851519c5924eb3f5a.jpg",
+        "image": "https://www.bravis.cz/advimg/list/20426-359b583307cdb4e8939aba04d93827ce.jpg",
         "source": "bravis.cz"
     },
     {
-        "uid": 483,
+        "uid": 482,
         "link": "https://www.bravis.cz/prodej-noveho-bytu-2kk-rezidence-in-sady-na-ul-fuchsova-terasa-50-msup2sup-chytra-domacnost-rekuperace-klimatizace-terasa-sklep-06217-1",
         "type_of_flat": "2+kk",
         "size": "69",
         "price": 9990000,
         "locality": "Fuchsova, Brno - Staré Brno",
-        "image": "https://www.bravis.cz/advimg/list/20434-b05f7726e33ebbb4a404b08667339b6e.jpg",
+        "image": "https://www.bravis.cz/advimg/list/20434-b05f7726e33ebbb4939aba04d93827ce.jpg",
         "source": "bravis.cz"
     },
     {
-        "uid": 484,
+        "uid": 483,
         "link": "https://www.bravis.cz/prodej-bytove-jednotky-2kk-ul-jirchare-brno-stare-brno-po-celkove-rekonstrukci-sklep-satna-06199",
         "type_of_flat": "2+kk",
         "size": "58",
@@ -4840,7 +4830,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 485,
+        "uid": 484,
         "link": "https://www.bravis.cz/prodej-bytu-2kk-ul-trida-generala-piky-brno-cerna-pole-zarizeny-sklep-investicni-prilezitost-06163",
         "type_of_flat": "2+kk",
         "size": "47",
@@ -4850,7 +4840,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 486,
+        "uid": 485,
         "link": "https://www.bravis.cz/prodej-zrekonstruovaneho-bytu-3kk-ul-vranovska-brno-husovice-balkon-sklep-06182",
         "type_of_flat": "3+kk",
         "size": "100",
@@ -4860,7 +4850,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 487,
+        "uid": 486,
         "link": "https://www.bravis.cz/prodej-krasneho-moderniho-bytu-3kk-kryte-parkovaci-stani-balkon-sklep-75-msup2sup-06166",
         "type_of_flat": "3+kk",
         "size": "61",
@@ -4870,17 +4860,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 488,
-        "link": "https://www.bravis.cz/prodej-moderniho-bytu-2kk-v-prestizni-lokalite-u-leskavy-53-msup2sup-balkon-7-msup2sup-06152",
-        "type_of_flat": "2+kk",
-        "size": "53",
-        "price": 6990000,
-        "locality": "U Leskavy, Brno - Starý Lískovec",
-        "image": "https://www.bravis.cz/advimg/list/20329-6fa09c38bbc91864ec07df8a5a15df5f.jpg",
-        "source": "bravis.cz"
-    },
-    {
-        "uid": 489,
+        "uid": 487,
         "link": "https://www.bravis.cz/moderni-prostorny-byt-prakticka-dispozice-25-kk-cernovice-turgenevova-balkon-satna-pracovna-parkovaci-stani-v-cene-06124",
         "type_of_flat": "2+kk",
         "size": "70",
@@ -4890,7 +4870,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 490,
+        "uid": 488,
         "link": "https://www.bravis.cz/prodej-bytu-21-brno-styrice-ul-jilova-balkon-sklep-dobra-dostupnost-06091",
         "type_of_flat": "3+1",
         "size": "55",
@@ -4900,7 +4880,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 491,
+        "uid": 489,
         "link": "https://www.bravis.cz/prodej-moderniho-bytu-2kk-s-galerii-terasou-garazi-park-stanim-ul-visnova-moravany-u-brna-124-msup2sup-06046",
         "type_of_flat": "2+kk",
         "size": "95",
@@ -4910,7 +4890,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 492,
+        "uid": 490,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-06087",
         "type_of_flat": "3+kk",
         "size": "60",
@@ -4920,7 +4900,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 493,
+        "uid": 491,
         "link": "https://www.bravis.cz/prodej-bytu-31-brno-cernovice-ul-turgenevova-lodzie-sklep-06056",
         "type_of_flat": "3+1",
         "size": "71",
@@ -4930,7 +4910,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 494,
+        "uid": 492,
         "link": "https://www.bravis.cz/prodej-moderni-novostavby-bytu-2kk-59-msup2sup-blizko-centra-terasa-13-msup2sup-moznost-garazoveho-stani-06075",
         "type_of_flat": "2+kk",
         "size": "59",
@@ -4940,7 +4920,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 495,
+        "uid": 493,
         "link": "https://www.bravis.cz/prodej-druzstevniho-bytu-3kk-brno-kralovo-pole-ulice-palackeho-trida-lodzie-po-kompletni-rekonstrukci-klidny-vnitroblok-06041",
         "type_of_flat": "3+kk",
         "size": "93",
@@ -4950,7 +4930,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 496,
+        "uid": 494,
         "link": "https://www.bravis.cz/prodej-nebytoveho-prostoru-v-moderni-novostavbe-polyfunkcniho-domu-413-msup2sup-lipuvka-u-brna-parkovaci-stani-v-cene-06035",
         "type_of_flat": "2+kk",
         "size": "41",
@@ -4960,17 +4940,17 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 497,
+        "uid": 495,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-75-msup2sup-s-balkonem-v-novem-projektu-rezidence-hana-vyskov-sklep-06020",
         "type_of_flat": "3+kk",
         "size": "75",
         "price": 7120000,
         "locality": "Vyškov - Vyškov-Předměstí",
-        "image": "https://www.bravis.cz/advimg/list/20197-5fd1ebaad18e1c6b61c9ab76c376976c.jpg",
+        "image": "https://www.bravis.cz/advimg/list/20197-5fd1ebaad18e1c6b939aba04d93827ce.jpg",
         "source": "bravis.cz"
     },
     {
-        "uid": 498,
+        "uid": 496,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-75-msup2sup-s-balkonem-v-novem-projektu-rezidence-hana-vyskov-sklep-06017",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -4980,17 +4960,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 499,
-        "link": "https://www.bravis.cz/prodej-bytu-2kk-53-msup2sup-s-balkonem-v-novem-projektu-rezidence-hana-vyskov-sklep-06008",
-        "type_of_flat": "2+kk",
-        "size": "53",
-        "price": 5250000,
-        "locality": "Vyškov - Vyškov-Předměstí",
-        "image": "https://www.bravis.cz/advimg/list/20185-7d7e5b39074c19a84c14e54997f20eae.jpg",
-        "source": "bravis.cz"
-    },
-    {
-        "uid": 500,
+        "uid": 497,
         "link": "https://www.bravis.cz/prodej-moderniho-bytu-3kk-ul-kyselkova-brno-sadova-sklep-lodzie-garazove-stani-05972",
         "type_of_flat": "3+kk",
         "size": "92",
@@ -5000,17 +4970,17 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 501,
+        "uid": 498,
         "link": "https://www.bravis.cz/prodej-noveho-bytu-21-se-zahradou-226-msup2sup-ul-ondreje-veseleho-brno-slatin-2x-parkovaci-stani-05967",
         "type_of_flat": "3+kk",
         "size": "81",
         "price": 11950000,
         "locality": "Ondřeje Veselého, Brno - Slatina",
-        "image": "https://www.bravis.cz/advimg/list/20144-66e103a2f3d700fc55edf93fa8582560.jpg",
+        "image": "https://www.bravis.cz/advimg/list/20144-66e103a2f3d700fc939aba04d93827ce.jpg",
         "source": "bravis.cz"
     },
     {
-        "uid": 502,
+        "uid": 499,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05956",
         "type_of_flat": "3+kk",
         "size": "80",
@@ -5020,17 +4990,17 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 503,
+        "uid": 500,
         "link": "https://www.bravis.cz/prodej-novostavby-domobytu-ul-vysluni-drnholec-samostatny-vchod-zahrada-05946",
         "type_of_flat": "3+kk",
         "size": "80",
         "price": 5990000,
         "locality": "Výsluní, Drnholec",
-        "image": "https://www.bravis.cz/advimg/list/20123-1023bf520e61c2eae8ff68465b32a6fa.jpg",
+        "image": "https://www.bravis.cz/advimg/list/20123-1023bf520e61c2ea939aba04d93827ce.jpg",
         "source": "bravis.cz"
     },
     {
-        "uid": 504,
+        "uid": 501,
         "link": "https://www.bravis.cz/prodej-bytu-31-brno-zabovresky-ul-zborovska-2x-balkon-sklep-05925",
         "type_of_flat": "3+1",
         "size": "75",
@@ -5040,7 +5010,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 505,
+        "uid": 502,
         "link": "https://www.bravis.cz/prodej-jedinecneho-podkrovniho-bytu-3kk-s-terasou-brno-ul-bezrucova-9-05906",
         "type_of_flat": "3+kk",
         "size": "112",
@@ -5050,17 +5020,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 506,
-        "link": "https://www.bravis.cz/prodej-mezonetoveho-bytu-3kk-ulice-sokolska-brno-mesto-balkon-sklep-05916",
-        "type_of_flat": "3+kk",
-        "size": "98",
-        "price": 10900000,
-        "locality": "Sokolská, Brno - Veveří",
-        "image": "https://www.bravis.cz/advimg/list/20093-549a400e17b52987c7d77e801710577f.jpg",
-        "source": "bravis.cz"
-    },
-    {
-        "uid": 507,
+        "uid": 503,
         "link": "https://www.bravis.cz/prodej-moderni-novostavby-atelieru-2kk-lipuvka-u-brna-parkovaci-stani-v-cene-05748",
         "type_of_flat": "2+kk",
         "size": "40",
@@ -5070,7 +5030,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 508,
+        "uid": 504,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-775-msup2sup-v-novem-projektu-zborovce-blansko-sklep-balkon-moznost-parkovani-05710",
         "type_of_flat": "3+kk",
         "size": "78",
@@ -5080,7 +5040,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 509,
+        "uid": 505,
         "link": "https://www.bravis.cz/prodej-bytu-2kk-557-msup2sup-v-novem-projektu-zborovce-blansko-sklep-balkon-moznost-parkovani-05709",
         "type_of_flat": "2+kk",
         "size": "56",
@@ -5090,7 +5050,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 510,
+        "uid": 506,
         "link": "https://www.bravis.cz/prodej-bytu-2kk-51-msup2sup-v-novem-projektu-zborovce-blansko-terasa-sklep-moznost-parkovani-05702",
         "type_of_flat": "2+kk",
         "size": "51",
@@ -5100,7 +5060,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 511,
+        "uid": 507,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-75-msup2sup-v-novem-projektu-zborovce-blansko-05704",
         "type_of_flat": "3+kk",
         "size": "75",
@@ -5110,7 +5070,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 512,
+        "uid": 508,
         "link": "https://www.bravis.cz/prodej-luxusniho-apartmanu-3kk-s-terasou-v-az-toweru-brno-24-podlazi-109-msup2sup-05611",
         "type_of_flat": "3+kk",
         "size": "96",
@@ -5120,7 +5080,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 513,
+        "uid": 509,
         "link": "https://www.bravis.cz/prodej-bytu-2kk-brno-stred-ulice-bayerova-sklep-blizko-centra-a-parku-luzanky-s-vybornou-dostupnosti-05534",
         "type_of_flat": "2+kk",
         "size": "60",
@@ -5130,7 +5090,7 @@
         "source": "bravis.cz"
     },
     {
-        "uid": 514,
+        "uid": 510,
         "link": "https://www.bravis.cz/prodej-bytu-3kk-brno-ivanovice-ul-jezeruvky-balkon-terasa-moznost-garazoveho-stani-05487",
         "type_of_flat": "3+kk",
         "size": "82",
